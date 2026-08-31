@@ -1,0 +1,269 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Heebo', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-sentra-bg: #050a14;
+  --color-sentra-bg-2: #0a1020;
+  --color-sentra-panel: #0b1424;
+  --color-sentra-panel-2: #071629;
+  --color-sentra-blue: #139bff;
+  --color-sentra-blue-2: #28a8ff;
+  --color-sentra-muted: #afc0d4;
+  --color-sentra-muted-2: #b9c2d6;
+  --color-sentra-navy: #1e3554;
+  --color-sentra-line: rgba(255, 255, 255, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-sentra-bg);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  overflow-x: clip;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+  border: 0;
+}
+
+img {
+  image-rendering: auto;
+  -webkit-user-drag: none;
+}
+
+::selection {
+  background: rgba(19, 155, 255, 0.35);
+}
+
+.sentra-card {
+  border: 1px solid rgba(175, 192, 212, 0.16);
+  background: linear-gradient(
+    180deg,
+    rgba(30, 53, 84, 0.35) 0%,
+    rgba(11, 20, 36, 0.75) 100%
+  );
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.sentra-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(19, 155, 255, 0.35);
+  box-shadow: 0 22px 60px rgba(19, 155, 255, 0.12);
+}
+
+.sentra-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  background: #139bff;
+  border: 1px solid #139bff;
+  color: #fff;
+  font-family: Inter, Heebo, sans-serif;
+  font-weight: 700;
+  padding: 0.85rem 1.35rem;
+  font-size: 0.95rem;
+  box-shadow: 0px 14px 34px 0px rgba(19, 155, 255, 0.25);
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease,
+    background 0.2s ease;
+}
+
+.sentra-btn-primary:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  background-image: linear-gradient(180deg, #06b1f4 0%, #0459e0 100%);
+}
+
+@media (min-width: 768px) {
+  .sentra-btn-primary {
+    padding: 0.9rem 1.55rem;
+    font-size: 1rem;
+  }
+}
+
+.sentra-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
+  background: rgba(4, 89, 224, 0.03);
+  color: #fff;
+  font-family: Inter, Heebo, sans-serif;
+  font-weight: 700;
+  padding: 0.85rem 1.55rem;
+  box-shadow: 0px 14px 34px 0px rgba(19, 155, 255, 0.25);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.sentra-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
+}
+
+.fade-in-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float-anim {
+  animation: floaty 4.5s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.sentra-table-wrap {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(16px);
+}
+
+.sentra-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.sentra-comparison-table thead th {
+  padding: 26px 28px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: left;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sentra-comparison-table thead th:first-child {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.sentra-comparison-table thead th:last-child {
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    rgba(40, 120, 255, 0.28),
+    rgba(20, 220, 180, 0.13)
+  );
+}
+
+.sentra-comparison-table tbody td {
+  padding: 23px 28px;
+  font-size: 17px;
+  line-height: 1.45;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.sentra-comparison-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.sentra-comparison-table tbody td:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.sentra-negative,
+.sentra-positive {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sentra-negative::before {
+  content: '✕';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 88, 88, 0.12);
+  color: #ff7777;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.sentra-positive::before {
+  content: '✓';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(48, 220, 160, 0.14);
+  color: #42e6ad;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.sentra-positive {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .sentra-table-wrap {
+    border-radius: 20px;
+    overflow-x: auto;
+  }
+
+  .sentra-comparison-table {
+    min-width: 680px;
+  }
+
+  .sentra-comparison-table thead th,
+  .sentra-comparison-table tbody td {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
