@@ -33,7 +33,7 @@ export function Footer() {
           Always Watching. Never Sleeping.© 2026 Sentra AI. All rights reserved.
         </p>
 
-        <a
+        {/* <a
           href="https://www.ezpoint.co.il/"
           target="_blank"
           rel="noreferrer"
@@ -44,7 +44,7 @@ export function Footer() {
             alt="ezpoint"
             className="mx-auto h-auto w-[120px]"
           />
-        </a>
+        </a> */}
       </div>
     </footer>
   )
