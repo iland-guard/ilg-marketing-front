@@ -1,32 +1,47 @@
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { comparisonRows } from '../data/content'
+import { useTranslation } from 'react-i18next'
+import { useParams } from 'react-router-dom'
+import { categoryIcons } from '../data/content'
 import { FeatureIcon } from './FeatureIcon'
 import { Reveal } from './motion'
 import { VideoModal } from './VideoModal'
+import { DEFAULT_LANG, isLang } from '../i18n/languages'
 
-const slides = [
+const slideMedia = [
   {
     poster: '/assets/soc-bg.png',
     video: 'https://www.youtube.com/watch?v=bcn06_Szb9c',
-    label: 'How Maya works',
   },
   {
     poster: '/assets/hero-house.png',
     video: 'https://www.youtube.com/watch?v=Um78seeaFoU',
-    label: 'Maya in action',
   },
   {
     poster: '/assets/whatsapp-alert.png',
     video: 'https://www.youtube.com/watch?v=bcn06_Szb9c',
-    label: 'Alerts demo',
   },
 ]
 
 export function BuiltAndCompare() {
   const [index, setIndex] = useState(0)
   const [videoUrl, setVideoUrl] = useState<string | null>(null)
+  const { t } = useTranslation()
+  const { lang } = useParams()
+  const currentLang = isLang(lang) ? lang : DEFAULT_LANG
+
+  const slideLabels = t('built.slides', { returnObjects: true }) as string[]
+  const rows = t('built.rows', { returnObjects: true }) as string[][]
+  const categories = t('built.categories', { returnObjects: true }) as Array<{
+    title: string
+    desc: string
+  }>
+
+  const slides = slideMedia.map((m, i) => ({
+    ...m,
+    label: Array.isArray(slideLabels) ? slideLabels[i] : '',
+  }))
 
   return (
     <>
@@ -34,11 +49,10 @@ export function BuiltAndCompare() {
         <div className="mx-auto max-w-[1100px] px-4 sm:px-5">
           <Reveal>
             <h2 className="mb-8 text-center text-3xl font-extrabold tracking-[-0.03em] md:text-5xl">
-              VIDEO AND HOW ITS WORK
+              {t('built.videoTitle')}
             </h2>
           </Reveal>
 
-          {/* Desktop: 3 thumbnails like original carousel */}
           <div className="mb-6 hidden gap-4 md:grid md:grid-cols-3">
             {slides.map((slide, i) => (
               <Reveal key={slide.label} delay={i * 0.08}>
@@ -63,7 +77,6 @@ export function BuiltAndCompare() {
             ))}
           </div>
 
-          {/* Mobile/tablet carousel */}
           <Reveal className="relative md:hidden">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_30px_80px_rgba(0,0,0,0.4)]">
               <AnimatePresence mode="wait">
@@ -94,7 +107,7 @@ export function BuiltAndCompare() {
               <button
                 type="button"
                 className="absolute top-1/2 left-2 -translate-y-1/2 rounded-full bg-black/55 p-2 text-white"
-                aria-label="Previous"
+                aria-label={t('built.prev')}
                 onClick={() =>
                   setIndex((i) => (i - 1 + slides.length) % slides.length)
                 }
@@ -104,7 +117,7 @@ export function BuiltAndCompare() {
               <button
                 type="button"
                 className="absolute top-1/2 right-2 -translate-y-1/2 rounded-full bg-black/55 p-2 text-white"
-                aria-label="Next"
+                aria-label={t('built.next')}
                 onClick={() => setIndex((i) => (i + 1) % slides.length)}
               >
                 <ChevronRight className="size-5" />
@@ -115,7 +128,7 @@ export function BuiltAndCompare() {
                 <button
                   key={i}
                   type="button"
-                  aria-label={`Go to slide ${i + 1}`}
+                  aria-label={t('built.goToSlide', { n: i + 1 })}
                   className={`h-2.5 w-2.5 rounded-full transition ${
                     i === index ? 'bg-[#139bff]' : 'bg-white/35'
                   }`}
@@ -131,15 +144,13 @@ export function BuiltAndCompare() {
         <div className="mx-auto max-w-[1120px] px-4 sm:px-5">
           <Reveal className="mx-auto mb-8 max-w-[760px] text-left sm:mb-10 sm:text-center">
             <span className="mb-4 inline-flex items-center justify-center rounded-full border border-[rgba(77,139,255,0.35)] bg-[rgba(77,139,255,0.08)] px-3.5 py-2 text-[12px] font-bold tracking-[1.4px] text-[#8fb3ff] sm:text-[13px]">
-              Traditional Monitoring vs Sentra
+              {t('built.compareBadge')}
             </span>
             <h2 className="text-[clamp(28px,7vw,56px)] font-extrabold leading-[1.05] tracking-[-1px] sm:tracking-[-1.4px]">
-              A smarter alternative to traditional monitoring centers
+              {t('built.compareTitle')}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
-              Sentra replaces expensive, human-dependent monitoring with an AI
-              security operator that watches 24/7, reacts instantly, and scales
-              across every site without adding more people.
+              {t('built.compareBody')}
             </p>
           </Reveal>
 
@@ -148,21 +159,22 @@ export function BuiltAndCompare() {
               <table className="sentra-comparison-table">
                 <thead>
                   <tr>
-                    <th>Traditional Monitoring</th>
-                    <th>Sentra AI Operator</th>
+                    <th>{t('built.colTraditional')}</th>
+                    <th>{t('built.colSentra')}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {comparisonRows.map(([neg, pos]) => (
-                    <tr key={neg}>
-                      <td>
-                        <span className="sentra-negative">{neg}</span>
-                      </td>
-                      <td>
-                        <span className="sentra-positive">{pos}</span>
-                      </td>
-                    </tr>
-                  ))}
+                  {Array.isArray(rows) &&
+                    rows.map(([neg, pos]) => (
+                      <tr key={neg}>
+                        <td>
+                          <span className="sentra-negative">{neg}</span>
+                        </td>
+                        <td>
+                          <span className="sentra-positive">{pos}</span>
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
@@ -170,10 +182,10 @@ export function BuiltAndCompare() {
 
           <Reveal delay={0.15} className="mt-10 text-center">
             <a
-              href="/#DEMO"
+              href={`/${currentLang}#DEMO`}
               className="sentra-btn-primary inline-flex transition hover:scale-[1.03]"
             >
-              Schedule a Demo
+              {t('built.scheduleDemo')}
             </a>
           </Reveal>
         </div>
@@ -183,34 +195,28 @@ export function BuiltAndCompare() {
         <div className="mx-auto max-w-[1100px] px-4 text-center sm:px-5">
           <Reveal>
             <p className="mb-3 text-xs font-bold tracking-[0.2em] text-[#8fb3ff]">
-              NOT CCTV. NOT ANALYTICS.
+              {t('built.categoryEyebrow')}
             </p>
             <h2 className="text-3xl font-extrabold tracking-[-0.03em] md:text-5xl">
-              A Virtual Security Professional.
+              {t('built.categoryTitle')}
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-[#afc0d4] md:text-lg">
-              Sentra AI is not another camera app, dashboard or analytics tool.
-              It is a new category: an AI Security Operator that actively
-              watches, verifies, alerts and responds — just like a trained
-              security professional.
+              {t('built.categoryBody')}
             </p>
           </Reveal>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {[
-              { title: 'Not CCTV', desc: 'Just recording.', icon: 'x' },
-              { title: 'Not Analytics', desc: 'Just data.', icon: 'chart' },
-              { title: 'Sentra AI', desc: 'Real protection.', icon: 'shield' },
-            ].map((item, i) => (
-              <Reveal key={item.title} delay={i * 0.08}>
-                <article className="sentra-card h-full p-6">
-                  <div className="mx-auto mb-4 inline-flex rounded-full bg-[#139bff]/12 p-3 text-[#139bff]">
-                    <FeatureIcon name={item.icon} />
-                  </div>
-                  <h3 className="text-lg font-bold">{item.title}</h3>
-                  <p className="mt-2 text-sm text-[#afc0d4]">{item.desc}</p>
-                </article>
-              </Reveal>
-            ))}
+            {Array.isArray(categories) &&
+              categories.map((item, i) => (
+                <Reveal key={item.title} delay={i * 0.08}>
+                  <article className="sentra-card h-full p-6">
+                    <div className="mx-auto mb-4 inline-flex rounded-full bg-[#139bff]/12 p-3 text-[#139bff]">
+                      <FeatureIcon name={categoryIcons[i] ?? 'shield'} />
+                    </div>
+                    <h3 className="text-lg font-bold">{item.title}</h3>
+                    <p className="mt-2 text-sm text-[#afc0d4]">{item.desc}</p>
+                  </article>
+                </Reveal>
+              ))}
           </div>
         </div>
       </section>

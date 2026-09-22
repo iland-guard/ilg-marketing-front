@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Play, PlayCircle, Star } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { FeatureIcon } from './FeatureIcon'
 import { Float, Reveal } from './motion'
 import { VideoModal } from './VideoModal'
@@ -12,13 +13,13 @@ const avatars = [
 
 export function Hero() {
   const [videoOpen, setVideoOpen] = useState(false)
+  const { t } = useTranslation()
 
   return (
     <section
       id="WHO"
       className="relative overflow-hidden bg-[#050A14] px-5 py-12 md:min-h-[82vh] md:py-[105px]"
     >
-      {/* Elementor: house bg center-right 60% */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
@@ -30,7 +31,6 @@ export function Hero() {
           backgroundSize: '60% auto',
         }}
       />
-      {/* Elementor overlay */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
@@ -41,19 +41,18 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1180px] flex-col items-center gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
-        {/* Left ~60% */}
         <div className="w-full max-w-xl lg:w-[60%] lg:max-w-none">
           <Reveal>
             <p
               className="mb-3 font-bold"
               style={{
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: 'Rubik, system-ui, sans-serif',
                 fontSize: 13,
                 letterSpacing: '1.8px',
                 color: '#28A8FF',
               }}
             >
-              ALWAYS WATCHING. NEVER SLEEPING.
+              {t('hero.eyebrow')}
             </p>
           </Reveal>
 
@@ -61,16 +60,16 @@ export function Hero() {
             <h1
               className="font-extrabold text-white"
               style={{
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: 'Rubik, system-ui, sans-serif',
                 fontSize: 'clamp(32px, 5vw, 49px)',
                 lineHeight: 1.08,
               }}
             >
-              Meet Maya.
+              {t('hero.titleLine1')}
               <br />
-              <span style={{ color: '#139BFF' }}>Your Personal</span>
+              <span style={{ color: '#139BFF' }}>{t('hero.titleLine2')}</span>
               <br />
-              <span style={{ color: '#139BFF' }}>AI Security Operator.</span>
+              <span style={{ color: '#139BFF' }}>{t('hero.titleLine3')}</span>
             </h1>
           </Reveal>
 
@@ -78,25 +77,21 @@ export function Hero() {
             <div
               className="mt-5 space-y-3"
               style={{
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: 'Rubik, system-ui, sans-serif',
                 fontSize: 18,
                 lineHeight: 1.55,
                 color: '#B8C9DD',
               }}
             >
-              <p>
-                Maya watches your existing security cameras around the clock,
-                verifies potential threats, filters unnecessary alerts and
-                contacts you only when something truly matters.
-              </p>
-              <p>For your business, home or private property.</p>
+              <p>{t('hero.body1')}</p>
+              <p>{t('hero.body2')}</p>
             </div>
           </Reveal>
 
           <Reveal delay={0.18}>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a href="#contact" className="sentra-btn-primary">
-                Start Free for 7 Days
+                {t('hero.ctaTrial')}
               </a>
               <button
                 type="button"
@@ -104,7 +99,7 @@ export function Hero() {
                 className="sentra-btn-ghost"
               >
                 <PlayCircle className="size-5 shrink-0" />
-                Watch Maya in Action
+                {t('hero.ctaWatch')}
               </button>
             </div>
           </Reveal>
@@ -134,13 +129,12 @@ export function Hero() {
                 ))}
               </div>
               <p className="max-w-[240px] text-sm text-[#AFC0D4]">
-                Trusted to monitor thousands of cameras and properties.
+                {t('hero.trusted')}
               </p>
             </div>
           </Reveal>
         </div>
 
-        {/* Right video widget ~30% — Elementor: radius 50px black, inner border 10px radius 30 */}
         <Reveal
           delay={0.15}
           className="relative w-full max-w-[340px] lg:w-[30%] lg:max-w-[360px]"
@@ -150,12 +144,12 @@ export function Hero() {
               type="button"
               onClick={() => setVideoOpen(true)}
               className="group relative block w-full overflow-hidden rounded-[30px] border-[10px] border-[#2E2E30]"
-              aria-label="Play Maya demo video"
+              aria-label={t('hero.playVideo')}
               style={{ aspectRatio: '9 / 16' }}
             >
               <img
                 src="/assets/whatsapp-alert.png"
-                alt="Maya security alert"
+                alt={t('hero.alertAlt')}
                 className="h-full w-full object-cover object-top"
                 loading="eager"
               />
@@ -167,17 +161,16 @@ export function Hero() {
               </div>
             </button>
 
-            {/* Existing Cameras card — Elementor absolute bottom -50 left -100 */}
             <div className="absolute -bottom-8 left-2 z-20 flex max-w-[230px] items-start gap-3 rounded-[18px] border border-[#1E3554] bg-[#0B1424] px-[22px] py-[26px] shadow-xl sm:-bottom-[50px] sm:-left-[40px] lg:-left-[80px] xl:-left-[100px]">
               <div className="mt-0.5 text-[#139BFF]">
                 <FeatureIcon name="shield" className="size-5" />
               </div>
               <div>
-                <h3 className="text-sm font-bold text-white">Existing Cameras</h3>
+                <h3 className="text-sm font-bold text-white">
+                  {t('hero.camerasTitle')}
+                </h3>
                 <p className="mt-1 text-xs leading-relaxed text-[#AFC0D4]">
-                  No full infrastructure
-                  <br />
-                  replacement required.
+                  {t('hero.camerasDesc')}
                 </p>
               </div>
             </div>

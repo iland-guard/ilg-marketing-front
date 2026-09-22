@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "brand": "Sentra AI"
+  },
+  "nav": {
+    "who": "WER WIR SIND",
+    "problem": "DAS PROBLEM",
+    "solution": "DIE LÖSUNG",
+    "works": "SO FUNKTIONIERT’S",
+    "built": "FÜR WEN",
+    "faq": "FAQ",
+    "scheduleDemo": "DEMO PLANEN",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "IMMER WACHSAM. NIE SCHLAFEND.",
+    "titleLine1": "Lernen Sie Maya kennen.",
+    "titleLine2": "Ihre persönliche",
+    "titleLine3": "KI‑Sicherheitsoperatorin.",
+    "body1": "Maya überwacht Ihre bestehenden Sicherheitskameras rund um die Uhr, prüft potenzielle Bedrohungen, filtert unnötige Alarme und kontaktiert Sie nur, wenn es wirklich darauf ankommt.",
+    "body2": "Für Ihr Unternehmen, Zuhause oder Privatgrundstück.",
+    "ctaTrial": "7 Tage kostenlos starten",
+    "ctaWatch": "Maya in Aktion sehen",
+    "trusted": "Vertraut für die Überwachung von Tausenden Kameras und Objekten.",
+    "playVideo": "Maya‑Demo‑Video abspielen",
+    "camerasTitle": "Bestehende Kameras",
+    "camerasDesc": "Kein vollständiger Infrastrukturaustausch nötig.",
+    "alertAlt": "Maya‑Sicherheitsalarm"
+  },
+  "problem": {
+    "eyebrow": "DAS PROBLEM",
+    "title": "Ihre Kameras sehen alles.\nAber wer schaut wirklich hin?",
+    "p1": "Die meisten Sicherheitskameras zeichnen nur auf, was passiert.",
+    "p2": "Sie senden möglicherweise Bewegungsmeldungen, können aber nicht immer echte Bedrohungen von unnötigen Alarmen unterscheiden.",
+    "p3": "Wenn jemand die Aufnahme prüft, kann das Ereignis bereits vorbei sein.",
+    "mayaTitle": "Was Maya tut, während Sie schlafen",
+    "steps": [
+      {
+        "title": "Maya wacht",
+        "description": "Maya überwacht kontinuierlich die von Ihnen gewählten Kameras und Bereiche."
+      },
+      {
+        "title": "Maya erkennt",
+        "description": "Sie erkennt Personen, Fahrzeuge und ungewöhnliche Aktivität in Echtzeit."
+      },
+      {
+        "title": "Maya prüft",
+        "description": "Sie analysiert das Ereignis und hilft, echte Aktivität von unnötigen Alarmen zu unterscheiden."
+      },
+      {
+        "title": "Maya benachrichtigt",
+        "description": "Sie sendet klare WhatsApp‑Alarme mit Bild, Kamera und Ereignisinformationen."
+      },
+      {
+        "title": "Maya ruft an",
+        "description": "Bei dringenden Ereignissen kann Maya Sie und Ihre Notfallkontakte anrufen."
+      },
+      {
+        "title": "Maya reagiert",
+        "description": "Sie kann Sirenen oder Abschreckungssysteme automatisch oder nach Ihrer Freigabe aktivieren."
+      },
+      {
+        "title": "Maya bleibt wachsam",
+        "description": "Maya verfolgt das Ereignis, bis die Situation geklärt ist."
+      }
+    ]
+  },
+  "solution": {
+    "eyebrow": "DIE LÖSUNG",
+    "title": "Sentra wacht, prüft und reagiert",
+    "body": "Sentra AI wirkt wie eine virtuelle Sicherheitsoperatorin für Ihre Kameras. Sie erkennt, prüft und reagiert — damit Sie es nicht müssen.",
+    "features": [
+      {
+        "title": "KI‑Überwachung 24/7",
+        "description": "Dauerhafte Kameraüberwachung."
+      },
+      {
+        "title": "Personen‑ & Fahrzeugerkennung",
+        "description": "Erkennt echte Bewegung und Risiko."
+      },
+      {
+        "title": "Fehlalarm‑Filterung",
+        "description": "Reduziert unnötigen Lärm."
+      },
+      {
+        "title": "WhatsApp‑Fotoalarme",
+        "description": "Klare Alarme mit Ereignisfotos."
+      },
+      {
+        "title": "Automatische Anrufe",
+        "description": "Eskalation, wenn es zählt."
+      },
+      {
+        "title": "Sirenenaktivierung",
+        "description": "Abschreckung in Echtzeit."
+      }
+    ],
+    "worksEyebrow": "SO FUNKTIONIERT’S",
+    "worksTitle": "Einfach. Intelligent. Immer an.",
+    "howItWorks": [
+      "1. Kameras verbinden",
+      "2. Maya beginnt zu wachen",
+      "3. Maya prüft Bedrohungen",
+      "4. Maya kontaktiert Sie"
+    ],
+    "protectTitle": "Schützen Sie, was zählt",
+    "protectBody": "Machen Sie Ihr bestehendes Kamerasystem zur immer wachen KI‑Sicherheitsoperatorin.",
+    "downloadCta": "App herunterladen",
+    "noCard": "Keine Kreditkarte erforderlich."
+  },
+  "built": {
+    "videoTitle": "VIDEO UND SO FUNKTIONIERT’S",
+    "slides": [
+      "So arbeitet Maya",
+      "Maya in Aktion",
+      "Alarm‑Demo"
+    ],
+    "prev": "Zurück",
+    "next": "Weiter",
+    "goToSlide": "Zu Folie {{n}}",
+    "compareBadge": "Traditionelle Überwachung vs Sentra",
+    "compareTitle": "Eine klügere Alternative zu klassischen Leitstellen",
+    "compareBody": "Sentra ersetzt teure, personenabhängige Überwachung durch eine KI‑Operatorin, die 24/7 wacht, sofort reagiert und ohne mehr Personal auf jedes Objekt skaliert.",
+    "colTraditional": "Traditionelle Überwachung",
+    "colSentra": "Sentra‑AI‑Operatorin",
+    "rows": [
+      [
+        "Hohe Monatsgebühren",
+        "Ein Bruchteil der Kosten"
+      ],
+      [
+        "Menschliche Operatoren",
+        "KI‑Sicherheitsoperatorin"
+      ],
+      [
+        "Schichtwechsel",
+        "24/7 durchgehender Schutz"
+      ],
+      [
+        "Begrenzte Kapazität",
+        "Skaliert auf unbegrenzte Standorte"
+      ],
+      [
+        "Menschlicher Fehler",
+        "Konsistente Echtzeitreaktion"
+      ],
+      [
+        "Verzögerte Reaktion",
+        "Sofortige Alarme und Anrufe"
+      ]
+    ],
+    "scheduleDemo": "Demo planen",
+    "categoryEyebrow": "KEIN CCTV. KEINE ANALYTIK.",
+    "categoryTitle": "Eine virtuelle Sicherheitsfachkraft.",
+    "categoryBody": "Sentra AI ist keine weitere Kamera‑App, kein Dashboard und kein Analysetool. Es ist eine neue Kategorie: eine KI‑Sicherheitsoperatorin, die aktiv wacht, prüft, alarmiert und reagiert — wie eine geschulte Fachkraft.",
+    "categories": [
+      {
+        "title": "Kein CCTV",
+        "desc": "Nur Aufzeichnung."
+      },
+      {
+        "title": "Keine Analytik",
+        "desc": "Nur Daten."
+      },
+      {
+        "title": "Sentra AI",
+        "desc": "Echter Schutz."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Fragen vor dem Start?",
+    "items": [
+      {
+        "q": "Welche Kameras sind mit Sentra AI kompatibel?",
+        "a": "Sentra AI ist dafür ausgelegt, bestehende Kamerasysteme anzubinden und einen vollständigen Infrastrukturaustausch zu vermeiden."
+      },
+      {
+        "q": "Wie reduziert Sentra AI Fehlalarme?",
+        "a": "Die KI prüft Ereignisse vor der Eskalation, filtert unnötige Bewegungsmeldungen und konzentriert sich auf echte Bedrohungen."
+      },
+      {
+        "q": "Wie schnell erhalte ich Alarme?",
+        "a": "Bei einem verifizierten Ereignis können Alarme sofort per WhatsApp und automatisierten Anrufen gesendet werden."
+      },
+      {
+        "q": "Kann Sentra AI Abschreckung aktivieren?",
+        "a": "Ja. Reaktionsabläufe können Sirenenaktivierung und automatische Eskalation umfassen."
+      },
+      {
+        "q": "Brauche ich neue Kameras?",
+        "a": "Oft nicht. Der Fokus liegt darauf, bestehende Systeme zur immer wachen KI‑Sicherheitsoperatorin zu machen."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Fragen vor dem Start?",
+    "name": "NAME",
+    "email": "E‑MAIL",
+    "phone": "TELEFON",
+    "message": "WIE KÖNNEN WIR HELFEN",
+    "phoneTitle": "Nur Zahlen und Telefonzeichen (#, -, * usw.) sind erlaubt.",
+    "privacyAgree": "Ich stimme der",
+    "privacyLink": "Datenschutzerklärung",
+    "send": "SENDEN",
+    "thanks": "Danke — wir melden uns in Kürze.",
+    "formLabel": "Kontaktformular"
+  },
+  "download": {
+    "title": "Laden Sie die Sentra‑AI‑App herunter",
+    "subtitle": "Verbinden | Steuern | Echtzeit‑Alarme erhalten",
+    "googlePlay": "Bei Google Play laden",
+    "appStore": "Im App Store laden",
+    "perks": [
+      "7 Tage kostenlos",
+      "Menschlicher Support",
+      "Jederzeit kündbar",
+      "Einfache Einrichtung"
+    ],
+    "phoneHomeAlt": "Sentra‑AI‑Startbildschirm",
+    "phoneCamerasAlt": "Sentra‑AI‑Kamerabildschirm"
+  },
+  "footer": {
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "siteRules": "Website‑Regeln",
+    "accessibility": "Barrierefreiheitserklärung",
+    "tagline": "Immer wachsam. Nie schlafend.© 2026 Sentra AI. Alle Rechte vorbehalten."
+  },
+  "payments": {
+    "eyebrow": "DEMNÄCHST",
+    "title": "Zahlungen",
+    "body": "Platzhalter‑Route für den künftigen Checkout‑/Abo‑Flow. Bereit zur Backend‑Anbindung.",
+    "back": "Zur Startseite"
+  },
+  "legal": {
+    "eyebrow": "RECHTLICHES",
+    "back": "Zur Startseite",
+    "lastUpdated": "Zuletzt aktualisiert: 22. September 2026",
+    "disclaimer": "Dieses Dokument ist ein Entwurf für Produkt‑ und Marketingzwecke. Es ist keine Rechtsberatung. Lassen Sie es vor der Nutzung von qualifizierter Anwaltschaft prüfen.",
+    "companyPlaceholder": "[Rechtsform und eingetragene Adresse — auszufüllen]",
+    "contactEmail": "privacy@sentra.ai"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Sentra AI („Sentra“, „wir“) bietet KI‑gestützte Sicherheitsanalytik für Kamerasysteme, optionale Telefon‑/Messaging‑Alarme sowie optionales menschliches Monitoring / Live‑Kameraeinsicht für von Ihnen autorisierte Standorte. Diese Erklärung beschreibt, wie wir Daten erheben, nutzen, teilen und schützen, wenn Sie unsere Marketing‑Website, Apps und Dienste nutzen.",
+    "sections": [
+      {
+        "title": "1. Wer wir sind",
+        "paragraphs": [
+          "Verantwortlicher für personenbezogene Daten ist Sentra AI, betrieben von {{company}}. Datenschutzanfragen: {{email}}."
+        ]
+      },
+      {
+        "title": "2. Welche Daten wir erheben",
+        "paragraphs": [
+          "Konto‑ und Kontaktdaten: Name, E‑Mail, Telefon, Firmen‑/Standortdaten und Formularnachrichten.",
+          "Service‑ und Kameradaten: Streams, Schnappschüsse, Ereignismetadaten, Standortkonfiguration, Erkennungsergebnisse und KI‑Analytik.",
+          "Alarm‑ und Kommunikationsdaten: WhatsApp‑/SMS‑/Anrufprotokolle, Benachrichtigungseinstellungen und Notfallkontakte.",
+          "Optionale Human‑Monitoring‑Daten: autorisierte Operatoren können Live‑ oder aufgezeichnetes Material und Ereignisinfos einsehen.",
+          "Zahlungsdaten (wenn aktiv): Rechnungsidentität, Tarif, Rechnungen und Zahlungsstatus über unseren Zahlungsanbieter. Vollständige Kartennummern speichern wir nicht.",
+          "Technische Daten: IP‑Adresse, Gerät/Browser, ungefährer Standort, Cookies und ähnliche Technologien."
+        ]
+      },
+      {
+        "title": "3. Wie wir Daten nutzen",
+        "paragraphs": [
+          "Für KI‑Monitoring, Bedrohungsprüfung, Fehlalarmfilterung und Standortanalytik.",
+          "Für optionale Alarme per Messaging und Telefon gemäß Ihren Regeln.",
+          "Für optionale menschliche Prüfung und Reaktion bei Monitoring‑Abos.",
+          "Zur Beantwortung von Vertriebs‑, Support‑ und Demo‑Anfragen.",
+          "Zur Verarbeitung von Abos und Zahlungen, sobald Checkout verfügbar ist.",
+          "Zur Verbesserung von Sicherheit, Zuverlässigkeit, Betrugsprävention und Produktqualität.",
+          "Zur Einhaltung von Recht und Durchsetzung unserer AGB und Website‑Regeln."
+        ]
+      },
+      {
+        "title": "4. Rechtsgrundlagen",
+        "paragraphs": [
+          "Je nach Standort verarbeiten wir Daten auf Basis Vertragserfüllung, berechtigter Interessen, Einwilligung und gesetzlicher Pflichten."
+        ]
+      },
+      {
+        "title": "5. Weitergabe",
+        "paragraphs": [
+          "Wir geben Daten an Infrastruktur‑, Messaging‑, Analyse‑ und Zahlungsanbieter weiter; an Monitoring‑Partner nur für autorisierte Standorte; und wenn gesetzlich erforderlich.",
+          "Wir verkaufen Ihre personenbezogenen Daten nicht."
+        ]
+      },
+      {
+        "title": "6. Speicherung",
+        "paragraphs": [
+          "Kontaktanfragen speichern wir für einen angemessenen Geschäftzeitraum; Konto‑ und Abrechnungsdaten für die Kontolaufzeit plus gesetzliche Fristen; Kamera‑/Ereignisdaten gemäß Tarif und Betriebsbedarf."
+        ]
+      },
+      {
+        "title": "7. Sicherheit",
+        "paragraphs": [
+          "Wir setzen Maßnahmen ein, die der Sensibilität von Sicherheitsaufnahmen und Kontaktdaten angemessen sind. Keine Methode ist vollständig sicher; Sie bleiben für Kameras, Zugangsdaten und Netze verantwortlich."
+        ]
+      },
+      {
+        "title": "8. Ihre Rechte",
+        "paragraphs": [
+          "Nach geltendem Recht können Sie Auskunft, Berichtigung, Löschung, Einschränkung, Portabilität oder Widerspruch verlangen und Einwilligungen widerrufen. Kontakt: {{email}}."
+        ]
+      },
+      {
+        "title": "9. Cookies",
+        "paragraphs": [
+          "Die Website kann essenzielle Cookies und, wo erlaubt, Analyse‑Cookies nutzen. Nicht essentielle Cookies steuern Sie im Browser."
+        ]
+      },
+      {
+        "title": "10. Internationale Übermittlungen",
+        "paragraphs": [
+          "Daten können außerhalb Ihres Landes verarbeitet werden. Wo erforderlich, nutzen wir geeignete Garantien."
+        ]
+      },
+      {
+        "title": "11. Kinder",
+        "paragraphs": [
+          "Der Dienst richtet sich an Unternehmen und Erwachsene. Wir erheben wissentlich keine Daten von unter 16‑Jährigen ohne passende Autorisierung."
+        ]
+      },
+      {
+        "title": "12. Änderungen",
+        "paragraphs": [
+          "Wir können diese Erklärung aktualisieren. Wesentliche Änderungen werden auf dieser Seite mit aktualisiertem Datum veröffentlicht."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "intro": "Diese Bedingungen regeln den Zugang zur Sentra‑AI‑Marketing‑Website, Apps und Diensten für KI‑Kameraanalytik, optionale Telefon‑/Messaging‑Benachrichtigungen, optionales Human‑Monitoring und künftige bezahlte Abos.",
+    "sections": [
+      {
+        "title": "1. Annahme",
+        "paragraphs": [
+          "Mit dem Zugriff auf Sentra AI akzeptieren Sie diese Bedingungen und die Datenschutzerklärung."
+        ]
+      },
+      {
+        "title": "2. Der Dienst",
+        "paragraphs": [
+          "Sentra AI stellt Software und Dienste bereit, die verbundene Kamerastreams analysieren, Ereignisse erkennen und prüfen helfen, unnötige Alarme reduzieren und optional per Messaging und Telefon benachrichtigen.",
+          "Wenn aktiviert, kann ein Monitoring‑Team autorisierte Kameras und Ereignisse einsehen. Funktionen hängen vom Tarif ab.",
+          "Sentra ist ein Entscheidungs‑ und Alarmierungswerkzeug. Es ersetzt keine Notrufdienste, Polizei oder physische Objektsicherheit."
+        ]
+      },
+      {
+        "title": "3. Berechtigung und Konten",
+        "paragraphs": [
+          "Sie müssen vertragsfähig sein und genaue Registrierungsdaten angeben. Sie sind für Zugangsdaten und Kontoaktivität verantwortlich."
+        ]
+      },
+      {
+        "title": "4. Zulässige Nutzung",
+        "paragraphs": [
+          "Sie dürfen nur Kameras und Standorte anbinden, die Sie überwachen dürfen, und müssen Datenschutz‑ sowie Aufzeichnungsgesetze einhalten.",
+          "Sie dürfen den Dienst nicht missbrauchen, um zu belästigen, unrechtmäßig zu überwachen, zu diskriminieren, Rechte zu verletzen, unbefugt zuzugreifen oder die Integrität zu stören."
+        ]
+      },
+      {
+        "title": "5. Alarme und Monitoring",
+        "paragraphs": [
+          "Telefon‑/Messaging‑Alarme sind optional und nicht garantiert. Optionales Human‑Monitoring garantiert nicht, jedes Ereignis zu erkennen."
+        ]
+      },
+      {
+        "title": "6. Abos und Zahlungen",
+        "paragraphs": [
+          "Bezahlpläne werden zu den beim Kauf angezeigten Preisen angeboten. Mit dem Abo autorisieren Sie wiederkehrende Abbuchungen bis zur Kündigung."
+        ]
+      },
+      {
+        "title": "7. Geistiges Eigentum",
+        "paragraphs": [
+          "Sentra AI, Maya‑Branding, Software und Inhalte gehören Sentra oder Lizenzgebern. Sie behalten Rechte an Ihrem Kamerainhalt und erteilen eine Verarbeitungslizenz zur Leistungserbringung."
+        ]
+      },
+      {
+        "title": "8. Haftungsausschlüsse",
+        "paragraphs": [
+          "DER DIENST WIRD „WIE BESEHEN“ UND „WIE VERFÜGBAR“ BEREITGESTELLT. SOWEIT GESETZLICH ZULÄSSIG, SCHLIESSEN WIR IMPLIZITE GEWÄHRLEISTUNGEN AUS."
+        ]
+      },
+      {
+        "title": "9. Haftungsbeschränkung",
+        "paragraphs": [
+          "SOWEIT GESETZLICH ZULÄSSIG HAFTET SENTRA NICHT FÜR INDIREKTE ODER FOLGESCHÄDEN. UNSERE GESAMTHAFTUNG ÜBERSTEIGT NICHT DIE IN DEN VORANGEGANGENEN ZWÖLF (12) MONATEN GEZAHLTEN BETRÄGE."
+        ]
+      },
+      {
+        "title": "10. Freistellung",
+        "paragraphs": [
+          "Sie stellen Sentra von Ansprüchen frei, die aus Ihrer Kamerainstallation, unrechtmäßiger Aufzeichnung oder Verletzung dieser Bedingungen entstehen."
+        ]
+      },
+      {
+        "title": "11. Sperrung und Kündigung",
+        "paragraphs": [
+          "Wir können den Zugang bei Verstoß, Sicherheitsrisiko, Nichtzahlung oder gesetzlichen Anforderungen sperren oder beenden."
+        ]
+      },
+      {
+        "title": "12. Anwendbares Recht",
+        "paragraphs": [
+          "Diese Bedingungen unterliegen dem auf {{company}} anwendbaren Recht, vorbehaltlich zwingender lokaler Verbraucherschutzrechte."
+        ]
+      },
+      {
+        "title": "13. Änderungen",
+        "paragraphs": [
+          "Wir können diese Bedingungen aktualisieren. Fortgesetzte Nutzung nach Veröffentlichung gilt als Annahme, soweit gesetzlich zulässig."
+        ]
+      },
+      {
+        "title": "14. Kontakt",
+        "paragraphs": [
+          "Fragen: {{email}}."
+        ]
+      }
+    ]
+  },
+  "siteRules": {
+    "title": "Website‑Regeln",
+    "intro": "Diese Regeln gelten für Besucher der Sentra‑AI‑Marketing‑Website. Sie ergänzen die Nutzungsbedingungen und die Datenschutzerklärung.",
+    "sections": [
+      {
+        "title": "1. Zweck der Website",
+        "paragraphs": [
+          "Die Website informiert über Sentra‑AI‑Produkte und ‑Dienste, Demo‑Anfragen, Downloads und (falls verfügbar) Abo‑Käufe."
+        ]
+      },
+      {
+        "title": "2. Erwartetes Verhalten",
+        "paragraphs": [
+          "Nutzen Sie die Website rechtmäßig und respektvoll. Senden Sie kein Spam, Malware oder missbräuchliche Inhalte.",
+          "Versuchen Sie nicht, die Website zu scannen, zu überlasten oder zu stören."
+        ]
+      },
+      {
+        "title": "3. Geistiges Eigentum",
+        "paragraphs": [
+          "Marken, Logos, Texte, Grafiken, Videos und Software sind geschützt. Kommerzielle Nutzung ohne vorherige schriftliche Erlaubnis ist untersagt."
+        ]
+      },
+      {
+        "title": "4. Formulare",
+        "paragraphs": [
+          "Geben Sie genaue Kontaktdaten an. Einsendungen werden gemäß Datenschutzerklärung verwendet."
+        ]
+      },
+      {
+        "title": "5. Drittanbieter‑Links",
+        "paragraphs": [
+          "Links zu App‑Stores, Videos oder Drittseiten dienen der Bequemlichkeit."
+        ]
+      },
+      {
+        "title": "6. Melden",
+        "paragraphs": [
+          "Melden Sie Missbrauch an {{email}}."
+        ]
+      },
+      {
+        "title": "7. Durchsetzung",
+        "paragraphs": [
+          "Wir können den Zugang sperren oder andere geeignete Maßnahmen ergreifen."
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "title": "Barrierefreiheitserklärung",
+    "body": "Sentra AI möchte diese Marketing‑Website für möglichst viele Menschen nutzbar machen. Wir streben semantisches HTML, tastaturfreundliche Navigation und lesbaren Kontrast an. Bei Barrieren schreiben Sie an {{email}}."
+  }
+}

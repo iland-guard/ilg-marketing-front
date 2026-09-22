@@ -37,12 +37,12 @@ jobs:
 
       - name: Invalidate CloudFront Cache
         env:
-          CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          # Primary + secondary distributions
+          CLOUDFRONT_DISTRIBUTION_IDS: E3TLVG5CTFPRKN EKAR1KW5LY2S0
         run: |
-          if [ -z "$CLOUDFRONT_DISTRIBUTION_ID" ]; then
-            echo "Skipping CloudFront invalidation — CLOUDFRONT_DISTRIBUTION_ID not set"
-            exit 0
-          fi
-          aws cloudfront create-invalidation \
-            --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" \
-            --paths "/*"
+          for DIST_ID in $CLOUDFRONT_DISTRIBUTION_IDS; do
+            echo "Invalidating CloudFront distribution: $DIST_ID"
+            aws cloudfront create-invalidation \
+              --distribution-id "$DIST_ID" \
+              --paths "/*"
+          done
