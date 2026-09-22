@@ -8,17 +8,38 @@ import {
   SiteRulesPage,
   TermsPage,
 } from './pages/LegalPages'
-import { DEFAULT_LANG, isLang } from './i18n/languages'
+import { DEFAULT_LANG, isLang, type Lang } from './i18n/languages'
+import { LANG_STORAGE_KEY } from './i18n'
 
-function RootRedirect() {
-  let lang = DEFAULT_LANG
+function detectBrowserLang(): Lang {
   try {
-    const stored = localStorage.getItem('sentra_lang')
-    if (stored && isLang(stored)) lang = stored
+    const candidates = [
+      ...(navigator.languages ?? []),
+      navigator.language,
+    ].filter(Boolean)
+
+    for (const code of candidates) {
+      const base = code.toLowerCase().split('-')[0]
+      if (isLang(base)) return base
+    }
   } catch {
     /* ignore */
   }
-  return <Navigate to={`/${lang}`} replace />
+  return DEFAULT_LANG
+}
+
+function resolveInitialLang(): Lang {
+  try {
+    const stored = localStorage.getItem(LANG_STORAGE_KEY)
+    if (stored && isLang(stored)) return stored
+  } catch {
+    /* ignore */
+  }
+  return detectBrowserLang()
+}
+
+function RootRedirect() {
+  return <Navigate to={`/${resolveInitialLang()}`} replace />
 }
 
 export default function App() {

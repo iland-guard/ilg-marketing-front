@@ -70,7 +70,7 @@
   "solution": {
     "eyebrow": "THE SOLUTION",
     "title": "Sentra Watches, Verifies and Responds",
-    "body": "Sentra AI acts like a virtual security operator for your cameras. It detects, verifies and responds so you don’t have to.",
+    "body": "Sentra AI acts like a virtual security operator for your cameras. It detects, verifies and responds so you donג€™t have to.",
     "features": [
       {
         "title": "24/7 AI Monitoring",
@@ -112,7 +112,11 @@
   },
   "built": {
     "videoTitle": "VIDEO AND HOW ITS WORK",
-    "slides": ["How Maya works", "Maya in action", "Alerts demo"],
+    "slides": [
+      "How Maya works",
+      "Maya in action",
+      "Alerts demo"
+    ],
     "prev": "Previous",
     "next": "Next",
     "goToSlide": "Go to slide {{n}}",
@@ -122,21 +126,48 @@
     "colTraditional": "Traditional Monitoring",
     "colSentra": "Sentra AI Operator",
     "rows": [
-      ["Expensive monthly fees", "Fraction of the cost"],
-      ["Human operators", "AI security operator"],
-      ["Shift changes", "24/7 continuous protection"],
-      ["Limited capacity", "Scales across unlimited sites"],
-      ["Human error", "Consistent real-time response"],
-      ["Delayed reaction", "Instant alerts and calls"]
+      [
+        "Expensive monthly fees",
+        "Fraction of the cost"
+      ],
+      [
+        "Human operators",
+        "AI security operator"
+      ],
+      [
+        "Shift changes",
+        "24/7 continuous protection"
+      ],
+      [
+        "Limited capacity",
+        "Scales across unlimited sites"
+      ],
+      [
+        "Human error",
+        "Consistent real-time response"
+      ],
+      [
+        "Delayed reaction",
+        "Instant alerts and calls"
+      ]
     ],
     "scheduleDemo": "Schedule a Demo",
     "categoryEyebrow": "NOT CCTV. NOT ANALYTICS.",
     "categoryTitle": "A Virtual Security Professional.",
-    "categoryBody": "Sentra AI is not another camera app, dashboard or analytics tool. It is a new category: an AI Security Operator that actively watches, verifies, alerts and responds — just like a trained security professional.",
+    "categoryBody": "Sentra AI is not another camera app, dashboard or analytics tool. It is a new category: an AI Security Operator that actively watches, verifies, alerts and responds ג€” just like a trained security professional.",
     "categories": [
-      { "title": "Not CCTV", "desc": "Just recording." },
-      { "title": "Not Analytics", "desc": "Just data." },
-      { "title": "Sentra AI", "desc": "Real protection." }
+      {
+        "title": "Not CCTV",
+        "desc": "Just recording."
+      },
+      {
+        "title": "Not Analytics",
+        "desc": "Just data."
+      },
+      {
+        "title": "Sentra AI",
+        "desc": "Real protection."
+      }
     ]
   },
   "faq": {
@@ -175,7 +206,7 @@
     "privacyAgree": "I agree to the",
     "privacyLink": "Privacy Policy",
     "send": "SEND",
-    "thanks": "Thanks — we’ll be in touch shortly.",
+    "thanks": "Thanks ג€” weג€™ll be in touch shortly.",
     "formLabel": "Contact Form"
   },
   "download": {
@@ -197,7 +228,7 @@
     "terms": "Terms of Use",
     "siteRules": "Site Rules",
     "accessibility": "Accessibility Statement",
-    "tagline": "Always Watching. Never Sleeping.© 2026 Sentra AI. All rights reserved."
+    "tagline": "Always Watching. Never Sleeping.ֲ© 2026 Sentra AI. All rights reserved."
   },
   "payments": {
     "eyebrow": "COMING NEXT",
@@ -210,12 +241,12 @@
     "back": "Back to home",
     "lastUpdated": "Last updated: September 22, 2026",
     "disclaimer": "This document is a draft for product and marketing use. It is not legal advice. Have it reviewed by qualified counsel before relying on it.",
-    "companyPlaceholder": "[Legal entity name and registered address — to be completed]",
-    "contactEmail": "privacy@sentra.ai"
+    "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
+    "contactEmail": "support@sentraai.ai"
   },
   "privacy": {
     "title": "Privacy Policy",
-    "intro": "Sentra AI (“Sentra”, “we”, “us”) provides AI-assisted security analytics for camera systems, optional phone and messaging alerts, and optional human monitoring / live camera review for sites you authorize. This Privacy Policy explains how we collect, use, share and protect personal and related data when you use our marketing website, apps and services.",
+    "intro": "Sentra AI (ג€Sentraג€, ג€weג€, ג€usג€) provides AI-assisted security analytics for camera systems, optional phone and messaging alerts, and optional human monitoring / live camera review for sites you authorize. This Privacy Policy explains how we collect, use, share and protect personal and related data when you use our marketing website, apps and services.",
     "sections": [
       {
         "title": "1. Who we are",
@@ -331,7 +362,7 @@
         "title": "4. Acceptable use",
         "paragraphs": [
           "You may only connect cameras and sites you are authorized to monitor. You must comply with privacy, labor, surveillance and recording laws in every jurisdiction where cameras operate, including notice and consent requirements for individuals who may be filmed.",
-          "You must not misuse the service to harass, unlawfully surveil, discriminate, violate others’ rights, attempt unauthorized access, reverse engineer except as allowed by law, or interfere with service integrity."
+          "You must not misuse the service to harass, unlawfully surveil, discriminate, violate othersג€™ rights, attempt unauthorized access, reverse engineer except as allowed by law, or interfere with service integrity."
         ]
       },
       {
@@ -356,7 +387,7 @@
       {
         "title": "8. Disclaimers",
         "paragraphs": [
-          "THE SERVICE IS PROVIDED “AS IS” AND “AS AVAILABLE”. TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT UNINTERRUPTED OR ERROR-FREE OPERATION, OR THAT EVERY THREAT WILL BE DETECTED OR PREVENTED."
+          "THE SERVICE IS PROVIDED ג€AS ISג€ AND ג€AS AVAILABLEג€. TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT UNINTERRUPTED OR ERROR-FREE OPERATION, OR THAT EVERY THREAT WILL BE DETECTED OR PREVENTED."
         ]
       },
       {

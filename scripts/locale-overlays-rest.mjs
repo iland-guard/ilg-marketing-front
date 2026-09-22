@@ -148,8 +148,8 @@ export default {
       back: 'العودة للرئيسية',
       lastUpdated: 'آخر تحديث: 22 سبتمبر 2026',
       disclaimer: 'هذه الوثيقة مسودة للاستخدام المنتج والتسويقي. ليست استشارة قانونية. يجب مراجعتها من محامٍ مؤهل قبل الاعتماد عليها.',
-      companyPlaceholder: '[الاسم القانوني والعنوان المسجل — يُستكمل]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'سياسة الخصوصية',
@@ -392,8 +392,8 @@ export default {
       back: 'На главную',
       lastUpdated: 'Последнее обновление: 22 сентября 2026',
       disclaimer: 'Этот документ — черновик для продуктового и маркетингового использования. Это не юридическая консультация. Перед использованием передайте его квалифицированному юристу.',
-      companyPlaceholder: '[Юридическое лицо и зарегистрированный адрес — заполнить]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'Политика конфиденциальности',
@@ -636,8 +636,8 @@ export default {
       back: 'Zur Startseite',
       lastUpdated: 'Zuletzt aktualisiert: 22. September 2026',
       disclaimer: 'Dieses Dokument ist ein Entwurf für Produkt‑ und Marketingzwecke. Es ist keine Rechtsberatung. Lassen Sie es vor der Nutzung von qualifizierter Anwaltschaft prüfen.',
-      companyPlaceholder: '[Rechtsform und eingetragene Adresse — auszufüllen]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'Datenschutzerklärung',
@@ -880,8 +880,8 @@ export default {
       back: 'Voltar ao início',
       lastUpdated: 'Última atualização: 22 de setembro de 2026',
       disclaimer: 'Este documento é um rascunho para uso de produto e marketing. Não é aconselhamento jurídico. Faça-o revisar por um advogado qualificado antes de confiar nele.',
-      companyPlaceholder: '[Nome da entidade jurídica e endereço registrado — a completar]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'Política de Privacidade',

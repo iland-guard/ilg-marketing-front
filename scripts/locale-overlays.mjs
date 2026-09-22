@@ -169,8 +169,8 @@ export default {
       lastUpdated: 'Dernière mise à jour : 22 septembre 2026',
       disclaimer:
         'Ce document est un projet à usage produit et marketing. Ce n’est pas un conseil juridique. Faites-le examiner par un avocat qualifié avant de vous y fier.',
-      companyPlaceholder: '[Raison sociale et adresse enregistrée — à compléter]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'Politique de confidentialité',
@@ -434,8 +434,8 @@ export default {
       lastUpdated: 'Última actualización: 22 de septiembre de 2026',
       disclaimer:
         'Este documento es un borrador para uso de producto y marketing. No es asesoramiento legal. Hágalo revisar por un abogado calificado antes de confiar en él.',
-      companyPlaceholder: '[Nombre de la entidad legal y domicilio registrado — por completar]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'Política de privacidad',

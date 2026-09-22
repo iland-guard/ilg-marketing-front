@@ -193,8 +193,8 @@ const translations = {
       lastUpdated: 'עודכן לאחרונה: 22 בספטמבר 2026',
       disclaimer:
         'מסמך זה הוא טיוטה לשימוש מוצרי ושיווקי. אינו ייעוץ משפטי. יש להעבירו לבחינת עורך דין מוסמך לפני הסתמכות עליו.',
-      companyPlaceholder: '[שם הישות המשפטית וכתובת רשומה — להשלמה]',
-      contactEmail: 'privacy@sentra.ai',
+      companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
+      contactEmail: 'support@sentraai.ai',
     },
     privacy: {
       title: 'מדיניות פרטיות',
