@@ -209,6 +209,8 @@
     "thanks": "Obrigado — entraremos em contato em breve.",
     "sending": "Enviando…",
     "error": "Algo deu errado. Tente novamente em breve.",
+    "invalidEmail": "Introduza um e-mail válido.",
+    "invalidPhone": "Escolha um país e introduza um telefone válido.",
     "formLabel": "Formulário de contato"
   },
   "download": {

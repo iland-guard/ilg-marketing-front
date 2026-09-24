@@ -209,6 +209,8 @@
     "thanks": "Thanks ג€” weג€™ll be in touch shortly.",
     "sending": "Sending…",
     "error": "Something went wrong. Please try again shortly.",
+    "invalidEmail": "Please enter a valid email.",
+    "invalidPhone": "Please choose a country and enter a valid phone number.",
     "formLabel": "Contact Form"
   },
   "download": {

@@ -209,6 +209,8 @@
     "thanks": "Merci — nous vous recontacterons bientôt.",
     "sending": "Envoi…",
     "error": "Une erreur est survenue. Réessayez dans un instant.",
+    "invalidEmail": "Veuillez saisir un e-mail valide.",
+    "invalidPhone": "Choisissez un pays et saisissez un numéro valide.",
     "formLabel": "Formulaire de contact"
   },
   "download": {

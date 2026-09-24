@@ -209,6 +209,8 @@
     "thanks": "Danke — wir melden uns in Kürze.",
     "sending": "Wird gesendet…",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es gleich erneut.",
+    "invalidEmail": "Bitte eine gültige E-Mail eingeben.",
+    "invalidPhone": "Bitte Land wählen und eine gültige Telefonnummer eingeben.",
     "formLabel": "Kontaktformular"
   },
   "download": {

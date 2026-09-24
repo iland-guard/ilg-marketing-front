@@ -1,23 +1,54 @@
-import { useState, type FormEvent } from 'react'
+import { useMemo, useState, type FormEvent } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import PhoneInput, {
+  isValidPhoneNumber,
+  type Country,
+  type Value,
+} from 'react-phone-number-input'
+import flags from 'react-phone-number-input/flags'
+import 'react-phone-number-input/style.css'
 import { submitMarketingLead } from '../api/leads'
 import { Reveal } from './motion'
 import { useLangPath } from '../hooks/useLangPath'
+import { isValidEmail, phoneToWhatsAppDigits } from '../utils/validation'
+
+const LANG_DEFAULT_COUNTRY: Record<string, Country> = {
+  he: 'IL',
+  ar: 'AE',
+  en: 'US',
+  fr: 'FR',
+  es: 'ES',
+  de: 'DE',
+  pt: 'PT',
+  ru: 'RU',
+}
+
+type FieldErrors = {
+  email?: string
+  phone?: string
+}
 
 export function FaqAndContact() {
   const [open, setOpen] = useState<number | null>(0)
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>(
     'idle',
   )
-  const { t } = useTranslation()
+  const [phone, setPhone] = useState<Value>()
+  const [errors, setErrors] = useState<FieldErrors>({})
+  const { t, i18n } = useTranslation()
   const privacyPath = useLangPath('/privacy-policy')
   const faqs = t('faq.items', { returnObjects: true }) as Array<{
     q: string
     a: string
   }>
+
+  const defaultCountry = useMemo(() => {
+    const lang = (i18n.language || 'en').slice(0, 2)
+    return LANG_DEFAULT_COUNTRY[lang] ?? 'IL'
+  }, [i18n.language])
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -25,13 +56,32 @@ export function FaqAndContact() {
     const data = new FormData(form)
     const name = String(data.get('name') ?? '').trim()
     const email = String(data.get('email') ?? '').trim()
-    const phone = String(data.get('phone') ?? '').trim()
     const message = String(data.get('message') ?? '').trim()
+
+    const nextErrors: FieldErrors = {}
+    if (!isValidEmail(email)) {
+      nextErrors.email = t('contact.invalidEmail')
+    }
+    if (!phone || !isValidPhoneNumber(phone)) {
+      nextErrors.phone = t('contact.invalidPhone')
+    }
+    setErrors(nextErrors)
+    if (Object.keys(nextErrors).length > 0) {
+      setStatus('idle')
+      return
+    }
 
     setStatus('sending')
     try {
-      await submitMarketingLead({ name, email, phone, message })
+      await submitMarketingLead({
+        name,
+        email,
+        phone: phoneToWhatsAppDigits(phone as string),
+        message,
+      })
       setStatus('sent')
+      setPhone(undefined)
+      setErrors({})
       form.reset()
     } catch {
       setStatus('error')
@@ -114,31 +164,66 @@ export function FaqAndContact() {
               className="sentra-card space-y-4 p-4 sm:p-6 md:p-8"
               name="Contact Form"
               aria-label={t('contact.formLabel')}
+              noValidate
             >
-              <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
+              <div className="grid gap-3 sm:gap-4 md:grid-cols-2">
                 <input
                   required
                   name="name"
+                  autoComplete="name"
                   placeholder={t('contact.name')}
                   className="w-full rounded-xl border border-white/10 bg-[#050a14] px-4 py-3.5 text-base text-white outline-none placeholder:text-[#afc0d4]/70 focus:border-[#139bff] sm:py-3 sm:text-sm"
                 />
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  placeholder={t('contact.email')}
-                  className="w-full rounded-xl border border-white/10 bg-[#050a14] px-4 py-3.5 text-base text-white outline-none placeholder:text-[#afc0d4]/70 focus:border-[#139bff] sm:py-3 sm:text-sm"
-                />
-                <input
-                  required
-                  type="tel"
-                  name="phone"
-                  placeholder={t('contact.phone')}
-                  pattern="[0-9()#&+*\\-=.]+"
-                  title={t('contact.phoneTitle')}
-                  className="w-full rounded-xl border border-white/10 bg-[#050a14] px-4 py-3.5 text-base text-white outline-none placeholder:text-[#afc0d4]/70 focus:border-[#139bff] sm:py-3 sm:text-sm"
-                />
+                <div>
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    autoComplete="email"
+                    placeholder={t('contact.email')}
+                    aria-invalid={Boolean(errors.email)}
+                    onChange={() =>
+                      setErrors((prev) => ({ ...prev, email: undefined }))
+                    }
+                    className={`w-full rounded-xl border bg-[#050a14] px-4 py-3.5 text-base text-white outline-none placeholder:text-[#afc0d4]/70 focus:border-[#139bff] sm:py-3 sm:text-sm ${
+                      errors.email ? 'border-red-400/70' : 'border-white/10'
+                    }`}
+                  />
+                  {errors.email && (
+                    <p className="mt-1.5 text-xs text-red-400">{errors.email}</p>
+                  )}
+                </div>
               </div>
+
+              <div>
+                <PhoneInput
+                  international
+                  countryCallingCodeEditable={false}
+                  defaultCountry={defaultCountry}
+                  flags={flags}
+                  value={phone}
+                  onChange={(value) => {
+                    setPhone(value)
+                    setErrors((prev) => ({ ...prev, phone: undefined }))
+                  }}
+                  placeholder={t('contact.phone')}
+                  className={`PhoneInput--sentra ${
+                    errors.phone ? 'PhoneInput--error' : ''
+                  }`}
+                  numberInputProps={{
+                    name: 'phone',
+                    required: true,
+                    autoComplete: 'tel',
+                    'aria-invalid': Boolean(errors.phone),
+                    className:
+                      'PhoneInputInput w-full rounded-xl border-0 bg-transparent px-3 py-3.5 text-base text-white outline-none placeholder:text-[#afc0d4]/70 sm:py-3 sm:text-sm',
+                  }}
+                />
+                {errors.phone && (
+                  <p className="mt-1.5 text-xs text-red-400">{errors.phone}</p>
+                )}
+              </div>
+
               <textarea
                 name="message"
                 rows={4}

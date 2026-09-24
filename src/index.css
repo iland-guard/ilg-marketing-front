@@ -271,3 +271,61 @@ img {
     font-size: 16px;
   }
 }
+
+/* react-phone-number-input — dark Sentra theme */
+.PhoneInput--sentra {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #050a14;
+  padding-inline: 0.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.PhoneInput--sentra:focus-within {
+  border-color: #139bff;
+}
+
+.PhoneInput--sentra.PhoneInput--error {
+  border-color: rgba(248, 113, 113, 0.7);
+}
+
+.PhoneInput--sentra .PhoneInputCountry {
+  margin: 0;
+  padding-inline: 0.35rem;
+  align-self: center;
+}
+
+.PhoneInput--sentra .PhoneInputCountryIcon {
+  width: 1.5rem;
+  height: 1.1rem;
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.PhoneInput--sentra .PhoneInputCountrySelect {
+  color: #fff;
+}
+
+.PhoneInput--sentra .PhoneInputCountrySelectArrow {
+  color: #afc0d4;
+  opacity: 1;
+  border-color: #afc0d4 transparent transparent;
+}
+
+.PhoneInput--sentra .PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+}
+
+.PhoneInput--sentra .PhoneInputCountryIconImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
