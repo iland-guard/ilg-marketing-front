@@ -3,27 +3,23 @@ import { ChevronDown } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import PhoneInput, {
-  isValidPhoneNumber,
-  type Country,
-  type Value,
-} from 'react-phone-number-input'
-import flags from 'react-phone-number-input/flags'
-import 'react-phone-number-input/style.css'
+import { PhoneInput } from 'react-international-phone'
+import { isValidPhoneNumber } from 'libphonenumber-js'
+import 'react-international-phone/style.css'
 import { submitMarketingLead } from '../api/leads'
 import { Reveal } from './motion'
 import { useLangPath } from '../hooks/useLangPath'
 import { isValidEmail, phoneToWhatsAppDigits } from '../utils/validation'
 
-const LANG_DEFAULT_COUNTRY: Record<string, Country> = {
-  he: 'IL',
-  ar: 'AE',
-  en: 'US',
-  fr: 'FR',
-  es: 'ES',
-  de: 'DE',
-  pt: 'PT',
-  ru: 'RU',
+const LANG_DEFAULT_COUNTRY: Record<string, string> = {
+  he: 'il',
+  ar: 'ae',
+  en: 'us',
+  fr: 'fr',
+  es: 'es',
+  de: 'de',
+  pt: 'pt',
+  ru: 'ru',
 }
 
 type FieldErrors = {
@@ -36,7 +32,7 @@ export function FaqAndContact() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>(
     'idle',
   )
-  const [phone, setPhone] = useState<Value>()
+  const [phone, setPhone] = useState('')
   const [errors, setErrors] = useState<FieldErrors>({})
   const { t, i18n } = useTranslation()
   const privacyPath = useLangPath('/privacy-policy')
@@ -47,7 +43,7 @@ export function FaqAndContact() {
 
   const defaultCountry = useMemo(() => {
     const lang = (i18n.language || 'en').slice(0, 2)
-    return LANG_DEFAULT_COUNTRY[lang] ?? 'IL'
+    return LANG_DEFAULT_COUNTRY[lang] ?? 'il'
   }, [i18n.language])
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -76,11 +72,11 @@ export function FaqAndContact() {
       await submitMarketingLead({
         name,
         email,
-        phone: phoneToWhatsAppDigits(phone as string),
+        phone: phoneToWhatsAppDigits(phone),
         message,
       })
       setStatus('sent')
-      setPhone(undefined)
+      setPhone('')
       setErrors({})
       form.reset()
     } catch {
@@ -161,7 +157,7 @@ export function FaqAndContact() {
           <Reveal delay={0.1}>
             <form
               onSubmit={onSubmit}
-              className="sentra-card space-y-4 p-4 sm:p-6 md:p-8"
+              className="sentra-card space-y-4 overflow-visible p-4 sm:p-6 md:p-8"
               name="Contact Form"
               aria-label={t('contact.formLabel')}
               noValidate
@@ -195,28 +191,21 @@ export function FaqAndContact() {
                 </div>
               </div>
 
-              <div>
+              <div className="relative z-20">
                 <PhoneInput
-                  international
-                  countryCallingCodeEditable={false}
                   defaultCountry={defaultCountry}
-                  flags={flags}
                   value={phone}
                   onChange={(value) => {
                     setPhone(value)
                     setErrors((prev) => ({ ...prev, phone: undefined }))
                   }}
                   placeholder={t('contact.phone')}
-                  className={`PhoneInput--sentra ${
-                    errors.phone ? 'PhoneInput--error' : ''
-                  }`}
-                  numberInputProps={{
+                  className={`sentra-phone ${errors.phone ? 'sentra-phone--error' : ''}`}
+                  inputProps={{
                     name: 'phone',
                     required: true,
                     autoComplete: 'tel',
                     'aria-invalid': Boolean(errors.phone),
-                    className:
-                      'PhoneInputInput w-full rounded-xl border-0 bg-transparent px-3 py-3.5 text-base text-white outline-none placeholder:text-[#afc0d4]/70 sm:py-3 sm:text-sm',
                   }}
                 />
                 {errors.phone && (

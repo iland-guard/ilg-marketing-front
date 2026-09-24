@@ -272,60 +272,80 @@ img {
   }
 }
 
-/* react-phone-number-input — dark Sentra theme */
-.PhoneInput--sentra {
-  display: flex;
-  align-items: stretch;
-  gap: 0.5rem;
+/* react-international-phone — dark Sentra theme */
+.sentra-phone.react-international-phone-input-container {
   width: 100%;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: #050a14;
-  padding-inline: 0.5rem;
-  transition: border-color 0.2s ease;
+  direction: ltr;
 }
 
-.PhoneInput--sentra:focus-within {
-  border-color: #139bff;
+.sentra-phone .react-international-phone-country-selector-button,
+.sentra-phone .react-international-phone-input {
+  height: 48px !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background: #050a14 !important;
+  color: #ffffff !important;
+  font-size: 0.95rem !important;
 }
 
-.PhoneInput--sentra.PhoneInput--error {
-  border-color: rgba(248, 113, 113, 0.7);
+.sentra-phone .react-international-phone-country-selector-button {
+  border-radius: 0.75rem 0 0 0.75rem !important;
+  padding-inline: 0.65rem !important;
 }
 
-.PhoneInput--sentra .PhoneInputCountry {
-  margin: 0;
-  padding-inline: 0.35rem;
-  align-self: center;
+.sentra-phone .react-international-phone-input {
+  border-radius: 0 0.75rem 0.75rem 0 !important;
+  margin-inline-start: -1px !important;
+  flex: 1 !important;
+  width: 100% !important;
 }
 
-.PhoneInput--sentra .PhoneInputCountryIcon {
-  width: 1.5rem;
-  height: 1.1rem;
-  box-shadow: none;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 2px;
-  overflow: hidden;
+.sentra-phone .react-international-phone-country-selector-button:hover,
+.sentra-phone .react-international-phone-country-selector-button:focus,
+.sentra-phone .react-international-phone-input:focus {
+  border-color: #139bff !important;
+  outline: none !important;
 }
 
-.PhoneInput--sentra .PhoneInputCountrySelect {
-  color: #fff;
+.sentra-phone--error .react-international-phone-country-selector-button,
+.sentra-phone--error .react-international-phone-input {
+  border-color: rgba(248, 113, 113, 0.7) !important;
 }
 
-.PhoneInput--sentra .PhoneInputCountrySelectArrow {
-  color: #afc0d4;
-  opacity: 1;
-  border-color: #afc0d4 transparent transparent;
+.sentra-phone .react-international-phone-country-selector-dropdown {
+  z-index: 80 !important;
+  top: calc(100% + 6px) !important;
+  left: 0 !important;
+  width: min(320px, 85vw) !important;
+  max-height: 260px !important;
+  overflow-y: auto !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px !important;
+  background: #0b1424 !important;
+  color: #ffffff !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45) !important;
 }
 
-.PhoneInput--sentra .PhoneInputInput {
-  flex: 1;
-  min-width: 0;
+.sentra-phone .react-international-phone-country-selector-dropdown__list-item {
+  color: #e8eef7 !important;
+  background: transparent !important;
 }
 
-.PhoneInput--sentra .PhoneInputCountryIconImg {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.sentra-phone
+  .react-international-phone-country-selector-dropdown__list-item:hover,
+.sentra-phone
+  .react-international-phone-country-selector-dropdown__list-item--focused,
+.sentra-phone
+  .react-international-phone-country-selector-dropdown__list-item--selected {
+  background: rgba(19, 155, 255, 0.18) !important;
+}
+
+.sentra-phone
+  .react-international-phone-country-selector-dropdown__list-item-country-name,
+.sentra-phone
+  .react-international-phone-country-selector-dropdown__list-item-dial-code {
+  color: inherit !important;
+}
+
+.sentra-phone .react-international-phone-country-selector-arrow {
+  border-top-color: #afc0d4 !important;
 }
