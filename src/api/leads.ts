@@ -10,6 +10,7 @@ export type MarketingLeadPayload = {
   email: string
   phone: string
   message?: string
+  language?: string
 }
 
 export async function submitMarketingLead(
@@ -19,6 +20,7 @@ export async function submitMarketingLead(
   const guestName = payload.name.trim()
   const guestEmail = payload.email.trim()
   const note = payload.message?.trim()
+  const language = payload.language?.trim().slice(0, 2).toLowerCase()
 
   const res = await fetch(`${ILG_API_BASE_URL}/wa-support-desk/leads`, {
     method: 'POST',
@@ -30,6 +32,7 @@ export async function submitMarketingLead(
       source: 'marketing',
       subject: 'ליד מאתר השיווק',
       message: note || undefined,
+      language: language || undefined,
       notifyStaff: true,
     }),
   })

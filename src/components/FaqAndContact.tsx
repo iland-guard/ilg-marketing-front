@@ -74,6 +74,7 @@ export function FaqAndContact() {
         email,
         phone: phoneToWhatsAppDigits(phone),
         message,
+        language: (i18n.language || 'en').slice(0, 2),
       })
       setStatus('sent')
       setPhone('')
