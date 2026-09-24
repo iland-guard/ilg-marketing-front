@@ -207,6 +207,8 @@
     "privacyLink": "Privacy Policy",
     "send": "SEND",
     "thanks": "Thanks ג€” weג€™ll be in touch shortly.",
+    "sending": "Sending…",
+    "error": "Something went wrong. Please try again shortly.",
     "formLabel": "Contact Form"
   },
   "download": {

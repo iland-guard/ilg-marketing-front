@@ -207,6 +207,8 @@
     "privacyLink": "Datenschutzerklärung",
     "send": "SENDEN",
     "thanks": "Danke — wir melden uns in Kürze.",
+    "sending": "Wird gesendet…",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es gleich erneut.",
     "formLabel": "Kontaktformular"
   },
   "download": {

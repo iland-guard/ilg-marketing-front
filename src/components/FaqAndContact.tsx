@@ -3,12 +3,15 @@ import { ChevronDown } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { submitMarketingLead } from '../api/leads'
 import { Reveal } from './motion'
 import { useLangPath } from '../hooks/useLangPath'
 
 export function FaqAndContact() {
   const [open, setOpen] = useState<number | null>(0)
-  const [status, setStatus] = useState<'idle' | 'sent'>('idle')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>(
+    'idle',
+  )
   const { t } = useTranslation()
   const privacyPath = useLangPath('/privacy-policy')
   const faqs = t('faq.items', { returnObjects: true }) as Array<{
@@ -16,10 +19,23 @@ export function FaqAndContact() {
     a: string
   }>
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setStatus('sent')
-    e.currentTarget.reset()
+    const form = e.currentTarget
+    const data = new FormData(form)
+    const name = String(data.get('name') ?? '').trim()
+    const email = String(data.get('email') ?? '').trim()
+    const phone = String(data.get('phone') ?? '').trim()
+    const message = String(data.get('message') ?? '').trim()
+
+    setStatus('sending')
+    try {
+      await submitMarketingLead({ name, email, phone, message })
+      setStatus('sent')
+      form.reset()
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
@@ -148,13 +164,19 @@ export function FaqAndContact() {
               </label>
               <button
                 type="submit"
-                className="sentra-btn-primary w-full transition hover:scale-[1.01]"
+                disabled={status === 'sending'}
+                className="sentra-btn-primary w-full transition hover:scale-[1.01] disabled:opacity-60"
               >
-                {t('contact.send')}
+                {status === 'sending' ? t('contact.sending') : t('contact.send')}
               </button>
               {status === 'sent' && (
                 <p className="text-center text-sm text-[#42e6ad]">
                   {t('contact.thanks')}
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-center text-sm text-red-400">
+                  {t('contact.error')}
                 </p>
               )}
             </form>

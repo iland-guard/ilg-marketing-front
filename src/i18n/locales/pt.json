@@ -207,6 +207,8 @@
     "privacyLink": "Política de Privacidade",
     "send": "ENVIAR",
     "thanks": "Obrigado — entraremos em contato em breve.",
+    "sending": "Enviando…",
+    "error": "Algo deu errado. Tente novamente em breve.",
     "formLabel": "Formulário de contato"
   },
   "download": {
