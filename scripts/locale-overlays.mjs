@@ -170,7 +170,7 @@ export default {
       disclaimer:
         'Ce document est un projet à usage produit et marketing. Ce n’est pas un conseil juridique. Faites-le examiner par un avocat qualifié avant de vous y fier.',
       companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
-      contactEmail: 'support@sentraai.ai',
+      contactEmail: '{{supportEmail}}',
     },
     privacy: {
       title: 'Politique de confidentialité',
@@ -435,7 +435,7 @@ export default {
       disclaimer:
         'Este documento es un borrador para uso de producto y marketing. No es asesoramiento legal. Hágalo revisar por un abogado calificado antes de confiar en él.',
       companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
-      contactEmail: 'support@sentraai.ai',
+      contactEmail: '{{supportEmail}}',
     },
     privacy: {
       title: 'Política de privacidad',

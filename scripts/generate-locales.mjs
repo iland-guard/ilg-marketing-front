@@ -194,7 +194,7 @@ const translations = {
       disclaimer:
         'מסמך זה הוא טיוטה לשימוש מוצרי ושיווקי. אינו ייעוץ משפטי. יש להעבירו לבחינת עורך דין מוסמך לפני הסתמכות עליו.',
       companyPlaceholder: 'iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A',
-      contactEmail: 'support@sentraai.ai',
+      contactEmail: '{{supportEmail}}',
     },
     privacy: {
       title: 'מדיניות פרטיות',

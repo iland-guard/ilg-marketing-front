@@ -1,6 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import { DEFAULT_LANG, SUPPORTED_LANGS } from './languages'
+import { SUPPORT_EMAIL } from '../constants/support'
 
 import en from './locales/en.json'
 import he from './locales/he.json'
@@ -28,7 +29,10 @@ void i18n.use(initReactI18next).init({
   lng: DEFAULT_LANG,
   fallbackLng: DEFAULT_LANG,
   supportedLngs: [...SUPPORTED_LANGS],
-  interpolation: { escapeValue: false },
+  interpolation: {
+    escapeValue: false,
+    defaultVariables: { supportEmail: SUPPORT_EMAIL },
+  },
 })
 
 export default i18n

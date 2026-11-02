@@ -246,7 +246,7 @@
     "lastUpdated": "آخر تحديث: 22 سبتمبر 2026",
     "disclaimer": "هذه الوثيقة مسودة للاستخدام المنتج والتسويقي. ليست استشارة قانونية. يجب مراجعتها من محامٍ مؤهل قبل الاعتماد عليها.",
     "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
-    "contactEmail": "support@sentraai.ai"
+    "contactEmail": "{{supportEmail}}"
   },
   "privacy": {
     "title": "سياسة الخصوصية",
