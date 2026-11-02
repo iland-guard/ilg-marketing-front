@@ -2,14 +2,14 @@
 
 Public return URL: `https://www.sentraai.ai/app/whatsapp/verified`.
 This static marketing site hosts the landing page and platform association files;
-the backend does not host or process the return link. No notification routes are
-enabled. The URL contains no phone, account or authentication token. It does not
+the backend does not host or process the return link. Notification links are also
+prepared at `/app/notifications?notificationId=<id>`; sending them is not enabled. The URL contains no phone, account or authentication token. It does not
 verify a phone; the authenticated app reads verification state from the backend.
 
 ## Files and deployment
 
-- `public/.well-known/apple-app-site-association` associates only the WhatsApp
-  return path with the existing Apple app/team identity.
+- `public/.well-known/apple-app-site-association` associates the WhatsApp return and notification
+  paths with the existing Apple app/team identity.
 - `public/.well-known/assetlinks.json` is empty until a release signing certificate
   is provided. During build, `scripts/generate-app-links.mjs` writes the configured
   Android association into `dist/.well-known/assetlinks.json`.
@@ -41,3 +41,18 @@ keeps its existing screen and server checks; after process death the app opens
 Settings after sign-in. Test the browser fallback and unrelated links as well.
 No deployment, app-store release or device validation is performed by these local
 file changes.
+
+## Notification link groundwork (not sent yet)
+
+Format: `https://www.sentraai.ai/app/notifications?notificationId=<notification-id>`.
+The browser fallback offers `sentraai://notifications?notificationId=<notification-id>`.
+Only one query parameter is accepted; the identifier contains letters, digits,
+underscores or hyphens. No alert contents, phone or auth token are embedded.
+The app retains the destination through startup/sign-in and opens its existing
+Notification Detail screen under Alerts. That screen uses the authenticated API
+and handles unavailable or inaccessible notifications through its existing UI.
+
+The helper `build_notification_app_link` in alert-center is available to future
+senders, but no outgoing notification/caption has been changed to call it.
+Do not begin sending until the verification return link has been validated and
+the updated website and apps supporting this notification route are deployed.

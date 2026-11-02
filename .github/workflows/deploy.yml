@@ -45,6 +45,7 @@ jobs:
           aws s3 cp ./dist/.well-known/apple-app-site-association "s3://$APP_LINKS_BUCKET/.well-known/apple-app-site-association" --content-type application/json --cache-control "public,max-age=3600"
           aws s3 cp ./dist/.well-known/assetlinks.json "s3://$APP_LINKS_BUCKET/.well-known/assetlinks.json" --content-type application/json --cache-control "public,max-age=3600"
           aws s3 cp ./dist/app/whatsapp/verified "s3://$APP_LINKS_BUCKET/app/whatsapp/verified" --content-type "text/html; charset=utf-8" --cache-control no-store
+          aws s3 cp ./dist/app/notifications "s3://$APP_LINKS_BUCKET/app/notifications" --content-type "text/html; charset=utf-8" --cache-control no-store
 
       - name: Invalidate CloudFront Cache
         env:

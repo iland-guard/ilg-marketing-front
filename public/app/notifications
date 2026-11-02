@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Open notification in Sentra AI</title>
+  <style>
+    body { margin: 0; background: #050a14; color: #fff; font: 1.1rem/1.6 system-ui, sans-serif; }
+    main { max-width: 32rem; margin: 12vh auto; padding: 1.5rem; }
+    h1 { line-height: 1.2; }
+    a { display: inline-block; padding: .8rem 1.4rem; border-radius: .8rem; background: #139bff; color: #050a14; font-weight: 700; text-decoration: none; }
+    a[hidden] { display: none; }
+    a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+    .hint { color: #bac4d4; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Open notification in Sentra AI</h1>
+    <p id="hint">This notification link is incomplete or invalid.</p>
+    <p><a id="open-app" hidden>Open Sentra AI</a></p>
+    <p class="hint">Install or update Sentra AI if needed. Sign in with an account that has access to this notification.</p>
+    <noscript>Enable JavaScript to open this notification from the browser.</noscript>
+  </main>
+  <script>
+    const entries = Array.from(new URLSearchParams(window.location.search).entries());
+    if (!window.location.hash && entries.length === 1 && entries[0][0] === 'notificationId' && /^[A-Za-z0-9_-]+$/.test(entries[0][1])) {
+      const link = document.getElementById('open-app');
+      link.href = 'sentraai://notifications?notificationId=' + encodeURIComponent(entries[0][1]);
+      link.hidden = false;
+      document.getElementById('hint').textContent = 'Open the app to view your notification. Access is checked after sign-in.';
+    }
+  </script>
+</body>
+</html>

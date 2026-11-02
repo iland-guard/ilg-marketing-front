@@ -5,7 +5,8 @@
       {
         "appID": "CWW4USUH3P.com.bizz.sentraai",
         "paths": [
-          "/app/whatsapp/verified"
+          "/app/whatsapp/verified",
+          "/app/notifications"
         ]
       }
     ]
