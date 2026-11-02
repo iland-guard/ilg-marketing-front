@@ -49,7 +49,7 @@ const translations = {
       ctaWatch: 'צפו במאיה בפעולה',
       trusted: 'מהימנה לניטור אלפי מצלמות ונכסים.',
       playVideo: 'נגן סרטון הדגמה של מאיה',
-      camerasTitle: 'מצלמות קיימות',
+      camerasTitle: 'שימוש במצלמות הקיימות',
       camerasDesc: 'אין צורך בהחלפת תשתית מלאה.',
       alertAlt: 'התראת אבטחה של מאיה',
     },
