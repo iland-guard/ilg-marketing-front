@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Return to Sentra AI</title>
+  <style>
+    body { margin: 0; background: #050a14; color: #fff; font: 1.1rem/1.6 system-ui, sans-serif; }
+    main { max-width: 32rem; margin: 12vh auto; padding: 1.5rem; }
+    h1 { line-height: 1.2; }
+    a { display: inline-block; padding: .8rem 1.4rem; border-radius: .8rem; background: #139bff; color: #050a14; font-weight: 700; text-decoration: none; }
+    a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+    .hint { color: #bac4d4; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Return to Sentra AI</h1>
+    <p>Open the app to view your WhatsApp verification status.</p>
+    <p><a href="sentraai://whatsapp/verified">Open Sentra AI</a></p>
+    <p class="hint">If the app does not open, install or update Sentra AI, then try again.</p>
+  </main>
+</body>
+</html>

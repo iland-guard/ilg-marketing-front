@@ -23,6 +23,8 @@ jobs:
         run: npm ci
 
       - name: Build Project
+        env:
+          MOBILE_APP_ANDROID_SHA256_CERT_FINGERPRINTS: ${{ secrets.MOBILE_APP_ANDROID_SHA256_CERT_FINGERPRINTS }}
         run: npm run build
 
       - name: Configure AWS Credentials
@@ -34,6 +36,15 @@ jobs:
 
       - name: Deploy dist to S3
         run: aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
+
+      # S3 cannot infer the correct MIME type for extensionless association/landing files.
+      - name: Set app-link content types
+        env:
+          APP_LINKS_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
+        run: |
+          aws s3 cp ./dist/.well-known/apple-app-site-association "s3://$APP_LINKS_BUCKET/.well-known/apple-app-site-association" --content-type application/json --cache-control "public,max-age=3600"
+          aws s3 cp ./dist/.well-known/assetlinks.json "s3://$APP_LINKS_BUCKET/.well-known/assetlinks.json" --content-type application/json --cache-control "public,max-age=3600"
+          aws s3 cp ./dist/app/whatsapp/verified "s3://$APP_LINKS_BUCKET/app/whatsapp/verified" --content-type "text/html; charset=utf-8" --cache-control no-store
 
       - name: Invalidate CloudFront Cache
         env:
