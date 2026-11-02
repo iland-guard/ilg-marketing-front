@@ -52,7 +52,14 @@ The app retains the destination through startup/sign-in and opens its existing
 Notification Detail screen under Alerts. That screen uses the authenticated API
 and handles unavailable or inaccessible notifications through its existing UI.
 
-The helper `build_notification_app_link` in alert-center is available to future
-senders, but no outgoing notification/caption has been changed to call it.
-Do not begin sending until the verification return link has been validated and
-the updated website and apps supporting this notification route are deployed.
+The `alert-center/util/app_links.py` rollout switch
+`ENABLE_WHATSAPP_NOTIFICATION_APP_LINKS` defaults to `False`. Event cards,
+critical escalation notices and manual video captions are wired to append the
+link only when this switch is enabled and the client's existing push-device
+resolver finds at least one enabled device with a token. Device push preferences
+do not control this app-presence check. Disabled mode performs no device lookup;
+lookup failures keep the existing WhatsApp message without a link.
+
+After validating the verification return link and deploying the website and
+apps supporting notification links, change the switch to `True` and deploy
+alert-center to begin appending links for eligible customers.
