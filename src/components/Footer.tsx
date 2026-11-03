@@ -9,12 +9,16 @@ export function Footer() {
   const terms = useLangPath('/terms')
   const siteRules = useLangPath('/site-rules')
   const accessibility = useLangPath('/accessibility')
+  const appPrivacy = useLangPath('/app-privacy-policy')
+  const deleteAccount = useLangPath('/delete-account')
 
   const links = [
     { to: privacy, label: t('footer.privacy') },
     { to: terms, label: t('footer.terms') },
     { to: siteRules, label: t('footer.siteRules') },
     { to: accessibility, label: t('footer.accessibility') },
+    { to: appPrivacy, label: t('footer.appPrivacy') },
+    { to: deleteAccount, label: t('footer.deleteAccount') },
   ]
 
   return (

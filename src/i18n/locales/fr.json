@@ -232,7 +232,9 @@
     "terms": "Conditions d’utilisation",
     "siteRules": "Règles du site",
     "accessibility": "Déclaration d’accessibilité",
-    "tagline": "Toujours en veille. Jamais endormi.© 2026 Sentra AI. Tous droits réservés."
+    "tagline": "Toujours en veille. Jamais endormi.© 2026 Sentra AI. Tous droits réservés.",
+    "appPrivacy": "Politique de confidentialité de l’application",
+    "deleteAccount": "Suppression du compte"
   },
   "payments": {
     "eyebrow": "BIENTÔT",

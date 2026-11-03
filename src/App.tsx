@@ -8,6 +8,7 @@ import {
   SiteRulesPage,
   TermsPage,
 } from './pages/LegalPages'
+import { AppPrivacyPage, DeleteAccountPage } from './pages/AppLegalPages'
 import { DEFAULT_LANG, isLang, type Lang } from './i18n/languages'
 import { LANG_STORAGE_KEY } from './i18n'
 
@@ -42,6 +43,11 @@ function RootRedirect() {
   return <Navigate to={`/${resolveInitialLang()}`} replace />
 }
 
+/** Language-less URLs (used by the app store listings) open in the visitor's language. */
+function LangRedirect({ path }: { path: string }) {
+  return <Navigate to={`/${resolveInitialLang()}${path}`} replace />
+}
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -49,6 +55,14 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<RootRedirect />} />
+            <Route
+              path="/app-privacy-policy"
+              element={<LangRedirect path="/app-privacy-policy" />}
+            />
+            <Route
+              path="/delete-account"
+              element={<LangRedirect path="/delete-account" />}
+            />
             <Route path="/:lang" element={<LangLayout />}>
               <Route index element={<HomePage />} />
               <Route path="payments" element={<PaymentsPage />} />
@@ -56,6 +70,8 @@ export default function App() {
               <Route path="terms" element={<TermsPage />} />
               <Route path="site-rules" element={<SiteRulesPage />} />
               <Route path="accessibility" element={<AccessibilityPage />} />
+              <Route path="app-privacy-policy" element={<AppPrivacyPage />} />
+              <Route path="delete-account" element={<DeleteAccountPage />} />
             </Route>
             <Route
               path="*"

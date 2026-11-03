@@ -1,0 +1,423 @@
+{
+  "appLegal": {
+    "contents": "Sommaire",
+    "translationNotice": "Cette page est une traduction fournie à titre de commodité. En cas de divergence, la <enLink>version anglaise</enLink> prévaut."
+  },
+  "appPrivacy": {
+    "badge": "Application mobile Sentra AI",
+    "title": "Politique de confidentialité",
+    "lede": "La présente politique explique comment les informations sont collectées, utilisées, partagées et protégées lorsque les clients utilisent l’application mobile Sentra AI pour la gestion des alertes caméra et des systèmes de sécurité.",
+    "lastUpdated": "Dernière mise à jour : 11 octobre 2026",
+    "notice": "La présente Politique de confidentialité décrit la manière dont Sentra AI traite les informations lorsque vous utilisez l’application mobile. Pour les instructions de suppression de compte, consultez la page <deleteLink>Demande de suppression de compte</deleteLink>.",
+    "categoriesLabel": "Récapitulatif des catégories de données",
+    "categories": [
+      "Compte",
+      "Authentification",
+      "E-mail",
+      "Connexion par téléphone (SMS)",
+      "Téléphone / WhatsApp",
+      "Caméra / NVR",
+      "Images de configuration du NVR",
+      "Instantanés / Médias d’événements",
+      "Notifications",
+      "Plannings / Périodes de mise en sourdine",
+      "Masques de détection",
+      "Chat de support",
+      "Diagnostics opérationnels",
+      "Analyse / Utilisation de l’application"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introduction",
+        "blocks": [
+          {
+            "p": "Sentra AI fournit une application mobile destinée aux clients pour la gestion de systèmes d’alertes NVR et caméras connectés. L’application permet aux clients de se connecter avec une adresse e-mail ou un numéro de téléphone mobile, de consulter les caméras NVR connectées, de gérer les caméras associées, de configurer le comportement des alertes caméra, de définir des plannings de mise en sourdine, de choisir des classes de détection et des zones de masquage, de consulter les informations d’alerte, de vérifier un numéro WhatsApp pour les notifications d’alerte et d’obtenir de l’aide auprès d’un assistant de support IA dans l’application."
+          },
+          {
+            "p": "La présente Politique de confidentialité s’applique à l’application mobile Sentra AI et aux services destinés aux clients qui la prennent en charge. Elle ne couvre pas les outils distincts d’administration, d’opérateur ou internes, sauf lorsque ces systèmes sont utilisés pour fournir ou prendre en charge le service de l’application mobile."
+          }
+        ]
+      },
+      {
+        "id": "controller",
+        "title": "Responsable du traitement",
+        "blocks": [
+          {
+            "p": "<ltr>Bizz Technologies Ltd</ltr><br/><ltr>17 Nachum Hafzadi, Jerusalem 9548400, Israel</ltr><br/>E-mail : <mail>{{supportEmail}}</mail><br/>Téléphone : <tel>{{supportPhone}}</tel>"
+          }
+        ]
+      },
+      {
+        "id": "collect",
+        "title": "Informations que nous collectons",
+        "blocks": [
+          {
+            "ul": [
+              "<b>Données de compte et de connexion :</b> adresse e-mail et/ou numéro de téléphone mobile (selon votre mode d’inscription), identifiants de compte, nom d’affichage, identifiant d’organisation/de compte, et informations de connexion/de session. L’application utilise également l’adresse e-mail pour les procédures de réinitialisation du mot de passe. Vous pouvez ajouter une adresse e-mail à un compte créé avec un numéro de téléphone, ou un numéro de téléphone de connexion à un compte créé avec une adresse e-mail ; chaque ajout est confirmé par un code de vérification.",
+              "<b>Numéro de téléphone pour la connexion (SMS) :</b> si vous vous inscrivez ou vous connectez avec un numéro de téléphone mobile, nous collectons ce numéro en tant qu’identifiant de votre compte et y envoyons un code de vérification à usage unique par SMS. La connexion par SMS n’est disponible que dans les pays pris en charge. Si vous vous inscrivez avec un numéro de téléphone sans indiquer de nom, votre numéro de téléphone est utilisé comme nom d’affichage jusqu’à ce que vous en ajoutiez un. Votre nom d’affichage est visible par le personnel d’assistance chargé de votre compte et peut apparaître dans le nom des groupes d’alertes WhatsApp. La connexion par SMS n’associe pas WhatsApp : les alertes WhatsApp ne sont envoyées qu’après que vous avez vérifié séparément un numéro pour WhatsApp, comme décrit ci-dessous.",
+              "<b>Données d’authentification et de session :</b> identifiants d’authentification, jetons de session et état de session associé nécessaires pour maintenir les utilisateurs connectés de manière sécurisée.",
+              "<b>Données de téléphone et WhatsApp :</b> un numéro de téléphone si vous choisissez d’associer WhatsApp pour les alertes, ainsi que le statut de vérification correspondant. Nous pouvons vous inviter une fois, après votre première connexion, à associer un numéro WhatsApp. Vous pouvez ignorer cette étape, et la vérification n’a lieu que si vous choisissez d’envoyer le message de vérification. Toute utilisation de WhatsApp repose sur une adhésion volontaire (opt-in). L’utilisateur connecte un numéro de téléphone vérifié, et les notifications sont envoyées uniquement à ce numéro. Nous n’accédons pas aux messages WhatsApp ni au contenu des conversations.",
+              "<b>Données de connexion des caméras et du NVR :</b> noms des NVR/sites, fabricant, modèle, numéro de série, type d’appareil, adresse IP, adresse IP secondaire lorsqu’elle est fournie, ports HTTP/RTSP, nom d’utilisateur et mot de passe de l’appareil nécessaires pour se connecter au NVR, canaux, canaux d’intérêt, identifiants des caméras associées, noms des caméras, type de caméra, statut de l’appareil/du réseau/de l’accès/des alertes, identifiant d’organisation, identifiant client et progression des brouillons de configuration. Ces informations sont fournies par l’utilisateur ou l’administrateur du compte et sont utilisées pour connecter, valider et exploiter les services NVR et caméras pris en charge.",
+              "<b>Données d’alerte, de détection et de configuration :</b> enregistrements de notifications et d’événements, messages d’alerte, heures des événements, heures des événements NVR, gravité/statut, métadonnées de consultation/résolution, classes de détection, identifiants des classes de détection sélectionnées, valeurs de confiance, cadres de délimitation, étiquettes, état de mise en sourdine, périodes d’inactivité temporaires, plannings hebdomadaires de mise en sourdine, fuseaux horaires, et polygones ou zones de masquage des caméras configurés par le client.",
+              "<b>Images des caméras, instantanés et médias d’événements :</b> l’application peut charger et afficher les URL des images d’aperçu des caméras et les URL des derniers instantanés renvoyées par le serveur backend. Les enregistrements de notifications et d’événements comprennent également, lorsqu’ils sont disponibles, les identifiants des images d’instantanés, des URL d’images temporaires et les identifiants des médias d’événements/vidéo. L’application ne demande pas l’accès au microphone ni aux contacts du téléphone. L’accès à la caméra et à la photothèque de l’appareil n’est demandé que lorsque vous choisissez de les utiliser — pour photographier ou sélectionner une image lors de l’ajout d’un NVR (voir <nvrImage>Traitement des images lors de la configuration du NVR</nvrImage>), ou pour enregistrer ou partager une image ou une vidéo d’alerte depuis l’application. À l’exception des images que vous fournissez lors de la configuration du NVR, tous les médias proviennent des systèmes NVR appartenant au client et ne sont pas capturés par l’appareil mobile.",
+              "<b>Images que vous fournissez lors de la configuration du NVR :</b> si vous choisissez d’ajouter un NVR à partir d’une photo, nous collectons l’image que vous prenez ou sélectionnez ainsi que les informations de connexion qui en sont extraites (adresse IP, port, nom d’utilisateur du NVR et mot de passe du NVR). Voir <nvrImage>Traitement des images lors de la configuration du NVR</nvrImage>.",
+              "<b>Coordonnées que vous fournissez concernant d’autres personnes :</b> si vous ajoutez des contacts d’urgence ou de notification, vous fournissez leur nom, leur numéro de téléphone et leur adresse e-mail. Il vous incombe de vous assurer que vous êtes autorisé à nous communiquer leurs coordonnées. Nous utilisons ces informations uniquement pour transmettre les alertes que vous avez configurées.",
+              "<b>Données du chat de support :</b> si vous utilisez l’assistant de support IA intégré à l’application, nous traitons les messages que vous rédigez, l’historique de la conversation en cours et les informations de compte nécessaires pour vous répondre. Voir <supportChat>Chat de support IA</supportChat>.",
+              "<b>Données opérationnelles et de diagnostic :</b> des journaux de diagnostic et d’exploitation peuvent être collectés afin de maintenir, sécuriser et améliorer le service.",
+              {
+                "text": "<b>Données d’analyse et d’utilisation de l’application :</b> l’application utilise des services d’analyse et de mesure des performances de l’application, actuellement Google Firebase Analytics et PostHog, afin de comprendre comment l’application est utilisée et d’en améliorer la stabilité, les performances et la facilité d’utilisation. Cela peut inclure :",
+                "ul": [
+                  "<b>Données d’utilisation et d’interaction</b> — telles que les sessions, les écrans ou fonctionnalités consultés, les actions effectuées dans l’application, et les événements d’ouverture, d’installation ou de mise à jour de l’application.",
+                  "<b>Données techniques et relatives à l’appareil</b> — telles que le modèle de l’appareil, la version du système d’exploitation, la version de l’application, la langue et la localisation approximative déduite de l’adresse IP (au niveau du pays ou de la région).",
+                  "<b>Identifiants</b> — les événements d’analyse sont associés à l’identifiant de votre compte et à un identifiant d’installation généré aléatoirement. Les événements envoyés à PostHog sont également associés à un identifiant d’appareil généré aléatoirement et au jeton de notification push de votre appareil, afin de pouvoir distinguer les différents appareils utilisant le même compte. Nous n’envoyons pas votre nom, votre adresse e-mail, votre numéro de téléphone, les images de vos caméras ni les identifiants d’accès de vos appareils à notre fournisseur d’analyse."
+                ],
+                "after": "Les événements spécifiques que nous mesurons peuvent évoluer au fil du temps à mesure que nous améliorons l’application. Nous n’utilisons pas d’identifiants publicitaires et nous n’utilisons pas vos données à des fins publicitaires ni de suivi entre applications."
+              }
+            ]
+          },
+          {
+            "chips": true
+          }
+        ]
+      },
+      {
+        "id": "nvr-image",
+        "title": "Traitement des images lors de la configuration du NVR",
+        "blocks": [
+          {
+            "p": "Lorsque vous choisissez d’ajouter un NVR à partir d’une image, l’application vous demande l’autorisation d’utiliser la caméra ou la photothèque de votre appareil. L’image que vous sélectionnez est envoyée aux serveurs de Sentra AI et transmise à l’API Google Gemini dans le seul but d’identifier les informations de connexion qu’elle contient."
+          },
+          {
+            "ul": [
+              "<b>Données collectées :</b> l’image elle-même, ainsi que les informations de connexion qui en sont extraites — adresse IP, port, nom d’utilisateur du NVR et mot de passe du NVR.",
+              "<b>Finalité :</b> vous éviter de saisir manuellement les informations de connexion.",
+              "<b>Tiers :</b> nous utilisons l’API Google Gemini. Conformément aux conditions des services payants de Google, les images ne sont pas utilisées pour entraîner les modèles de Google. Consultez les <google>Règles de confidentialité de Google</google>.",
+              "<b>Stockage :</b> l’image est stockée dans notre espace de stockage AWS S3."
+            ]
+          },
+          {
+            "p": "Cette fonctionnalité est facultative. Vous pouvez toujours saisir manuellement les informations de connexion du NVR à la place, et l’application n’accède pas à votre caméra ni à votre photothèque sauf si vous lancez cette procédure."
+          }
+        ]
+      },
+      {
+        "id": "support-chat",
+        "title": "Chat de support IA",
+        "blocks": [
+          {
+            "p": "L’application comprend un chat de support facultatif avec un assistant IA (Alex). Lorsque vous l’utilisez, vos messages sont envoyés aux serveurs de Sentra AI et transmis à l’API Google Gemini afin de générer des réponses."
+          },
+          {
+            "ul": [
+              "<b>Données traitées :</b> les messages que vous rédigez, l’historique de la conversation en cours (envoyé avec chaque message) et les informations de votre compte pertinentes pour votre demande — par exemple des données relatives aux NVR, aux caméras, à l’état de connexion, aux alertes et aux statistiques.",
+              "<b>Finalité :</b> répondre à vos questions, vous aider à résoudre des problèmes et effectuer les actions que vous demandez dans votre compte. Un enregistrement des actions effectuées par l’assistant (type d’action, statut et résumé) est conservé avec les dossiers de votre compte.",
+              "<b>Tiers :</b> nous utilisons l’API Google Gemini. Conformément aux conditions des services payants de Google, ces données ne sont pas utilisées pour entraîner les modèles de Google. Nous prenons des mesures pour masquer les mots de passe des appareils et les secrets similaires dans les données du compte avant leur envoi au modèle. Le texte que vous saisissez est envoyé tel quel ; veuillez donc ne pas saisir de mots de passe ni d’autres informations sensibles qui ne sont pas nécessaires. Consultez les <google>Règles de confidentialité de Google</google>.",
+              "<b>Stockage :</b> vos conversations passées (jusqu’aux 20 plus récentes) sont enregistrées sur votre appareil afin que vous puissiez les rouvrir ; nos serveurs ne conservent pas d’historique de chat. Un état de conversation et de tâche de courte durée est conservé sur nos serveurs pendant une durée limitée (d’environ 15 minutes à 24 heures, selon la tâche) afin que les demandes en plusieurs étapes puissent être menées à bien."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "data-safety",
+        "title": "Récapitulatif de la sécurité des données",
+        "blocks": [
+          {
+            "p": "Les catégories ci-dessous récapitulent les types d’informations que le service peut collecter ou traiter selon la manière dont vous utilisez Sentra AI. Ce récapitulatif aligne les déclarations relatives à la sécurité des données dans les boutiques d’applications sur la présente politique."
+          },
+          {
+            "ul": [
+              "<b>Informations de compte :</b> adresse e-mail et/ou numéro de téléphone, identifiants de compte/d’utilisateur, nom d’affichage, identifiant d’organisation. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Numéro de téléphone :</b> si vous vous inscrivez ou vous connectez avec un numéro de téléphone (en tant qu’identifiant de compte et pour les codes de vérification par SMS), ou si vous choisissez d’utiliser la vérification WhatsApp. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Configuration des caméras et du NVR :</b> informations de connexion et de configuration des appareils pris en charge. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Instantanés et médias :</b> images d’aperçu, instantanés et médias d’événements associés, le cas échéant. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Photos que vous fournissez lors de la configuration du NVR :</b> une image prise avec la caméra de l’appareil ou sélectionnée dans la photothèque, utilisée uniquement pour extraire les informations de connexion du NVR. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Messages du chat de support :</b> messages que vous adressez à l’assistant de support IA intégré à l’application, traités pour répondre à votre demande. Ces informations sont utilisées pour le fonctionnement de l’application et l’assistance client, et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Interactions avec l’application et paramètres :</b> utilisation de l’application et paramètres configurés par l’utilisateur. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Données opérationnelles et de diagnostic :</b> journaux utilisés pour la maintenance, la fiabilité et la sécurité du service. Ces informations sont utilisées pour le fonctionnement de l’application et transmises de manière sécurisée via HTTPS/TLS.",
+              "<b>Données d’analyse / d’utilisation de l’application :</b> données d’utilisation et d’interaction avec l’application, informations techniques et relatives à l’appareil, l’identifiant de votre compte, des identifiants d’installation et d’appareil générés aléatoirement et (pour PostHog) le jeton de notification push de votre appareil. Ces informations sont utilisées à des fins d’analyse, sont transmises de manière sécurisée via HTTPS/TLS et ne sont pas utilisées à des fins publicitaires ni de suivi entre applications."
+            ]
+          },
+          {
+            "p": "Nous ne vendons pas d’informations personnelles. L’application n’est pas conçue pour utiliser des données personnelles à des fins publicitaires ni de suivi entre applications."
+          },
+          {
+            "p": "Les données peuvent être partagées avec des prestataires de services uniquement dans la mesure nécessaire au fonctionnement du service."
+          }
+        ]
+      },
+      {
+        "id": "use",
+        "title": "Utilisation des informations",
+        "blocks": [
+          {
+            "ul": [
+              "Authentifier les utilisateurs, maintenir les sessions et protéger l’accès aux comptes, notamment en envoyant des codes de vérification à usage unique par SMS lorsque vous vous connectez avec un numéro de téléphone.",
+              "Créer, associer ou valider les profils clients et l’accès aux organisations.",
+              "Afficher les NVR, les caméras, les caméras associées, le statut des caméras et les images d’aperçu des caméras du client.",
+              "Connecter, analyser, activer, synchroniser et gérer les NVR et les canaux de caméras associés.",
+              "Enregistrer les choix de configuration du client, notamment les caméras associées, les canaux d’intérêt, les classes de détection, les masques des caméras, les plannings de mise en sourdine, les périodes temporaires de mise en sourdine et les brouillons de configuration des NVR.",
+              "Répertorier et afficher les notifications, les alertes, les enregistrements d’événements, les instantanés et les médias d’événements disponibles.",
+              "Envoyer des notifications d’alerte WhatsApp à un numéro que vous choisissez de vérifier dans le cadre d’une procédure facultative initiée par l’utilisateur.",
+              "Exploiter, sécuriser et dépanner l’application et les services associés, et en améliorer la fiabilité.",
+              "Mesurer, de manière agrégée, l’utilisation de l’application, l’adoption des fonctionnalités, la stabilité et les performances au moyen de services d’analyse, afin de pouvoir corriger les problèmes et améliorer l’expérience de l’application.",
+              "Extraire les informations de connexion du NVR d’une image que vous choisissez de fournir lors de la configuration du NVR, afin que vous n’ayez pas à les saisir manuellement.",
+              "Répondre aux demandes d’assistance, y compris les diagnostics de configuration et de connexion des NVR soumis par le client.",
+              "Répondre à vos questions et effectuer les actions que vous demandez via l’assistant de support IA intégré à l’application."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "Partage avec des prestataires de services",
+        "blocks": [
+          {
+            "p": "Nous ne vendons pas d’informations personnelles. L’application n’est pas conçue pour utiliser des données personnelles à des fins publicitaires ni de suivi entre applications. Nous partageons des informations avec des prestataires de services uniquement dans la mesure nécessaire pour exploiter, sécuriser et prendre en charge l’application et le service d’alertes."
+          },
+          {
+            "ul": [
+              "<b>Amazon Web Services (Cognito et SNS) :</b> utilisés pour la connexion, la réinitialisation du mot de passe, la vérification par SMS et la gestion des sessions. Lorsque vous réinitialisez votre mot de passe, votre adresse e-mail, le code de vérification et votre nouveau mot de passe sont envoyés directement de l’application à AWS. Lorsque vous vous connectez avec un numéro de téléphone, votre numéro de téléphone et le code de vérification sont envoyés à AWS, et le code est transmis à votre téléphone par SMS via Amazon SNS. Données traitées dans la région AWS il-central-1 (Israël).",
+              "<b>API backend de Sentra AI</b> (<backend>backend.x-sentral.com</backend>) : traite les données de profil client, de caméras, de NVR, de notifications, de plannings, de détection, de masques, d’événements, d’association WhatsApp, de chat de support, ainsi que les données opérationnelles associées, comme décrit dans la présente politique.",
+              "<b>WhatsApp :</b> utilisé comme canal de transmission des notifications sur adhésion volontaire (opt-in), pour les messages envoyés à un numéro de téléphone vérifié par l’utilisateur.",
+              "<b>Services de stockage cloud et de médias :</b> les instantanés des caméras, les URL d’aperçu, les URL de médias temporaires et les fichiers multimédias d’événements peuvent être stockés dans l’infrastructure cloud utilisée par la plateforme Sentra AI ou être servis depuis celle-ci.",
+              "<b>Services d’intégration NVR et caméras :</b> les informations de connexion des caméras et des NVR sont traitées par des services backend qui se connectent à votre appareil NVR pour récupérer l’état de l’appareil, la liste des canaux, les instantanés et les données d’alerte.",
+              "<b>API Google Gemini :</b> si vous ajoutez un NVR à partir d’une image, cette image est envoyée à l’API Google Gemini afin d’identifier les informations de connexion qu’elle contient. Si vous utilisez l’assistant de support IA intégré à l’application, vos messages et les informations de compte associées sont envoyés à l’API Google Gemini afin de générer des réponses (voir <supportChat>Chat de support IA</supportChat>). Conformément aux conditions des services payants de Google, ces données ne sont pas utilisées pour entraîner les modèles de Google. Consultez les <google>Règles de confidentialité de Google</google>.",
+              "<b>Amazon Web Services (S3) :</b> les images que vous fournissez lors de la configuration du NVR, ainsi que les autres médias de la plateforme, sont stockés dans notre espace de stockage AWS S3.",
+              "<b>Fournisseurs d’analyse et de messagerie — actuellement Google (Firebase) et PostHog :</b> Firebase Analytics et PostHog sont utilisés pour collecter des données d’utilisation de l’application, et Firebase Cloud Messaging est utilisé pour envoyer des notifications push sur votre appareil. Les données PostHog sont traitées dans la région cloud européenne de PostHog. Google et PostHog traitent ces données en tant que prestataires de services pour notre compte. Nous pouvons recourir à des fournisseurs d’analyse supplémentaires ou différents à l’avenir, dans des conditions équivalentes. Consultez les informations <firebase>Confidentialité et sécurité de Firebase</firebase>, les <google>Règles de confidentialité de Google</google> et la <posthog>Politique de confidentialité de PostHog</posthog>."
+            ]
+          },
+          {
+            "p": "Les données peuvent être traitées dans les pays où ces prestataires de services exercent leurs activités. Lorsque la législation applicable exige des garanties pour les transferts internationaux de données, nous nous appuyons sur des mesures contractuelles et organisationnelles conformes à ces exigences."
+          }
+        ]
+      },
+      {
+        "id": "analytics",
+        "title": "Analyse et vos choix",
+        "blocks": [
+          {
+            "p": "Nous utilisons des services d’analyse et de mesure des performances de l’application, actuellement Google Firebase Analytics et PostHog, afin de comprendre, de manière agrégée, comment l’application est utilisée, quelles fonctionnalités sont utilisées et où surviennent des erreurs ou des problèmes de performances. L’analyse est utilisée uniquement à des fins d’amélioration du produit, de fiabilité et de sécurité."
+          },
+          {
+            "p": "À mesure que l’application évolue, nous pouvons ajouter, modifier ou supprimer les événements et mesures spécifiques que nous collectons, et nous pouvons recourir à des fournisseurs d’analyse supplémentaires ou différents. Toute modification de ce type reste soumise aux engagements ci-dessous."
+          },
+          {
+            "ul": [
+              "<b>Amélioration du produit uniquement :</b> nous utilisons l’analyse pour améliorer, sécuriser et dépanner l’application — et non pour prendre des décisions concernant des utilisateurs individuels.",
+              "<b>Ni publicité ni suivi :</b> nous n’utilisons pas d’identifiants publicitaires et nous n’utilisons pas vos données à des fins publicitaires ni de suivi entre applications. Les données d’analyse ne sont ni vendues ni partagées avec des réseaux publicitaires ou des courtiers en données.",
+              "<b>Aucun contenu sensible :</b> nous n’envoyons pas d’images de caméras, d’instantanés, de vidéos, de médias d’alerte, d’identifiants de connexion aux NVR ni de contenu de messages WhatsApp aux fournisseurs d’analyse.",
+              "<b>Conservation :</b> les données d’événements d’analyse sont conservées pendant la durée de conservation configurée auprès de notre fournisseur d’analyse, à l’issue de laquelle elles sont supprimées ou conservées uniquement sous forme agrégée.",
+              "<b>Vos choix :</b> vous pouvez désactiver l’analyse à tout moment dans l’application, sous <b>Paramètres → Partager les données d’utilisation</b> ; cela met fin à la collecte par Firebase Analytics et par PostHog sur cet appareil. Vous pouvez également limiter la collecte de données d’analyse au moyen des paramètres de confidentialité du système d’exploitation de votre appareil, ou en désinstallant l’application. Vous pouvez aussi nous contacter à l’adresse <mail>{{supportEmail}}</mail> pour demander la suppression des données d’analyse associées à votre installation de l’application."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sécurité des données",
+        "blocks": [
+          {
+            "p": "Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables afin de contribuer à protéger les informations contre tout accès non autorisé, perte, utilisation abusive ou altération."
+          },
+          {
+            "ul": [
+              "<b>Données en transit :</b> les communications entre l’application mobile et les API du service sont protégées par HTTPS (TLS).",
+              "<b>Authentification :</b> des contrôles d’accès authentifiés sont utilisés pour protéger l’accès aux comptes et au service.",
+              "<b>Protection des sessions :</b> les informations de session sont stockées à l’aide des fonctionnalités sécurisées de la plateforme disponibles sur l’appareil.",
+              "<b>Identifiants des NVR :</b> les informations de connexion des appareils, y compris les noms d’utilisateur et mots de passe des NVR, les adresses IP et les ports, sont stockées sur nos serveurs afin que le service puisse se connecter à votre équipement. L’accès est limité aux systèmes et au personnel nécessaires au fonctionnement du service.",
+              "<b>Cache local des alertes :</b> les notifications d’alerte récentes, y compris leurs titres et leur texte, sont mises en cache dans le stockage de l’application sur votre appareil afin que vous puissiez les consulter hors ligne. Ce cache est de taille limitée, est exclu de la sauvegarde cloud de l’appareil sur Android et est effacé lorsque vous vous déconnectez ou désinstallez l’application."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "local-storage",
+        "title": "Stockage local (Archive)",
+        "blocks": [
+          {
+            "p": "L’application vous permet d’enregistrer des alertes, des images et des vidéos dans le stockage local de votre appareil. Ces éléments sont stockés uniquement sur votre appareil, ne sont pas envoyés à nos serveurs et ne nous sont pas accessibles. Ils sont conservés jusqu’à ce que vous les supprimiez. Vous pouvez également enregistrer des images et des vidéos dans la galerie de votre appareil — cela n’a lieu qu’à votre initiative et nécessite votre autorisation."
+          }
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Conservation des données",
+        "blocks": [
+          {
+            "p": "Nous conservons les différentes catégories de données pendant des durées différentes selon les exigences opérationnelles, de sécurité, légales et contractuelles. De manière générale :"
+          },
+          {
+            "ul": [
+              "<b>Les enregistrements de compte et de session</b> peuvent être conservés aussi longtemps que nécessaire pour fournir l’accès au compte, assurer la continuité du service et respecter les obligations légales ou contractuelles.",
+              "<b>La configuration et les identifiants des NVR et des caméras</b> peuvent être conservés aussi longtemps que nécessaire pour connecter et exploiter les appareils pris en charge et pour assurer les fonctions de service et de sécurité, selon la configuration et les exigences opérationnelles.",
+              "<b>Les images fournies lors de la configuration du NVR</b> sont stockées dans notre espace de stockage AWS S3 et peuvent être conservées aussi longtemps que nécessaire pour finaliser la configuration, prendre en charge la connexion de l’appareil et traiter les problèmes de service ou de sécurité.",
+              "<b>Les enregistrements d’alertes, d’événements, d’instantanés et de médias</b> peuvent être conservés aussi longtemps que nécessaire au fonctionnement du service, à la sécurité, à la conformité et au traitement des litiges.",
+              "<b>Les conversations du chat de support</b> sont enregistrées sur votre appareil (jusqu’aux 20 plus récentes) et ne sont pas conservées sous forme d’historique de chat sur nos serveurs ; l’état de conversation et de tâche de courte durée sur nos serveurs expire dans un délai d’environ 15 minutes à 24 heures, et les enregistrements des actions effectuées par l’assistant sont conservés avec les dossiers de votre compte.",
+              "<b>Les journaux de diagnostic et de sécurité</b> peuvent être conservés aussi longtemps que nécessaire pour surveiller, maintenir et protéger le service.",
+              "<b>Les données d’événements d’analyse</b> sont conservées pendant la durée de conservation configurée auprès de notre fournisseur d’analyse, à l’issue de laquelle elles sont supprimées ou conservées uniquement sous forme agrégée.",
+              "<b>Les demandes d’assistance et de suppression</b> peuvent être conservées aussi longtemps que nécessaire pour traiter les demandes, fournir une assistance et tenir les registres requis."
+            ]
+          },
+          {
+            "p": "Nous conservons les données aussi longtemps que nécessaire pour fournir le service, respecter nos obligations légales, résoudre les litiges et faire appliquer les accords."
+          },
+          {
+            "p": "Les utilisateurs peuvent demander la suppression de leur compte et des données personnelles associées. Sur demande vérifiée, nous supprimerons ou anonymiserons les données dans la mesure du possible, sous réserve des exigences légales, de sécurité et opérationnelles."
+          }
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Droits des utilisateurs et demandes de suppression",
+        "blocks": [
+          {
+            "p": "Lorsque la législation applicable en matière de protection de la vie privée confère des droits, les clients peuvent demander l’accès aux informations personnelles associées au compte, ainsi que leur rectification ou leur suppression, sous réserve d’une vérification de leur identité lorsque celle-ci est requise et des exceptions prévues par la loi (y compris la conservation nécessaire à des fins de sécurité, au respect d’obligations légales, d’obligations contractuelles ou de facturation, au règlement des litiges ou au fonctionnement continu de nos services)."
+          },
+          {
+            "p": "<b>Comment demander la suppression de votre compte :</b>"
+          },
+          {
+            "ul": [
+              "Dans l’application mobile Sentra AI, ouvrez <b>Paramètres → Supprimer le compte</b> en étant connecté — cela soumet une demande de suppression acheminée via votre profil authentifié.",
+              "Utilisez la page publique <deleteLink>Demande de suppression de compte</deleteLink> ou la procédure par e-mail.",
+              "Écrivez à <mail>{{supportEmail}}</mail> en indiquant l’adresse e-mail ou le numéro de téléphone que vous utilisez pour vous connecter."
+            ]
+          },
+          {
+            "p": "<b>Délai de traitement.</b> Nous nous efforçons de traiter les demandes de suppression vérifiées dans un délai de 30 jours, sauf si une période plus longue est requise ou autorisée par la loi, des obligations de sécurité, des exigences contractuelles, des dossiers de facturation, le règlement de litiges ou une nécessité opérationnelle."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "title": "Protection de la vie privée des enfants",
+        "blocks": [
+          {
+            "p": "L’application n’est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants de moins de 13 ans. Si vous pensez qu’un enfant de moins de 13 ans a fourni des informations via l’application, contactez-nous afin que nous puissions les examiner et les supprimer le cas échéant."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "p": "Pour toute question relative à la confidentialité, toute demande concernant vos données ou toute suppression de compte, contactez-nous à l’aide des coordonnées ci-dessous. Pour une suppression, vous pouvez également utiliser <b>Paramètres → Supprimer le compte</b> dans l’application ou la page <deleteLink>Demande de suppression de compte</deleteLink>."
+          },
+          {
+            "p": "E-mail : <mail>{{supportEmail}}</mail><br/>Téléphone : <tel>{{supportPhone}}</tel>"
+          },
+          {
+            "p": "Nous vous répondrons dans un délai raisonnable, conformément à la législation applicable et à nos obligations de service."
+          }
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "badge": "Nom de l’application : Sentra AI",
+    "title": "Demande de suppression de compte",
+    "lede": "Vous pouvez demander la suppression de votre compte Sentra AI et des données personnelles associées en suivant les étapes ci-dessous.",
+    "lastUpdated": "Dernière mise à jour : 11 octobre 2026",
+    "noticeProcessing": "<b>Durée de traitement.</b> Les demandes de suppression sont examinées et vérifiées par notre équipe d’assistance avant d’être traitées. <b>Délai de traitement :</b> nous nous efforçons de traiter les demandes de suppression vérifiées dans un délai de 30 jours, sauf si une période plus longue est requise ou autorisée par la loi, des obligations de sécurité, des exigences contractuelles, des dossiers de facturation, le règlement de litiges ou une nécessité opérationnelle.",
+    "noticeVerification": "<b>Vérification d’identité.</b> L’équipe d’assistance peut vérifier votre identité avant de traiter une demande de suppression afin de protéger votre compte.",
+    "emailCta": "Ouvrir un e-mail à l’assistance avec l’objet prérempli",
+    "sections": [
+      {
+        "id": "paths",
+        "title": "Moyens de demander la suppression du compte",
+        "blocks": [
+          {
+            "p": "Vous pouvez soumettre une demande par l’un des moyens suivants :"
+          },
+          {
+            "ul": [
+              "<b>Dans l’application Sentra AI :</b> accédez à <b>Paramètres → Supprimer le compte</b> en étant connecté. Cela soumet une demande de suppression acheminée à l’aide de votre profil authentifié.",
+              "<b>Par e-mail :</b> suivez les étapes ci-dessous pour écrire à l’équipe d’assistance (ou utilisez le bouton avec l’objet prérempli)."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "email-steps",
+        "title": "Comment demander la suppression par e-mail",
+        "blocks": [
+          {
+            "ol": [
+              "Envoyez un e-mail à <mail>{{supportEmail}}</mail>.",
+              "Utilisez l’objet suivant : <b>{{subject}}</b> (copiez-le exactement afin que votre demande soit acheminée correctement).",
+              "Dans le corps de l’e-mail, indiquez l’<b>adresse e-mail ou le numéro de téléphone que vous utilisez pour vous connecter</b> à Sentra AI.",
+              "Le cas échéant, indiquez tout <b>détail pertinent concernant l’organisation ou le compte</b> qui nous aide à localiser votre compte (par exemple, le nom de l’organisation ou des éléments de contexte issus de votre contrat de service)."
+            ]
+          },
+          {
+            "cta": true
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "title": "À propos de cette page",
+        "blocks": [
+          {
+            "p": "Cette page est un document public autonome. En raison des limites techniques des requêtes web non authentifiées, votre navigateur ne peut pas exécuter la même procédure de suppression authentifiée que celle utilisée dans l’application Sentra AI. Si vous pouvez vous connecter sur votre téléphone, privilégiez <b>Paramètres → Supprimer le compte</b>, qui constitue la voie la plus directe. Sinon, contactez l’équipe d’assistance par e-mail ou par téléphone afin que votre demande soit reçue de manière fiable."
+          }
+        ]
+      },
+      {
+        "id": "covered",
+        "title": "Ce que couvre une demande de suppression",
+        "blocks": [
+          {
+            "p": "Une demande de suppression vérifiée couvre :"
+          },
+          {
+            "ul": [
+              "Données de compte et de profil",
+              "Enregistrements de compte liés à la connexion",
+              "Configuration des caméras et du NVR",
+              "Caméras associées",
+              "Paramètres d’alerte",
+              "Plannings et périodes de mise en sourdine",
+              "Données de vérification WhatsApp",
+              "Demandes d’assistance"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "retained",
+        "title": "Ce que nous sommes tenus de conserver",
+        "blocks": [
+          {
+            "p": "Certaines informations peuvent être conservées après la suppression du compte lorsque la loi ou des besoins professionnels légitimes l’exigent ou le permettent, par exemple :"
+          },
+          {
+            "ul": [
+              "Journaux de sécurité et registres d’audit",
+              "Dossiers juridiques, contractuels ou de facturation",
+              "Journaux opérationnels et de diagnostic",
+              "Enregistrements d’alertes et d’événements nécessaires à la sécurité, à la prévention de la fraude, au règlement des litiges, à la conformité ou à l’intégrité de la plateforme"
+            ]
+          },
+          {
+            "p": "Les données conservées ne le sont que pendant la durée nécessaire pour des raisons juridiques, de sécurité, opérationnelles ou contractuelles. Nous conservons les différentes catégories de données pendant des durées différentes selon ces exigences — les durées précises ne sont pas publiées ici, car elles varient selon le type de données et les obligations applicables."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "p": "E-mail : <mail>{{supportEmail}}</mail><br/>Téléphone : <tel>{{supportPhone}}</tel>"
+          },
+          {
+            "p": "Lien direct avec l’objet prérempli : <subjectMail>{{supportEmail}}</subjectMail>"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -232,7 +232,9 @@
     "terms": "Terms of Use",
     "siteRules": "Site Rules",
     "accessibility": "Accessibility Statement",
-    "tagline": "Always Watching. Never Sleeping.ֲ© 2026 Sentra AI. All rights reserved."
+    "tagline": "Always Watching. Never Sleeping.ֲ© 2026 Sentra AI. All rights reserved.",
+    "appPrivacy": "App Privacy Policy",
+    "deleteAccount": "Account Deletion"
   },
   "payments": {
     "eyebrow": "COMING NEXT",

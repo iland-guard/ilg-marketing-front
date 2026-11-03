@@ -232,7 +232,9 @@
     "terms": "Termos de Uso",
     "siteRules": "Regras do Site",
     "accessibility": "Declaração de Acessibilidade",
-    "tagline": "Sempre vigiando. Nunca dormindo.© 2026 Sentra AI. Todos os direitos reservados."
+    "tagline": "Sempre vigiando. Nunca dormindo.© 2026 Sentra AI. Todos os direitos reservados.",
+    "appPrivacy": "Política de Privacidade do App",
+    "deleteAccount": "Exclusão de Conta"
   },
   "payments": {
     "eyebrow": "EM BREVE",

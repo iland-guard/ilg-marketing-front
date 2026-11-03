@@ -232,7 +232,9 @@
     "terms": "Nutzungsbedingungen",
     "siteRules": "Website‑Regeln",
     "accessibility": "Barrierefreiheitserklärung",
-    "tagline": "Immer wachsam. Nie schlafend.© 2026 Sentra AI. Alle Rechte vorbehalten."
+    "tagline": "Immer wachsam. Nie schlafend.© 2026 Sentra AI. Alle Rechte vorbehalten.",
+    "appPrivacy": "Datenschutzerklärung der App",
+    "deleteAccount": "Kontolöschung"
   },
   "payments": {
     "eyebrow": "DEMNÄCHST",
