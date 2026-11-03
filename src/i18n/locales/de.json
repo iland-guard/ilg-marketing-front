@@ -245,7 +245,7 @@
   "legal": {
     "eyebrow": "RECHTLICHES",
     "back": "Zur Startseite",
-    "lastUpdated": "Zuletzt aktualisiert: 22. September 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 3. November 2026",
     "disclaimer": "Dieses Dokument ist ein Entwurf für Produkt‑ und Marketingzwecke. Es ist keine Rechtsberatung. Lassen Sie es vor der Nutzung von qualifizierter Anwaltschaft prüfen.",
     "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
     "contactEmail": "{{supportEmail}}"
@@ -297,43 +297,50 @@
         ]
       },
       {
-        "title": "6. Speicherung",
+        "title": "6. SMS und mobile Informationen",
+        "paragraphs": [
+          "Wir verwenden die Mobiltelefonnummer, die Sie in der Sentra AI App eingeben, ausschließlich, um Ihnen bei der Registrierung oder Anmeldung Einmal-Bestätigungscodes per SMS zu senden.",
+          "Mobile Informationen werden nicht zu Marketing- oder Werbezwecken an Dritte oder verbundene Unternehmen weitergegeben. Alle oben genannten Kategorien schließen Opt-in-Daten und Einwilligungen des Absenders von Textnachrichten aus; diese Informationen werden an keine Dritten weitergegeben."
+        ]
+      },
+      {
+        "title": "7. Speicherung",
         "paragraphs": [
           "Kontaktanfragen speichern wir für einen angemessenen Geschäftzeitraum; Konto‑ und Abrechnungsdaten für die Kontolaufzeit plus gesetzliche Fristen; Kamera‑/Ereignisdaten gemäß Tarif und Betriebsbedarf."
         ]
       },
       {
-        "title": "7. Sicherheit",
+        "title": "8. Sicherheit",
         "paragraphs": [
           "Wir setzen Maßnahmen ein, die der Sensibilität von Sicherheitsaufnahmen und Kontaktdaten angemessen sind. Keine Methode ist vollständig sicher; Sie bleiben für Kameras, Zugangsdaten und Netze verantwortlich."
         ]
       },
       {
-        "title": "8. Ihre Rechte",
+        "title": "9. Ihre Rechte",
         "paragraphs": [
           "Nach geltendem Recht können Sie Auskunft, Berichtigung, Löschung, Einschränkung, Portabilität oder Widerspruch verlangen und Einwilligungen widerrufen. Kontakt: {{email}}."
         ]
       },
       {
-        "title": "9. Cookies",
+        "title": "10. Cookies",
         "paragraphs": [
           "Die Website kann essenzielle Cookies und, wo erlaubt, Analyse‑Cookies nutzen. Nicht essentielle Cookies steuern Sie im Browser."
         ]
       },
       {
-        "title": "10. Internationale Übermittlungen",
+        "title": "11. Internationale Übermittlungen",
         "paragraphs": [
           "Daten können außerhalb Ihres Landes verarbeitet werden. Wo erforderlich, nutzen wir geeignete Garantien."
         ]
       },
       {
-        "title": "11. Kinder",
+        "title": "12. Kinder",
         "paragraphs": [
           "Der Dienst richtet sich an Unternehmen und Erwachsene. Wir erheben wissentlich keine Daten von unter 16‑Jährigen ohne passende Autorisierung."
         ]
       },
       {
-        "title": "12. Änderungen",
+        "title": "13. Änderungen",
         "paragraphs": [
           "Wir können diese Erklärung aktualisieren. Wesentliche Änderungen werden auf dieser Seite mit aktualisiertem Datum veröffentlicht."
         ]
@@ -429,6 +436,17 @@
         "title": "14. Kontakt",
         "paragraphs": [
           "Fragen: {{email}}."
+        ]
+      },
+      {
+        "title": "15. SMS-Bedingungen",
+        "paragraphs": [
+          "1. Programm: iLandGuard Ltd, der Betreiber von Sentra AI, sendet Einmal-Bestätigungscodes per SMS an die Mobilnummer, die Sie bei der Registrierung oder Anmeldung in der Sentra AI App eingeben.",
+          "2. Nachrichtenhäufigkeit: eine Nachricht pro Anfrage.",
+          "3. Es können Gebühren für Nachrichten und Daten anfallen. Wenden Sie sich bezüglich Ihres Tarifs an Ihren Mobilfunkanbieter.",
+          "4. Um keine Nachrichten mehr zu erhalten, antworten Sie mit STOP. Für Hilfe antworten Sie mit HELP oder schreiben Sie an support@sentraai.ai. Wenn Sie sich abmelden, wenden Sie sich an den Support, um Ihr Konto auf die Anmeldung per E-Mail umzustellen.",
+          "5. Mobilfunkanbieter haften nicht für verzögerte oder nicht zugestellte Nachrichten.",
+          "6. Datenschutz: siehe unsere Datenschutzerklärung unter https://www.sentraai.ai/privacy-policy"
         ]
       }
     ]

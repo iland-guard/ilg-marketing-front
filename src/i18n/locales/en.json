@@ -245,7 +245,7 @@
   "legal": {
     "eyebrow": "LEGAL",
     "back": "Back to home",
-    "lastUpdated": "Last updated: September 22, 2026",
+    "lastUpdated": "Last updated: November 3, 2026",
     "disclaimer": "This document is a draft for product and marketing use. It is not legal advice. Have it reviewed by qualified counsel before relying on it.",
     "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
     "contactEmail": "{{supportEmail}}"
@@ -297,43 +297,50 @@
         ]
       },
       {
-        "title": "6. Retention",
+        "title": "6. SMS and mobile information",
+        "paragraphs": [
+          "We use the mobile phone number you enter in the Sentra AI app only to send you one-time verification codes by SMS when you sign up or sign in.",
+          "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
+        ]
+      },
+      {
+        "title": "7. Retention",
         "paragraphs": [
           "We retain contact inquiries for a reasonable business period; account and billing records for the life of the account plus legal retention periods; and camera/event data according to your plan settings and operational needs, unless a longer period is required by law or dispute resolution."
         ]
       },
       {
-        "title": "7. Security",
+        "title": "8. Security",
         "paragraphs": [
           "We use administrative, technical and organizational measures appropriate to the sensitivity of security footage and contact data. No method of transmission or storage is fully secure; you remain responsible for securing your cameras, credentials and local networks."
         ]
       },
       {
-        "title": "8. Your rights",
+        "title": "9. Your rights",
         "paragraphs": [
           "Subject to applicable law, you may request access, correction, deletion, restriction, portability or objection, and withdraw consent where processing is consent-based. Contact {{email}}. You may also lodge a complaint with a supervisory authority."
         ]
       },
       {
-        "title": "9. Cookies",
+        "title": "10. Cookies",
         "paragraphs": [
           "Our marketing site may use essential cookies and, where permitted, analytics cookies. You can control non-essential cookies through your browser settings."
         ]
       },
       {
-        "title": "10. International transfers",
+        "title": "11. International transfers",
         "paragraphs": [
           "Data may be processed in countries other than your own. Where required, we use appropriate safeguards for cross-border transfers."
         ]
       },
       {
-        "title": "11. Children",
+        "title": "12. Children",
         "paragraphs": [
           "The service is intended for business and adult users. We do not knowingly collect personal data from children under 16 (or higher age required locally) without appropriate authorization."
         ]
       },
       {
-        "title": "12. Changes",
+        "title": "13. Changes",
         "paragraphs": [
           "We may update this Policy. Material changes will be posted on this page with an updated date. Continued use after changes means you accept the revised Policy where permitted by law."
         ]
@@ -430,6 +437,17 @@
         "title": "14. Contact",
         "paragraphs": [
           "Questions about these Terms: {{email}}."
+        ]
+      },
+      {
+        "title": "15. SMS Terms",
+        "paragraphs": [
+          "1. Program: iLandGuard Ltd, the operator of Sentra AI, sends one-time verification codes by SMS to the mobile number you enter when you sign up for or sign in to the Sentra AI app.",
+          "2. Message frequency: one message per request.",
+          "3. Message and data rates may apply. Contact your wireless provider about your plan.",
+          "4. To stop receiving messages, reply STOP. For help, reply HELP or email support@sentraai.ai. If you opt out, contact support to switch your account to email sign-in.",
+          "5. Carriers are not liable for delayed or undelivered messages.",
+          "6. Privacy: see our Privacy Policy at https://www.sentraai.ai/privacy-policy"
         ]
       }
     ]

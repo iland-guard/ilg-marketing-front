@@ -7,7 +7,7 @@
     "badge": "Sentra AI Mobile App",
     "title": "Privacy Policy",
     "lede": "This policy explains how information is collected, used, shared, and protected when customers use the Sentra AI mobile app for camera alert and security-system management.",
-    "lastUpdated": "Last updated: October 11, 2026",
+    "lastUpdated": "Last updated: November 3, 2026",
     "notice": "This Privacy Policy describes how Sentra AI handles information when you use the mobile app. For account deletion instructions, see the <deleteLink>Account Deletion Request</deleteLink> page.",
     "categoriesLabel": "Data category summary",
     "categories": [
@@ -189,6 +189,18 @@
           },
           {
             "p": "Data may be processed in countries where these service providers operate. Where applicable laws require safeguards for international data transfers, we rely on contractual and organizational measures consistent with those requirements."
+          }
+        ]
+      },
+      {
+        "id": "sms",
+        "title": "SMS and mobile information",
+        "blocks": [
+          {
+            "p": "We use the mobile phone number you enter in the Sentra AI app only to send you one-time verification codes by SMS when you sign up or sign in."
+          },
+          {
+            "p": "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
           }
         ]
       },

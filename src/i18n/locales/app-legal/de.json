@@ -7,7 +7,7 @@
     "badge": "Sentra AI Mobile-App",
     "title": "Datenschutzerklärung",
     "lede": "Diese Erklärung beschreibt, wie Informationen erhoben, verwendet, weitergegeben und geschützt werden, wenn Kunden die mobile App von Sentra AI zur Verwaltung von Kameraalarmen und Sicherheitssystemen nutzen.",
-    "lastUpdated": "Zuletzt aktualisiert: 11. Oktober 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 3. November 2026",
     "notice": "Diese Datenschutzerklärung beschreibt, wie Sentra AI mit Informationen umgeht, wenn Sie die mobile App nutzen. Anleitungen zur Kontolöschung finden Sie auf der Seite <deleteLink>Antrag auf Kontolöschung</deleteLink>.",
     "categoriesLabel": "Übersicht der Datenkategorien",
     "categories": [
@@ -189,6 +189,18 @@
           },
           {
             "p": "Daten können in Ländern verarbeitet werden, in denen diese Dienstleister tätig sind. Soweit geltende Gesetze Garantien für internationale Datenübermittlungen vorschreiben, stützen wir uns auf vertragliche und organisatorische Maßnahmen, die diesen Anforderungen entsprechen."
+          }
+        ]
+      },
+      {
+        "id": "sms",
+        "title": "SMS und mobile Informationen",
+        "blocks": [
+          {
+            "p": "Wir verwenden die Mobiltelefonnummer, die Sie in der Sentra AI App eingeben, ausschließlich, um Ihnen bei der Registrierung oder Anmeldung Einmal-Bestätigungscodes per SMS zu senden."
+          },
+          {
+            "p": "Mobile Informationen werden nicht zu Marketing- oder Werbezwecken an Dritte oder verbundene Unternehmen weitergegeben. Alle oben genannten Kategorien schließen Opt-in-Daten und Einwilligungen des Absenders von Textnachrichten aus; diese Informationen werden an keine Dritten weitergegeben."
           }
         ]
       },

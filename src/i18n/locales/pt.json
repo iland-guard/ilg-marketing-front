@@ -245,7 +245,7 @@
   "legal": {
     "eyebrow": "JURÍDICO",
     "back": "Voltar ao início",
-    "lastUpdated": "Última atualização: 22 de setembro de 2026",
+    "lastUpdated": "Última atualização: 3 de novembro de 2026",
     "disclaimer": "Este documento é um rascunho para uso de produto e marketing. Não é aconselhamento jurídico. Faça-o revisar por um advogado qualificado antes de confiar nele.",
     "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
     "contactEmail": "{{supportEmail}}"
@@ -297,43 +297,50 @@
         ]
       },
       {
-        "title": "6. Retenção",
+        "title": "6. SMS e informações de celular",
+        "paragraphs": [
+          "Usamos o número de celular que você informa no aplicativo Sentra AI apenas para enviar a você códigos de verificação de uso único por SMS quando você se cadastra ou faz login.",
+          "Nenhuma informação de celular será compartilhada com terceiros ou afiliadas para fins de marketing ou promocionais. Todas as categorias acima excluem os dados e o consentimento de opt-in do remetente de mensagens de texto; essas informações não serão compartilhadas com nenhum terceiro."
+        ]
+      },
+      {
+        "title": "7. Retenção",
         "paragraphs": [
           "Retemos consultas por um período comercial razoável; contas e cobrança pela vida da conta mais prazos legais; e dados de câmera/evento conforme seu plano e necessidades operacionais."
         ]
       },
       {
-        "title": "7. Segurança",
+        "title": "8. Segurança",
         "paragraphs": [
           "Usamos medidas adequadas à sensibilidade de filmagens de segurança e dados de contato. Nenhum método é totalmente seguro; você permanece responsável por câmeras, credenciais e redes."
         ]
       },
       {
-        "title": "8. Seus direitos",
+        "title": "9. Seus direitos",
         "paragraphs": [
           "Sujeito à lei aplicável, você pode solicitar acesso, correção, exclusão, restrição, portabilidade ou oposição, e retirar o consentimento. Contate {{email}}."
         ]
       },
       {
-        "title": "9. Cookies",
+        "title": "10. Cookies",
         "paragraphs": [
           "O site pode usar cookies essenciais e, quando permitido, cookies de analítica. Você pode controlar os não essenciais no navegador."
         ]
       },
       {
-        "title": "10. Transferências internacionais",
+        "title": "11. Transferências internacionais",
         "paragraphs": [
           "Os dados podem ser processados fora do seu país. Quando necessário, usamos salvaguardas adequadas."
         ]
       },
       {
-        "title": "11. Crianças",
+        "title": "12. Crianças",
         "paragraphs": [
           "O serviço destina-se a empresas e adultos. Não coletamos conscientemente dados de menores de 16 anos sem autorização adequada."
         ]
       },
       {
-        "title": "12. Alterações",
+        "title": "13. Alterações",
         "paragraphs": [
           "Podemos atualizar esta Política. Alterações materiais serão publicadas nesta página com data atualizada."
         ]
@@ -429,6 +436,17 @@
         "title": "14. Contato",
         "paragraphs": [
           "Dúvidas: {{email}}."
+        ]
+      },
+      {
+        "title": "15. Termos de SMS",
+        "paragraphs": [
+          "1. Programa: a iLandGuard Ltd, operadora do Sentra AI, envia códigos de verificação de uso único por SMS para o número de celular que você informa ao se cadastrar ou fazer login no aplicativo Sentra AI.",
+          "2. Frequência de mensagens: uma mensagem por solicitação.",
+          "3. Podem ser cobradas tarifas de mensagens e dados. Consulte sua operadora de telefonia móvel sobre o seu plano.",
+          "4. Para parar de receber mensagens, responda STOP. Para obter ajuda, responda HELP ou envie um e-mail para support@sentraai.ai. Se você cancelar, entre em contato com o suporte para mudar sua conta para login por e-mail.",
+          "5. As operadoras não se responsabilizam por mensagens atrasadas ou não entregues.",
+          "6. Privacidade: consulte nossa Política de Privacidade em https://www.sentraai.ai/privacy-policy"
         ]
       }
     ]

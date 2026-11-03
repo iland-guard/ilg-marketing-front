@@ -7,7 +7,7 @@
     "badge": "Aplicación móvil Sentra AI",
     "title": "Política de privacidad",
     "lede": "Esta política explica cómo se recopila, utiliza, comparte y protege la información cuando los clientes utilizan la aplicación móvil Sentra AI para la gestión de alertas de cámaras y de sistemas de seguridad.",
-    "lastUpdated": "Última actualización: 11 de octubre de 2026",
+    "lastUpdated": "Última actualización: 3 de noviembre de 2026",
     "notice": "Esta Política de privacidad describe cómo Sentra AI trata la información cuando usted utiliza la aplicación móvil. Para obtener instrucciones sobre la eliminación de la cuenta, consulte la página <deleteLink>Solicitud de eliminación de cuenta</deleteLink>.",
     "categoriesLabel": "Resumen de categorías de datos",
     "categories": [
@@ -189,6 +189,18 @@
           },
           {
             "p": "Los datos pueden tratarse en los países en los que operan estos proveedores de servicios. Cuando la legislación aplicable exija garantías para las transferencias internacionales de datos, nos basamos en medidas contractuales y organizativas acordes con dichos requisitos."
+          }
+        ]
+      },
+      {
+        "id": "sms",
+        "title": "SMS e información móvil",
+        "blocks": [
+          {
+            "p": "Usamos el número de teléfono móvil que usted introduce en la aplicación Sentra AI únicamente para enviarle por SMS códigos de verificación de un solo uso cuando se registra o inicia sesión."
+          },
+          {
+            "p": "No se compartirá ninguna información móvil con terceros ni con empresas afiliadas con fines de marketing o promocionales. Todas las categorías anteriores excluyen los datos y el consentimiento de suscripción (opt-in) del remitente de mensajes de texto; esta información no se compartirá con ningún tercero."
           }
         ]
       },

@@ -43,7 +43,10 @@ function RootRedirect() {
   return <Navigate to={`/${resolveInitialLang()}`} replace />
 }
 
-/** Language-less URLs (used by the app store listings) open in the visitor's language. */
+/**
+ * Language-less URLs (app store listings, SMS terms) open in the visitor's
+ * language instead of falling through to the `/:lang` route as an invalid lang.
+ */
 function LangRedirect({ path }: { path: string }) {
   return <Navigate to={`/${resolveInitialLang()}${path}`} replace />
 }
@@ -55,6 +58,11 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<RootRedirect />} />
+            <Route
+              path="/privacy-policy"
+              element={<LangRedirect path="/privacy-policy" />}
+            />
+            <Route path="/terms" element={<LangRedirect path="/terms" />} />
             <Route
               path="/app-privacy-policy"
               element={<LangRedirect path="/app-privacy-policy" />}
