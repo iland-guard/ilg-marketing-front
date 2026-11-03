@@ -16,8 +16,9 @@ import {
 } from '../constants/support'
 
 /**
- * Mobile-app legal pages (privacy policy + account deletion) linked from the
- * App Store / Google Play listings. Content lives in
+ * The site's privacy policy (covering the app and the website) and the
+ * account-deletion page, both linked from the App Store / Google Play
+ * listings. Content lives in
  * `i18n/locales/app-legal/<lang>.json` (keys `appLegal`, `appPrivacy`,
  * `deleteAccount`) and is loaded into i18next only when one of these pages is
  * opened, so the long texts stay out of the landing-page bundle. Inline markup
@@ -53,7 +54,7 @@ function useAppLegalBundle(): boolean {
   return loadedLangs.has(current)
 }
 
-const APP_PRIVACY_PATH = '/app-privacy-policy'
+const PRIVACY_PATH = '/privacy-policy'
 const DELETE_ACCOUNT_PATH = '/delete-account'
 
 /** Kept in English in every locale so support can route requests reliably. */
@@ -365,11 +366,11 @@ function DeletionEmailButton() {
   )
 }
 
-export function AppPrivacyPage() {
+export function PrivacyPage() {
   return (
     <AppLegalShell
       page="appPrivacy"
-      pagePath={APP_PRIVACY_PATH}
+      pagePath={PRIVACY_PATH}
       notices={['appPrivacy.notice']}
       showContents
       extras={{ chips: <CategoryChips /> }}

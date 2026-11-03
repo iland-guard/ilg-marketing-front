@@ -1,14 +1,16 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useParams,
+} from 'react-router-dom'
 import { LangLayout } from './components/LangLayout'
 import { HomePage } from './pages/HomePage'
 import { PaymentsPage } from './pages/PaymentsPage'
-import {
-  AccessibilityPage,
-  PrivacyPage,
-  SiteRulesPage,
-  TermsPage,
-} from './pages/LegalPages'
-import { AppPrivacyPage, DeleteAccountPage } from './pages/AppLegalPages'
+import { AccessibilityPage, TermsPage } from './pages/LegalPages'
+import { DeleteAccountPage, PrivacyPage } from './pages/AppLegalPages'
 import { DEFAULT_LANG, isLang, type Lang } from './i18n/languages'
 import { LANG_STORAGE_KEY } from './i18n'
 
@@ -51,6 +53,13 @@ function LangRedirect({ path }: { path: string }) {
   return <Navigate to={`/${resolveInitialLang()}${path}`} replace />
 }
 
+/** Retired pages (merged into others) keep working for existing links. */
+function MovedPage({ to }: { to: string }) {
+  const { lang } = useParams()
+  const { hash } = useLocation()
+  return <Navigate to={`/${lang}${to}${hash}`} replace />
+}
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -65,7 +74,11 @@ export default function App() {
             <Route path="/terms" element={<LangRedirect path="/terms" />} />
             <Route
               path="/app-privacy-policy"
-              element={<LangRedirect path="/app-privacy-policy" />}
+              element={<LangRedirect path="/privacy-policy" />}
+            />
+            <Route
+              path="/site-rules"
+              element={<LangRedirect path="/terms" />}
             />
             <Route
               path="/delete-account"
@@ -76,10 +89,13 @@ export default function App() {
               <Route path="payments" element={<PaymentsPage />} />
               <Route path="privacy-policy" element={<PrivacyPage />} />
               <Route path="terms" element={<TermsPage />} />
-              <Route path="site-rules" element={<SiteRulesPage />} />
               <Route path="accessibility" element={<AccessibilityPage />} />
-              <Route path="app-privacy-policy" element={<AppPrivacyPage />} />
               <Route path="delete-account" element={<DeleteAccountPage />} />
+              <Route
+                path="app-privacy-policy"
+                element={<MovedPage to="/privacy-policy" />}
+              />
+              <Route path="site-rules" element={<MovedPage to="/terms" />} />
             </Route>
             <Route
               path="*"

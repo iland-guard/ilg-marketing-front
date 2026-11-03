@@ -7,18 +7,14 @@ export function Footer() {
   const home = useLangPath('/')
   const privacy = useLangPath('/privacy-policy')
   const terms = useLangPath('/terms')
-  const siteRules = useLangPath('/site-rules')
   const accessibility = useLangPath('/accessibility')
-  const appPrivacy = useLangPath('/app-privacy-policy')
-  const deleteAccount = useLangPath('/delete-account')
 
+  // Account deletion (/delete-account) is linked from the privacy policy and
+  // the app, not the footer; site rules are part of the terms.
   const links = [
     { to: privacy, label: t('footer.privacy') },
     { to: terms, label: t('footer.terms') },
-    { to: siteRules, label: t('footer.siteRules') },
     { to: accessibility, label: t('footer.accessibility') },
-    { to: appPrivacy, label: t('footer.appPrivacy') },
-    { to: deleteAccount, label: t('footer.deleteAccount') },
   ]
 
   return (

@@ -230,11 +230,8 @@
   "footer": {
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
-    "siteRules": "Website‑Regeln",
     "accessibility": "Barrierefreiheitserklärung",
-    "tagline": "Immer wachsam. Nie schlafend.© 2026 Sentra AI. Alle Rechte vorbehalten.",
-    "appPrivacy": "Datenschutzerklärung der App",
-    "deleteAccount": "Kontolöschung"
+    "tagline": "Immer wachsam. Nie schlafend.© 2026 Sentra AI. Alle Rechte vorbehalten."
   },
   "payments": {
     "eyebrow": "DEMNÄCHST",
@@ -246,106 +243,8 @@
     "eyebrow": "RECHTLICHES",
     "back": "Zur Startseite",
     "lastUpdated": "Zuletzt aktualisiert: 3. November 2026",
-    "disclaimer": "Dieses Dokument ist ein Entwurf für Produkt‑ und Marketingzwecke. Es ist keine Rechtsberatung. Lassen Sie es vor der Nutzung von qualifizierter Anwaltschaft prüfen.",
     "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
     "contactEmail": "{{supportEmail}}"
-  },
-  "privacy": {
-    "title": "Datenschutzerklärung",
-    "intro": "Sentra AI („Sentra“, „wir“) bietet KI‑gestützte Sicherheitsanalytik für Kamerasysteme, optionale Telefon‑/Messaging‑Alarme sowie optionales menschliches Monitoring / Live‑Kameraeinsicht für von Ihnen autorisierte Standorte. Diese Erklärung beschreibt, wie wir Daten erheben, nutzen, teilen und schützen, wenn Sie unsere Marketing‑Website, Apps und Dienste nutzen.",
-    "sections": [
-      {
-        "title": "1. Wer wir sind",
-        "paragraphs": [
-          "Verantwortlicher für personenbezogene Daten ist Sentra AI, betrieben von {{company}}. Datenschutzanfragen: {{email}}."
-        ]
-      },
-      {
-        "title": "2. Welche Daten wir erheben",
-        "paragraphs": [
-          "Konto‑ und Kontaktdaten: Name, E‑Mail, Telefon, Firmen‑/Standortdaten und Formularnachrichten.",
-          "Service‑ und Kameradaten: Streams, Schnappschüsse, Ereignismetadaten, Standortkonfiguration, Erkennungsergebnisse und KI‑Analytik.",
-          "Alarm‑ und Kommunikationsdaten: WhatsApp‑/SMS‑/Anrufprotokolle, Benachrichtigungseinstellungen und Notfallkontakte.",
-          "Optionale Human‑Monitoring‑Daten: autorisierte Operatoren können Live‑ oder aufgezeichnetes Material und Ereignisinfos einsehen.",
-          "Zahlungsdaten (wenn aktiv): Rechnungsidentität, Tarif, Rechnungen und Zahlungsstatus über unseren Zahlungsanbieter. Vollständige Kartennummern speichern wir nicht.",
-          "Technische Daten: IP‑Adresse, Gerät/Browser, ungefährer Standort, Cookies und ähnliche Technologien."
-        ]
-      },
-      {
-        "title": "3. Wie wir Daten nutzen",
-        "paragraphs": [
-          "Für KI‑Monitoring, Bedrohungsprüfung, Fehlalarmfilterung und Standortanalytik.",
-          "Für optionale Alarme per Messaging und Telefon gemäß Ihren Regeln.",
-          "Für optionale menschliche Prüfung und Reaktion bei Monitoring‑Abos.",
-          "Zur Beantwortung von Vertriebs‑, Support‑ und Demo‑Anfragen.",
-          "Zur Verarbeitung von Abos und Zahlungen, sobald Checkout verfügbar ist.",
-          "Zur Verbesserung von Sicherheit, Zuverlässigkeit, Betrugsprävention und Produktqualität.",
-          "Zur Einhaltung von Recht und Durchsetzung unserer AGB und Website‑Regeln."
-        ]
-      },
-      {
-        "title": "4. Rechtsgrundlagen",
-        "paragraphs": [
-          "Je nach Standort verarbeiten wir Daten auf Basis Vertragserfüllung, berechtigter Interessen, Einwilligung und gesetzlicher Pflichten."
-        ]
-      },
-      {
-        "title": "5. Weitergabe",
-        "paragraphs": [
-          "Wir geben Daten an Infrastruktur‑, Messaging‑, Analyse‑ und Zahlungsanbieter weiter; an Monitoring‑Partner nur für autorisierte Standorte; und wenn gesetzlich erforderlich.",
-          "Wir verkaufen Ihre personenbezogenen Daten nicht."
-        ]
-      },
-      {
-        "title": "6. SMS und mobile Informationen",
-        "paragraphs": [
-          "Wir verwenden die Mobiltelefonnummer, die Sie in der Sentra AI App eingeben, um Ihr Konto zu identifizieren und Ihnen bei der Registrierung oder Anmeldung Einmal-Bestätigungscodes per SMS zu senden. Wir versenden keine Marketing- oder Werbe-SMS.",
-          "Mobile Informationen werden nicht zu Marketing- oder Werbezwecken an Dritte oder verbundene Unternehmen weitergegeben. Alle oben genannten Kategorien schließen Opt-in-Daten und Einwilligungen des Absenders von Textnachrichten aus; diese Informationen werden an keine Dritten weitergegeben."
-        ]
-      },
-      {
-        "title": "7. Speicherung",
-        "paragraphs": [
-          "Kontaktanfragen speichern wir für einen angemessenen Geschäftzeitraum; Konto‑ und Abrechnungsdaten für die Kontolaufzeit plus gesetzliche Fristen; Kamera‑/Ereignisdaten gemäß Tarif und Betriebsbedarf."
-        ]
-      },
-      {
-        "title": "8. Sicherheit",
-        "paragraphs": [
-          "Wir setzen Maßnahmen ein, die der Sensibilität von Sicherheitsaufnahmen und Kontaktdaten angemessen sind. Keine Methode ist vollständig sicher; Sie bleiben für Kameras, Zugangsdaten und Netze verantwortlich."
-        ]
-      },
-      {
-        "title": "9. Ihre Rechte",
-        "paragraphs": [
-          "Nach geltendem Recht können Sie Auskunft, Berichtigung, Löschung, Einschränkung, Portabilität oder Widerspruch verlangen und Einwilligungen widerrufen. Kontakt: {{email}}."
-        ]
-      },
-      {
-        "title": "10. Cookies",
-        "paragraphs": [
-          "Die Website kann essenzielle Cookies und, wo erlaubt, Analyse‑Cookies nutzen. Nicht essentielle Cookies steuern Sie im Browser."
-        ]
-      },
-      {
-        "title": "11. Internationale Übermittlungen",
-        "paragraphs": [
-          "Daten können außerhalb Ihres Landes verarbeitet werden. Wo erforderlich, nutzen wir geeignete Garantien."
-        ]
-      },
-      {
-        "title": "12. Kinder",
-        "paragraphs": [
-          "Der Dienst richtet sich an Unternehmen und Erwachsene. Wir erheben wissentlich keine Daten von unter 16‑Jährigen ohne passende Autorisierung."
-        ]
-      },
-      {
-        "title": "13. Änderungen",
-        "paragraphs": [
-          "Wir können diese Erklärung aktualisieren. Wesentliche Änderungen werden auf dieser Seite mit aktualisiertem Datum veröffentlicht."
-        ]
-      }
-    ]
   },
   "terms": {
     "title": "Nutzungsbedingungen",
@@ -448,54 +347,17 @@
           "5. Mobilfunkanbieter haften nicht für verzögerte oder nicht zugestellte Nachrichten.",
           "6. Datenschutz: siehe unsere Datenschutzerklärung unter https://www.sentraai.ai/privacy-policy"
         ]
-      }
-    ]
-  },
-  "siteRules": {
-    "title": "Website‑Regeln",
-    "intro": "Diese Regeln gelten für Besucher der Sentra‑AI‑Marketing‑Website. Sie ergänzen die Nutzungsbedingungen und die Datenschutzerklärung.",
-    "sections": [
-      {
-        "title": "1. Zweck der Website",
-        "paragraphs": [
-          "Die Website informiert über Sentra‑AI‑Produkte und ‑Dienste, Demo‑Anfragen, Downloads und (falls verfügbar) Abo‑Käufe."
-        ]
       },
       {
-        "title": "2. Erwartetes Verhalten",
+        "title": "16. Nutzung der Website",
         "paragraphs": [
+          "Die Website informiert über Sentra‑AI‑Produkte und ‑Dienste, Demo‑Anfragen, Downloads und (falls verfügbar) Abo‑Käufe.",
           "Nutzen Sie die Website rechtmäßig und respektvoll. Senden Sie kein Spam, Malware oder missbräuchliche Inhalte.",
-          "Versuchen Sie nicht, die Website zu scannen, zu überlasten oder zu stören."
-        ]
-      },
-      {
-        "title": "3. Geistiges Eigentum",
-        "paragraphs": [
-          "Marken, Logos, Texte, Grafiken, Videos und Software sind geschützt. Kommerzielle Nutzung ohne vorherige schriftliche Erlaubnis ist untersagt."
-        ]
-      },
-      {
-        "title": "4. Formulare",
-        "paragraphs": [
-          "Geben Sie genaue Kontaktdaten an. Einsendungen werden gemäß Datenschutzerklärung verwendet."
-        ]
-      },
-      {
-        "title": "5. Drittanbieter‑Links",
-        "paragraphs": [
-          "Links zu App‑Stores, Videos oder Drittseiten dienen der Bequemlichkeit."
-        ]
-      },
-      {
-        "title": "6. Melden",
-        "paragraphs": [
+          "Versuchen Sie nicht, die Website zu scannen, zu überlasten oder zu stören.",
+          "Marken, Logos, Texte, Grafiken, Videos und Software sind geschützt. Kommerzielle Nutzung ohne vorherige schriftliche Erlaubnis ist untersagt.",
+          "Geben Sie genaue Kontaktdaten an. Einsendungen werden gemäß Datenschutzerklärung verwendet.",
+          "Links zu App‑Stores, Videos oder Drittseiten dienen der Bequemlichkeit.",
           "Melden Sie Missbrauch an {{email}}."
-        ]
-      },
-      {
-        "title": "7. Durchsetzung",
-        "paragraphs": [
-          "Wir können den Zugang sperren oder andere geeignete Maßnahmen ergreifen."
         ]
       }
     ]

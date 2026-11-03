@@ -230,11 +230,8 @@
   "footer": {
     "privacy": "Política de Privacidade",
     "terms": "Termos de Uso",
-    "siteRules": "Regras do Site",
     "accessibility": "Declaração de Acessibilidade",
-    "tagline": "Sempre vigiando. Nunca dormindo.© 2026 Sentra AI. Todos os direitos reservados.",
-    "appPrivacy": "Política de Privacidade do App",
-    "deleteAccount": "Exclusão de Conta"
+    "tagline": "Sempre vigiando. Nunca dormindo.© 2026 Sentra AI. Todos os direitos reservados."
   },
   "payments": {
     "eyebrow": "EM BREVE",
@@ -246,106 +243,8 @@
     "eyebrow": "JURÍDICO",
     "back": "Voltar ao início",
     "lastUpdated": "Última atualização: 3 de novembro de 2026",
-    "disclaimer": "Este documento é um rascunho para uso de produto e marketing. Não é aconselhamento jurídico. Faça-o revisar por um advogado qualificado antes de confiar nele.",
     "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
     "contactEmail": "{{supportEmail}}"
-  },
-  "privacy": {
-    "title": "Política de Privacidade",
-    "intro": "A Sentra AI (“Sentra”, “nós”) oferece analítica de segurança assistida por IA para sistemas de câmeras, alertas opcionais por telefone/mensagens e monitoramento humano / visualização ao vivo opcional para locais que você autorizar. Esta Política explica como coletamos, usamos, compartilhamos e protegemos dados ao usar nosso site de marketing, apps e serviços.",
-    "sections": [
-      {
-        "title": "1. Quem somos",
-        "paragraphs": [
-          "O controlador de dados pessoais deste site e serviços relacionados é a Sentra AI, operada por {{company}}. Para privacidade: {{email}}."
-        ]
-      },
-      {
-        "title": "2. Dados que coletamos",
-        "paragraphs": [
-          "Dados de conta e contato: nome, e-mail, telefone, detalhes da empresa/local e mensagens de formulários.",
-          "Dados de serviço e câmeras: streams, capturas, metadados de eventos, configuração do local, detecções e analítica gerada pela IA.",
-          "Dados de alertas e comunicação: logs de WhatsApp/SMS/chamadas, preferências e contatos de emergência.",
-          "Dados de monitoramento humano opcional: operadores autorizados podem ver live ou gravações e informações do evento.",
-          "Dados de pagamento (quando ativos): identidade de cobrança, plano, faturas e status processados pelo provedor de pagamento. Não armazenamos números completos de cartão.",
-          "Dados técnicos: IP, dispositivo/navegador, localização aproximada, cookies e tecnologias semelhantes."
-        ]
-      },
-      {
-        "title": "3. Como usamos os dados",
-        "paragraphs": [
-          "Para fornecer monitoramento por IA, verificação de ameaças, filtragem de falsos alarmes e analítica do local.",
-          "Para enviar alertas opcionais por mensagens e telefone conforme suas regras.",
-          "Para habilitar revisão humana e resposta opcional se você assinar o monitoramento.",
-          "Para responder a solicitações de vendas, suporte e demos.",
-          "Para processar assinaturas e pagamentos quando o checkout estiver disponível.",
-          "Para melhorar segurança, confiabilidade, prevenção de fraude e qualidade do produto.",
-          "Para cumprir a lei e aplicar nossos Termos e Regras do Site."
-        ]
-      },
-      {
-        "title": "4. Bases legais",
-        "paragraphs": [
-          "Dependendo da sua localização, processamos dados com base em contrato, interesses legítimos, consentimento e obrigações legais."
-        ]
-      },
-      {
-        "title": "5. Compartilhamento",
-        "paragraphs": [
-          "Compartilhamos dados com provedores de infraestrutura, mensagens, analítica e pagamento; com parceiros de monitoramento apenas para locais autorizados; e quando exigido por lei.",
-          "Não vendemos seus dados pessoais."
-        ]
-      },
-      {
-        "title": "6. SMS e informações de celular",
-        "paragraphs": [
-          "Usamos o número de celular que você informa no aplicativo Sentra AI para identificar sua conta e para enviar a você códigos de verificação de uso único por SMS quando você se cadastra ou faz login. Não enviamos SMS de marketing ou promocionais.",
-          "Nenhuma informação de celular será compartilhada com terceiros ou afiliadas para fins de marketing ou promocionais. Todas as categorias acima excluem os dados e o consentimento de opt-in do remetente de mensagens de texto; essas informações não serão compartilhadas com nenhum terceiro."
-        ]
-      },
-      {
-        "title": "7. Retenção",
-        "paragraphs": [
-          "Retemos consultas por um período comercial razoável; contas e cobrança pela vida da conta mais prazos legais; e dados de câmera/evento conforme seu plano e necessidades operacionais."
-        ]
-      },
-      {
-        "title": "8. Segurança",
-        "paragraphs": [
-          "Usamos medidas adequadas à sensibilidade de filmagens de segurança e dados de contato. Nenhum método é totalmente seguro; você permanece responsável por câmeras, credenciais e redes."
-        ]
-      },
-      {
-        "title": "9. Seus direitos",
-        "paragraphs": [
-          "Sujeito à lei aplicável, você pode solicitar acesso, correção, exclusão, restrição, portabilidade ou oposição, e retirar o consentimento. Contate {{email}}."
-        ]
-      },
-      {
-        "title": "10. Cookies",
-        "paragraphs": [
-          "O site pode usar cookies essenciais e, quando permitido, cookies de analítica. Você pode controlar os não essenciais no navegador."
-        ]
-      },
-      {
-        "title": "11. Transferências internacionais",
-        "paragraphs": [
-          "Os dados podem ser processados fora do seu país. Quando necessário, usamos salvaguardas adequadas."
-        ]
-      },
-      {
-        "title": "12. Crianças",
-        "paragraphs": [
-          "O serviço destina-se a empresas e adultos. Não coletamos conscientemente dados de menores de 16 anos sem autorização adequada."
-        ]
-      },
-      {
-        "title": "13. Alterações",
-        "paragraphs": [
-          "Podemos atualizar esta Política. Alterações materiais serão publicadas nesta página com data atualizada."
-        ]
-      }
-    ]
   },
   "terms": {
     "title": "Termos de Uso",
@@ -448,54 +347,17 @@
           "5. As operadoras não se responsabilizam por mensagens atrasadas ou não entregues.",
           "6. Privacidade: consulte nossa Política de Privacidade em https://www.sentraai.ai/privacy-policy"
         ]
-      }
-    ]
-  },
-  "siteRules": {
-    "title": "Regras do Site",
-    "intro": "Estas Regras aplicam-se a visitantes do site de marketing da Sentra AI. Complementam os Termos de Uso e a Política de Privacidade.",
-    "sections": [
-      {
-        "title": "1. Finalidade do site",
-        "paragraphs": [
-          "Este site informa sobre produtos e serviços Sentra AI, solicitações de demo, downloads e (quando disponível) compra de assinatura."
-        ]
       },
       {
-        "title": "2. Conduta esperada",
+        "title": "16. Uso do site",
         "paragraphs": [
+          "Este site informa sobre produtos e serviços Sentra AI, solicitações de demo, downloads e (quando disponível) compra de assinatura.",
           "Use o site de forma legal e respeitosa. Não envie spam, malware ou conteúdo abusivo.",
-          "Não tente sondar, sobrecarregar ou interromper o site."
-        ]
-      },
-      {
-        "title": "3. Propriedade intelectual",
-        "paragraphs": [
-          "Marcas, logos, textos, gráficos, vídeos e software são protegidos. É proibida exploração comercial sem permissão escrita prévia."
-        ]
-      },
-      {
-        "title": "4. Formulários",
-        "paragraphs": [
-          "Forneça dados de contato precisos. Os envios são usados conforme a Política de Privacidade."
-        ]
-      },
-      {
-        "title": "5. Links de terceiros",
-        "paragraphs": [
-          "Links para lojas de apps, vídeos ou sites de terceiros são fornecidos por conveniência."
-        ]
-      },
-      {
-        "title": "6. Relatos",
-        "paragraphs": [
+          "Não tente sondar, sobrecarregar ou interromper o site.",
+          "Marcas, logos, textos, gráficos, vídeos e software são protegidos. É proibida exploração comercial sem permissão escrita prévia.",
+          "Forneça dados de contato precisos. Os envios são usados conforme a Política de Privacidade.",
+          "Links para lojas de apps, vídeos ou sites de terceiros são fornecidos por conveniência.",
           "Relate uso indevido para {{email}}."
-        ]
-      },
-      {
-        "title": "7. Aplicação",
-        "paragraphs": [
-          "Podemos bloquear o acesso ou tomar outras medidas adequadas em caso de violação."
         ]
       }
     ]
