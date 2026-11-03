@@ -12,6 +12,7 @@
     "categoriesLabel": "Data category summary",
     "categories": [
       "Account",
+      "Profile / Address",
       "Authentication",
       "Email",
       "Phone Sign-In (SMS)",
@@ -55,14 +56,16 @@
           {
             "ul": [
               "<b>Account and login data:</b> email address and/or mobile phone number (depending on how you sign up), account identifiers, display name, organization/account ID, and sign-in/session information. The app also uses email for password reset flows. You can add an email address to an account created with a phone number, or a sign-in phone number to an account created with an email address; each addition is confirmed with a verification code.",
+              "<b>Profile details:</b> when you complete your profile, we collect your city and street address, a contact phone number and your time zone, to identify the protected site and support our service.",
               "<b>Phone number for sign-in (SMS):</b> if you sign up or sign in with a mobile phone number, we collect that number as your account identifier and send a one-time verification code to it by SMS. SMS sign-in is available only in supported countries. If you sign up with a phone number and do not provide a name, your phone number is used as your display name until you add one. Your display name is visible to support personnel who serve your account and may appear in the names of WhatsApp alert groups. Signing in by SMS does not link WhatsApp: WhatsApp alerts are sent only after you separately verify a number for WhatsApp, as described below.",
               "<b>Authentication and session data:</b> authentication identifiers, session tokens, and related session state needed to keep users signed in securely.",
-              "<b>Phone and WhatsApp data:</b> a phone number if you choose to link WhatsApp for alerts, and related verification status. We may prompt you once, after your first sign-in, to link a WhatsApp number. You can skip this, and verification only proceeds if you choose to send the verification message. All WhatsApp usage is opt-in. The user connects a verified phone number, and notifications are sent only to that number. We do not access WhatsApp messages or chat content.",
+              "<b>Phone and WhatsApp data:</b> a phone number if you choose to link WhatsApp for alerts, and related verification status. We may prompt you once, after your first sign-in, to link a WhatsApp number. You can skip this, and verification only proceeds if you choose to send the verification message. All WhatsApp usage is opt-in. After verification, critical alerts, including images and video clips, are sent to the WhatsApp group set up for your account. The group includes the verified number and any other members you add yourself or ask us to add. We do not access your private WhatsApp conversations; we only see messages in your alert group and messages you send to our support number.",
               "<b>Camera and NVR connection data:</b> NVR/site names, manufacturer, model, serial number, device type, IP address, secondary IP address when provided, HTTP/RTSP ports, device username and password required to connect to the NVR, channels, interested channels, linked camera IDs, camera names, camera type, device/network/access/alert status, organization ID, client ID, and setup draft progress. This information is provided by the user or account administrator and is used to connect, validate, and operate supported NVR and camera services.",
               "<b>Alert, detection, and configuration data:</b> notification and event records, alert messages, event times, NVR event times, severity/status, viewed/resolved metadata, detection classes, selected detection class IDs, confidence values, bounding boxes, tags, mute state, temporary inactive periods, weekly mute schedules, time zones, and camera mask polygons or regions configured by the customer.",
+              "<b>Alert verification by our team:</b> trained operators may review an alert's images and video clips to confirm that it is a real event. Access is limited to authorized staff.",
               "<b>Camera images, snapshots, and event media:</b> the app can load and display camera preview image URLs and last-snapshot URLs returned by the backend. Notification and event records also include snapshot image IDs, temporary image URLs, and event/video media identifiers where available. The app does not request access to the phone microphone or contacts. Device camera and photo library access is requested only when you choose to use them — to photograph or select an image while adding an NVR (see <nvrImage>Image Processing During NVR Setup</nvrImage>), or to save or share an alert image or video from the app. Except for images you supply during NVR setup, all media is provided by customer-owned NVR systems and is not captured by the mobile device.",
               "<b>Images you provide during NVR setup:</b> if you choose to add an NVR from a photo, we collect the image you capture or select and the connection details extracted from it (IP address, port, NVR username, and NVR password). See <nvrImage>Image Processing During NVR Setup</nvrImage>.",
-              "<b>Contact details you provide about others:</b> if you add emergency or notification contacts, you provide their name, phone number and email address. You are responsible for ensuring you may share their details with us. We use this information only to deliver alerts you have configured.",
+              "<b>Contact details you provide about others:</b> if you add emergency or notification contacts, you provide their name, phone number and email address. You are responsible for ensuring you may share their details with us. We use this information only to deliver alerts you have configured, including automated voice calls to your emergency contacts for critical alerts.",
               "<b>Support chat data:</b> if you use the in-app AI support assistant, we process the messages you write, the history of the current conversation, and the account information needed to answer you. See <supportChat>AI Support Chat</supportChat>.",
               "<b>Operational and diagnostic data:</b> diagnostic and operational logs may be collected to maintain, secure, and improve the service.",
               {
@@ -70,7 +73,8 @@
                 "ul": [
                   "<b>Usage and interaction data</b> — such as sessions, screens or features viewed, actions taken in the app, and app open, install, or update events.",
                   "<b>Technical and device data</b> — such as device model, operating system version, app version, language, and approximate location derived from IP address (country or region level).",
-                  "<b>Identifiers</b> — analytics events are associated with your account identifier and with a randomly generated installation identifier. Events sent to PostHog are also associated with a randomly generated device identifier and with your device's push notification token, so that different devices using the same account can be told apart. We do not send your name, email address, phone number, camera imagery, or device credentials to our analytics provider."
+                  "<b>Identifiers</b> — analytics events are associated with your account identifier and with a randomly generated installation identifier. Events sent to PostHog are also associated with a randomly generated device identifier and with your device's push notification token, so that different devices using the same account can be told apart. We do not send your name, email address, phone number, camera imagery, or device credentials to our analytics provider.",
+                  "<b>Error reports</b> — such as the error name, a cleaned-up error message and the screen where it occurred, sent to PostHog to help us fix problems."
                 ],
                 "after": "The specific events we measure may change over time as we improve the app. We do not use advertising identifiers, and we do not use your data for advertising or cross-app tracking."
               }
@@ -128,6 +132,7 @@
           {
             "ul": [
               "<b>Account information:</b> email address and/or phone number, account/user IDs, display name, organization ID. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Profile details:</b> city and street address, contact phone number and time zone. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
               "<b>Phone number:</b> if you sign up or sign in with a phone number (as your account identifier and for SMS verification codes), or if you choose to use WhatsApp verification. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
               "<b>Camera and NVR configuration:</b> connection and configuration information for supported devices. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
               "<b>Snapshots and media:</b> preview images, snapshots, and related event media where applicable. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
@@ -135,7 +140,7 @@
               "<b>Support chat messages:</b> messages you write to the in-app AI support assistant, processed to answer your request. This information is used for app functionality and customer support and transmitted securely using HTTPS/TLS.",
               "<b>App interactions and settings:</b> app usage and user-configured settings. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
               "<b>Operational and diagnostic data:</b> logs used for service maintenance, reliability, and security. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
-              "<b>Analytics / app usage data:</b> app usage and interaction data, technical and device information, your account identifier, randomly generated installation and device identifiers, and (for PostHog) your device's push notification token. This information is used for analytics, is transmitted securely using HTTPS/TLS, and is not used for advertising or cross-app tracking."
+              "<b>Analytics / app usage data:</b> app usage and interaction data, error reports, technical and device information, your account identifier, randomly generated installation and device identifiers, and (for PostHog) your device's push notification token. This information is used for analytics, is transmitted securely using HTTPS/TLS, and is not used for advertising or cross-app tracking."
             ]
           },
           {
@@ -158,12 +163,15 @@
               "Connect, scan, activate, sync, and manage NVRs and related camera channels.",
               "Save customer configuration choices, including linked cameras, interested channels, detection classes, camera masks, mute schedules, temporary mute windows, and NVR setup drafts.",
               "List and display notifications, alerts, event records, snapshots, and available event media.",
-              "Send WhatsApp alert notifications to a number you choose to verify through an optional, user-initiated process.",
+              "Send critical alerts by WhatsApp to the WhatsApp group set up for your account, after you verify a number through an optional, user-initiated process.",
+              "Place automated voice calls to your emergency contacts when a critical alert occurs.",
+              "Have trained operators review an alert's images and video clips to confirm that it is a real event.",
               "Operate, secure, troubleshoot, and improve the reliability of the app and supporting services.",
               "Measure aggregated app usage, feature adoption, stability, and performance through analytics services, so we can fix problems and improve the app experience.",
               "Extract NVR connection details from an image you choose to provide during NVR setup, so you do not have to type them manually.",
               "Respond to support inquiries, including NVR setup and connection diagnostics submitted by the customer.",
-              "Answer your questions and carry out actions you request through the in-app AI support assistant."
+              "Answer your questions and carry out actions you request through the in-app AI support assistant.",
+              "Respond to contact requests submitted through our website."
             ]
           }
         ]
@@ -179,7 +187,10 @@
             "ul": [
               "<b>Amazon Web Services (Cognito and SNS):</b> used for sign-in, password reset, SMS verification, and session management. When you reset your password, your email address, verification code, and new password are sent directly from the app to AWS. When you sign in with a phone number, your phone number and verification code are sent to AWS, and the code is delivered to your phone by SMS through Amazon SNS. Processed in AWS region il-central-1 (Israel).",
               "<b>Sentra AI backend API</b> (<backend>backend.x-sentral.com</backend>): processes customer profile, camera, NVR, notification, schedule, detection, mask, event, WhatsApp-linking, support chat, and related operational data as described in this policy.",
-              "<b>WhatsApp:</b> used as an opt-in notification delivery channel for messages sent to a user-verified phone number.",
+              "<b>WhatsApp (via Green-API):</b> an opt-in delivery channel for critical alerts. Alerts, images and video clips are delivered to your account's WhatsApp group through Green-API, our WhatsApp messaging provider.",
+              "<b>Twilio (USA):</b> if you add emergency contacts, critical alerts may trigger automated voice calls to them through Twilio. Twilio is also used to send SMS verification codes when you verify a phone number in our web app.",
+              "<b>Meta (WhatsApp Business Platform):</b> used for our WhatsApp support line and to process contact requests submitted through our website.",
+              "<b>Amazon Location Service (EU, Frankfurt):</b> address lookups made by our team when setting up a site.",
               "<b>Cloud storage and media services:</b> camera snapshots, preview URLs, temporary media URLs, and event media files may be stored in or served from cloud infrastructure used by the Sentra AI platform.",
               "<b>NVR and camera integration services:</b> camera and NVR connection details are processed by backend services that connect to your NVR device to retrieve device status, channel lists, snapshots, and alert data.",
               "<b>Google Gemini API:</b> if you add an NVR from an image, that image is sent to the Google Gemini API to identify the connection details it contains. If you use the in-app AI support assistant, your messages and related account information are sent to the Google Gemini API to generate replies (see <supportChat>AI Support Chat</supportChat>). Under Google's paid services terms, this data is not used to train Google's models. See the <google>Google Privacy Policy</google>.",
@@ -188,7 +199,7 @@
             ]
           },
           {
-            "p": "Data may be processed in countries where these service providers operate. Where applicable laws require safeguards for international data transfers, we rely on contractual and organizational measures consistent with those requirements."
+            "p": "Data may be processed in countries where these service providers operate, including Israel (AWS il-central-1), the European Union (PostHog, Amazon Location Service) and the United States (Google, Twilio, Meta). Where applicable laws require safeguards for international data transfers, we rely on contractual and organizational measures consistent with those requirements."
           }
         ]
       },
@@ -197,10 +208,19 @@
         "title": "SMS and mobile information",
         "blocks": [
           {
-            "p": "We use the mobile phone number you enter in the Sentra AI app only to send you one-time verification codes by SMS when you sign up or sign in."
+            "p": "We use the mobile phone number you enter in the Sentra AI app to identify your account and to send you one-time verification codes by SMS when you sign up or sign in. We do not send marketing or promotional SMS."
           },
           {
             "p": "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
+          }
+        ]
+      },
+      {
+        "id": "website",
+        "title": "Our Website",
+        "blocks": [
+          {
+            "p": "When you submit the contact form on sentraai.ai, we collect your name, email, phone number, message and language. We store the request, notify our team via WhatsApp, and may send you a WhatsApp message to follow up. Contact requests are kept until you ask us to delete them."
           }
         ]
       },

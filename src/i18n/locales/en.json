@@ -299,7 +299,7 @@
       {
         "title": "6. SMS and mobile information",
         "paragraphs": [
-          "We use the mobile phone number you enter in the Sentra AI app only to send you one-time verification codes by SMS when you sign up or sign in.",
+          "We use the mobile phone number you enter in the Sentra AI app to identify your account and to send you one-time verification codes by SMS when you sign up or sign in. We do not send marketing or promotional SMS.",
           "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
         ]
       },

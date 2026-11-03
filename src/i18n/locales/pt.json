@@ -299,7 +299,7 @@
       {
         "title": "6. SMS e informações de celular",
         "paragraphs": [
-          "Usamos o número de celular que você informa no aplicativo Sentra AI apenas para enviar a você códigos de verificação de uso único por SMS quando você se cadastra ou faz login.",
+          "Usamos o número de celular que você informa no aplicativo Sentra AI para identificar sua conta e para enviar a você códigos de verificação de uso único por SMS quando você se cadastra ou faz login. Não enviamos SMS de marketing ou promocionais.",
           "Nenhuma informação de celular será compartilhada com terceiros ou afiliadas para fins de marketing ou promocionais. Todas as categorias acima excluem os dados e o consentimento de opt-in do remetente de mensagens de texto; essas informações não serão compartilhadas com nenhum terceiro."
         ]
       },

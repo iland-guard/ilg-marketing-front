@@ -299,7 +299,7 @@
       {
         "title": "6. SMS et informations mobiles",
         "paragraphs": [
-          "Nous utilisons le numéro de téléphone mobile que vous saisissez dans l’application Sentra AI uniquement pour vous envoyer par SMS des codes de vérification à usage unique lors de votre inscription ou de votre connexion.",
+          "Nous utilisons le numéro de téléphone mobile que vous saisissez dans l’application Sentra AI pour identifier votre compte et pour vous envoyer par SMS des codes de vérification à usage unique lors de votre inscription ou de votre connexion. Nous n’envoyons pas de SMS marketing ou promotionnels.",
           "Aucune information mobile ne sera partagée avec des tiers ou des sociétés affiliées à des fins de marketing ou de promotion. Toutes les catégories ci-dessus excluent les données d’opt-in et le consentement de l’expéditeur des messages texte ; ces informations ne seront partagées avec aucun tiers."
         ]
       },

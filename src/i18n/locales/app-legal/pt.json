@@ -12,6 +12,7 @@
     "categoriesLabel": "Resumo das categorias de dados",
     "categories": [
       "Conta",
+      "Perfil / Endereço",
       "Autenticação",
       "E-mail",
       "Login por telefone (SMS)",
@@ -55,14 +56,16 @@
           {
             "ul": [
               "<b>Dados de conta e de login:</b> endereço de e-mail e/ou número de celular (dependendo de como você se cadastra), identificadores de conta, nome de exibição, ID da organização/conta e informações de login/sessão. O aplicativo também usa o e-mail nos fluxos de redefinição de senha. Você pode adicionar um endereço de e-mail a uma conta criada com um número de telefone, ou um número de telefone para login a uma conta criada com um endereço de e-mail; cada adição é confirmada com um código de verificação.",
+              "<b>Dados do perfil:</b> quando você completa seu perfil, coletamos sua cidade e seu endereço, um número de telefone de contato e seu fuso horário, para identificar o local protegido e dar suporte ao nosso serviço.",
               "<b>Número de telefone para login (SMS):</b> se você se cadastrar ou fizer login com um número de celular, coletamos esse número como seu identificador de conta e enviamos a ele um código de verificação de uso único por SMS. O login por SMS está disponível apenas em países compatíveis. Se você se cadastrar com um número de telefone e não informar um nome, seu número de telefone será usado como seu nome de exibição até que você adicione um. Seu nome de exibição é visível para a equipe de suporte que atende sua conta e pode aparecer nos nomes de grupos de alerta do WhatsApp. O login por SMS não vincula o WhatsApp: os alertas do WhatsApp são enviados somente depois que você verificar separadamente um número para o WhatsApp, conforme descrito abaixo.",
               "<b>Dados de autenticação e de sessão:</b> identificadores de autenticação, tokens de sessão e o estado de sessão relacionado, necessários para manter os usuários conectados com segurança.",
-              "<b>Dados de telefone e do WhatsApp:</b> um número de telefone, caso você opte por vincular o WhatsApp para alertas, e o respectivo status de verificação. Podemos solicitar uma única vez, após seu primeiro login, que você vincule um número de WhatsApp. Você pode pular essa etapa, e a verificação só prossegue se você optar por enviar a mensagem de verificação. Todo o uso do WhatsApp depende de adesão voluntária (opt-in). O usuário conecta um número de telefone verificado, e as notificações são enviadas somente para esse número. Não acessamos mensagens nem conteúdo de conversas do WhatsApp.",
+              "<b>Dados de telefone e do WhatsApp:</b> um número de telefone, caso você opte por vincular o WhatsApp para alertas, e o respectivo status de verificação. Podemos solicitar uma única vez, após seu primeiro login, que você vincule um número de WhatsApp. Você pode pular essa etapa, e a verificação só prossegue se você optar por enviar a mensagem de verificação. Todo o uso do WhatsApp depende de adesão voluntária (opt-in). Após a verificação, os alertas críticos, incluindo imagens e clipes de vídeo, são enviados ao grupo do WhatsApp configurado para a sua conta. O grupo inclui o número verificado e quaisquer outros membros que você mesmo adicionar ou nos pedir para adicionar. Não acessamos suas conversas privadas do WhatsApp; vemos somente as mensagens no seu grupo de alerta e as mensagens que você envia ao nosso número de suporte.",
               "<b>Dados de conexão de câmeras e NVR:</b> nomes de NVR/local, fabricante, modelo, número de série, tipo de dispositivo, endereço IP, endereço IP secundário (quando fornecido), portas HTTP/RTSP, nome de usuário e senha do dispositivo necessários para conectar ao NVR, canais, canais de interesse, IDs de câmeras vinculadas, nomes de câmeras, tipo de câmera, status do dispositivo/rede/acesso/alerta, ID da organização, ID do cliente e progresso de rascunhos de configuração. Essas informações são fornecidas pelo usuário ou pelo administrador da conta e são usadas para conectar, validar e operar os serviços de NVR e de câmeras compatíveis.",
               "<b>Dados de alertas, detecção e configuração:</b> registros de notificações e eventos, mensagens de alerta, horários de eventos, horários de eventos do NVR, gravidade/status, metadados de visualização/resolução, classes de detecção, IDs das classes de detecção selecionadas, valores de confiança, caixas delimitadoras, tags, estado de silenciamento, períodos temporários de inatividade, agendamentos semanais de silenciamento, fusos horários e polígonos ou regiões de máscara de câmera configurados pelo cliente.",
+              "<b>Verificação de alertas pela nossa equipe:</b> operadores treinados podem analisar as imagens e os clipes de vídeo de um alerta para confirmar que se trata de um evento real. O acesso é limitado à equipe autorizada.",
               "<b>Imagens de câmeras, snapshots e mídia de eventos:</b> o aplicativo pode carregar e exibir URLs de imagens de pré-visualização das câmeras e URLs do último snapshot retornados pelo backend. Os registros de notificações e eventos também incluem, quando disponíveis, IDs de imagens de snapshot, URLs temporárias de imagens e identificadores de mídia de eventos/vídeo. O aplicativo não solicita acesso ao microfone nem aos contatos do telefone. O acesso à câmera do dispositivo e à galeria de fotos é solicitado somente quando você opta por usá-los — para fotografar ou selecionar uma imagem ao adicionar um NVR (consulte <nvrImage>Processamento de Imagens Durante a Configuração do NVR</nvrImage>) ou para salvar ou compartilhar uma imagem ou um vídeo de alerta a partir do aplicativo. Com exceção das imagens que você fornece durante a configuração do NVR, todas as mídias são fornecidas por sistemas NVR de propriedade do cliente e não são capturadas pelo dispositivo móvel.",
               "<b>Imagens que você fornece durante a configuração do NVR:</b> se você optar por adicionar um NVR a partir de uma foto, coletamos a imagem que você captura ou seleciona e os dados de conexão extraídos dela (endereço IP, porta, nome de usuário do NVR e senha do NVR). Consulte <nvrImage>Processamento de Imagens Durante a Configuração do NVR</nvrImage>.",
-              "<b>Dados de contato que você fornece sobre outras pessoas:</b> se você adicionar contatos de emergência ou de notificação, você fornece o nome, o número de telefone e o endereço de e-mail dessas pessoas. Você é responsável por garantir que pode compartilhar os dados delas conosco. Usamos essas informações somente para entregar os alertas que você configurou.",
+              "<b>Dados de contato que você fornece sobre outras pessoas:</b> se você adicionar contatos de emergência ou de notificação, você fornece o nome, o número de telefone e o endereço de e-mail dessas pessoas. Você é responsável por garantir que pode compartilhar os dados delas conosco. Usamos essas informações somente para entregar os alertas que você configurou, incluindo chamadas de voz automatizadas para seus contatos de emergência em caso de alertas críticos.",
               "<b>Dados do chat de suporte:</b> se você usar o assistente de suporte com IA no aplicativo, processamos as mensagens que você escreve, o histórico da conversa atual e as informações da conta necessárias para responder a você. Consulte <supportChat>Chat de Suporte com IA</supportChat>.",
               "<b>Dados operacionais e de diagnóstico:</b> registros (logs) operacionais e de diagnóstico podem ser coletados para manter, proteger e aprimorar o serviço.",
               {
@@ -70,7 +73,8 @@
                 "ul": [
                   "<b>Dados de uso e de interação</b> — como sessões, telas ou recursos visualizados, ações realizadas no aplicativo e eventos de abertura, instalação ou atualização do aplicativo.",
                   "<b>Dados técnicos e do dispositivo</b> — como modelo do dispositivo, versão do sistema operacional, versão do aplicativo, idioma e localização aproximada derivada do endereço IP (em nível de país ou região).",
-                  "<b>Identificadores</b> — os eventos de análise são associados ao seu identificador de conta e a um identificador de instalação gerado aleatoriamente. Os eventos enviados ao PostHog também são associados a um identificador de dispositivo gerado aleatoriamente e ao token de notificações push do seu dispositivo, para que diferentes dispositivos que usam a mesma conta possam ser diferenciados. Não enviamos seu nome, endereço de e-mail, número de telefone, imagens de câmeras nem credenciais de dispositivos ao nosso provedor de análise."
+                  "<b>Identificadores</b> — os eventos de análise são associados ao seu identificador de conta e a um identificador de instalação gerado aleatoriamente. Os eventos enviados ao PostHog também são associados a um identificador de dispositivo gerado aleatoriamente e ao token de notificações push do seu dispositivo, para que diferentes dispositivos que usam a mesma conta possam ser diferenciados. Não enviamos seu nome, endereço de e-mail, número de telefone, imagens de câmeras nem credenciais de dispositivos ao nosso provedor de análise.",
+                  "<b>Relatórios de erros</b> — como o nome do erro, uma versão limpa da mensagem de erro e a tela em que o erro ocorreu, enviados ao PostHog para nos ajudar a corrigir problemas."
                 ],
                 "after": "Os eventos específicos que medimos podem mudar ao longo do tempo, à medida que aprimoramos o aplicativo. Não usamos identificadores de publicidade e não usamos seus dados para publicidade nem para rastreamento entre aplicativos."
               }
@@ -128,6 +132,7 @@
           {
             "ul": [
               "<b>Informações da conta:</b> endereço de e-mail e/ou número de telefone, IDs de conta/usuário, nome de exibição, ID da organização. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
+              "<b>Dados do perfil:</b> cidade e endereço, número de telefone de contato e fuso horário. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
               "<b>Número de telefone:</b> se você se cadastrar ou fizer login com um número de telefone (como seu identificador de conta e para códigos de verificação por SMS), ou se optar por usar a verificação do WhatsApp. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
               "<b>Configuração de câmeras e NVR:</b> informações de conexão e configuração de dispositivos compatíveis. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
               "<b>Snapshots e mídia:</b> imagens de pré-visualização, snapshots e mídia de eventos relacionada, quando aplicável. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
@@ -135,7 +140,7 @@
               "<b>Mensagens do chat de suporte:</b> mensagens que você escreve ao assistente de suporte com IA no aplicativo, processadas para responder à sua solicitação. Essas informações são usadas para a funcionalidade do aplicativo e para o suporte ao cliente e transmitidas com segurança por HTTPS/TLS.",
               "<b>Interações e configurações do aplicativo:</b> uso do aplicativo e configurações definidas pelo usuário. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
               "<b>Dados operacionais e de diagnóstico:</b> registros usados para manutenção, confiabilidade e segurança do serviço. Essas informações são usadas para a funcionalidade do aplicativo e transmitidas com segurança por HTTPS/TLS.",
-              "<b>Dados de análise / uso do aplicativo:</b> dados de uso e de interação com o aplicativo, informações técnicas e do dispositivo, seu identificador de conta, identificadores de instalação e de dispositivo gerados aleatoriamente e (para o PostHog) o token de notificações push do seu dispositivo. Essas informações são usadas para análise, transmitidas com segurança por HTTPS/TLS e não são usadas para publicidade nem para rastreamento entre aplicativos."
+              "<b>Dados de análise / uso do aplicativo:</b> dados de uso e de interação com o aplicativo, relatórios de erros, informações técnicas e do dispositivo, seu identificador de conta, identificadores de instalação e de dispositivo gerados aleatoriamente e (para o PostHog) o token de notificações push do seu dispositivo. Essas informações são usadas para análise, transmitidas com segurança por HTTPS/TLS e não são usadas para publicidade nem para rastreamento entre aplicativos."
             ]
           },
           {
@@ -158,12 +163,15 @@
               "Conectar, escanear, ativar, sincronizar e gerenciar NVRs e os respectivos canais de câmera.",
               "Salvar as escolhas de configuração do cliente, incluindo câmeras vinculadas, canais de interesse, classes de detecção, máscaras de câmera, agendamentos de silenciamento, períodos temporários de silenciamento e rascunhos de configuração do NVR.",
               "Listar e exibir notificações, alertas, registros de eventos, snapshots e mídia de eventos disponível.",
-              "Enviar notificações de alerta pelo WhatsApp para um número que você opte por verificar por meio de um processo opcional iniciado pelo usuário.",
+              "Enviar alertas críticos pelo WhatsApp ao grupo do WhatsApp configurado para a sua conta, depois que você verificar um número por meio de um processo opcional iniciado pelo usuário.",
+              "Fazer chamadas de voz automatizadas para seus contatos de emergência quando ocorrer um alerta crítico.",
+              "Fazer com que operadores treinados analisem as imagens e os clipes de vídeo de um alerta para confirmar que se trata de um evento real.",
               "Operar e proteger o aplicativo e os serviços de suporte, solucionar problemas e aprimorar sua confiabilidade.",
               "Medir, por meio de serviços de análise, o uso agregado do aplicativo, a adoção de recursos, a estabilidade e o desempenho, para que possamos corrigir problemas e aprimorar a experiência do aplicativo.",
               "Extrair os dados de conexão do NVR de uma imagem que você opte por fornecer durante a configuração do NVR, para que você não precise digitá-los manualmente.",
               "Responder a solicitações de suporte, incluindo diagnósticos de configuração e de conexão do NVR enviados pelo cliente.",
-              "Responder às suas perguntas e executar ações que você solicitar por meio do assistente de suporte com IA no aplicativo."
+              "Responder às suas perguntas e executar ações que você solicitar por meio do assistente de suporte com IA no aplicativo.",
+              "Responder a solicitações de contato enviadas pelo nosso site."
             ]
           }
         ]
@@ -179,7 +187,10 @@
             "ul": [
               "<b>Amazon Web Services (Cognito e SNS):</b> usados para login, redefinição de senha, verificação por SMS e gerenciamento de sessões. Quando você redefine sua senha, seu endereço de e-mail, o código de verificação e a nova senha são enviados diretamente do aplicativo para a AWS. Quando você faz login com um número de telefone, seu número de telefone e o código de verificação são enviados para a AWS, e o código é entregue no seu telefone por SMS por meio do Amazon SNS. Processados na região il-central-1 da AWS (Israel).",
               "<b>API de backend da Sentra AI</b> (<backend>backend.x-sentral.com</backend>): processa dados de perfil do cliente, câmeras, NVR, notificações, agendamentos, detecção, máscaras, eventos, vinculação do WhatsApp, chat de suporte e dados operacionais relacionados, conforme descrito nesta política.",
-              "<b>WhatsApp:</b> usado como canal opcional (opt-in) de entrega de notificações para mensagens enviadas a um número de telefone verificado pelo usuário.",
+              "<b>WhatsApp (via Green-API):</b> um canal opcional (opt-in) de entrega de alertas críticos. Os alertas, as imagens e os clipes de vídeo são entregues ao grupo do WhatsApp da sua conta por meio da Green-API, nosso provedor de mensagens do WhatsApp.",
+              "<b>Twilio (EUA):</b> se você adicionar contatos de emergência, os alertas críticos podem acionar chamadas de voz automatizadas para eles por meio da Twilio. A Twilio também é usada para enviar códigos de verificação por SMS quando você verifica um número de telefone em nosso aplicativo web.",
+              "<b>Meta (WhatsApp Business Platform):</b> usada para nossa linha de suporte do WhatsApp e para processar solicitações de contato enviadas pelo nosso site.",
+              "<b>Amazon Location Service (UE, Frankfurt):</b> consultas de endereço feitas pela nossa equipe ao configurar um local.",
               "<b>Serviços de armazenamento em nuvem e de mídia:</b> snapshots de câmeras, URLs de pré-visualização, URLs temporárias de mídia e arquivos de mídia de eventos podem ser armazenados ou disponibilizados a partir da infraestrutura em nuvem usada pela plataforma Sentra AI.",
               "<b>Serviços de integração de NVR e câmeras:</b> os dados de conexão de câmeras e NVR são processados por serviços de backend que se conectam ao seu dispositivo NVR para obter o status do dispositivo, listas de canais, snapshots e dados de alertas.",
               "<b>API do Google Gemini:</b> se você adicionar um NVR a partir de uma imagem, essa imagem é enviada à API do Google Gemini para identificar os dados de conexão nela contidos. Se você usar o assistente de suporte com IA no aplicativo, suas mensagens e as informações da conta relacionadas são enviadas à API do Google Gemini para gerar respostas (consulte <supportChat>Chat de Suporte com IA</supportChat>). De acordo com os termos dos serviços pagos do Google, esses dados não são usados para treinar os modelos do Google. Consulte a <google>Política de Privacidade do Google</google>.",
@@ -188,7 +199,7 @@
             ]
           },
           {
-            "p": "Os dados podem ser processados nos países em que esses prestadores de serviços operam. Quando as leis aplicáveis exigirem salvaguardas para transferências internacionais de dados, recorremos a medidas contratuais e organizacionais compatíveis com essas exigências."
+            "p": "Os dados podem ser processados nos países em que esses prestadores de serviços operam, incluindo Israel (AWS il-central-1), a União Europeia (PostHog, Amazon Location Service) e os Estados Unidos (Google, Twilio, Meta). Quando as leis aplicáveis exigirem salvaguardas para transferências internacionais de dados, recorremos a medidas contratuais e organizacionais compatíveis com essas exigências."
           }
         ]
       },
@@ -197,10 +208,19 @@
         "title": "SMS e informações de celular",
         "blocks": [
           {
-            "p": "Usamos o número de celular que você informa no aplicativo Sentra AI apenas para enviar a você códigos de verificação de uso único por SMS quando você se cadastra ou faz login."
+            "p": "Usamos o número de celular que você informa no aplicativo Sentra AI para identificar sua conta e para enviar a você códigos de verificação de uso único por SMS quando você se cadastra ou faz login. Não enviamos SMS de marketing ou promocionais."
           },
           {
             "p": "Nenhuma informação de celular será compartilhada com terceiros ou afiliadas para fins de marketing ou promocionais. Todas as categorias acima excluem os dados e o consentimento de opt-in do remetente de mensagens de texto; essas informações não serão compartilhadas com nenhum terceiro."
+          }
+        ]
+      },
+      {
+        "id": "website",
+        "title": "Nosso Site",
+        "blocks": [
+          {
+            "p": "Quando você envia o formulário de contato em sentraai.ai, coletamos seu nome, e-mail, número de telefone, mensagem e idioma. Armazenamos a solicitação, notificamos nossa equipe pelo WhatsApp e podemos enviar a você uma mensagem pelo WhatsApp para dar seguimento. As solicitações de contato são mantidas até que você nos peça para excluí-las."
           }
         ]
       },
