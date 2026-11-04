@@ -230,7 +230,6 @@
   "footer": {
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d’utilisation",
-    "siteRules": "Règles du site",
     "accessibility": "Déclaration d’accessibilité",
     "tagline": "Toujours en veille. Jamais endormi.© 2026 Sentra AI. Tous droits réservés."
   },
@@ -243,100 +242,9 @@
   "legal": {
     "eyebrow": "LÉGAL",
     "back": "Retour à l’accueil",
-    "lastUpdated": "Dernière mise à jour : 22 septembre 2026",
-    "disclaimer": "Ce document est un projet à usage produit et marketing. Ce n’est pas un conseil juridique. Faites-le examiner par un avocat qualifié avant de vous y fier.",
-    "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, GX11 1A",
+    "lastUpdated": "Dernière mise à jour : 3 novembre 2026",
+    "companyPlaceholder": "iLandGuard Ltd, Suite 5, 39 Irish Town, Gibraltar GX11 1AA",
     "contactEmail": "{{supportEmail}}"
-  },
-  "privacy": {
-    "title": "Politique de confidentialité",
-    "intro": "Sentra AI (« Sentra », « nous ») fournit une analytique de sécurité assistée par IA pour systèmes de caméras, des alertes téléphone/messagerie optionnelles, et une surveillance humaine / visionnage live optionnel pour les sites que vous autorisez. Cette Politique explique comment nous collectons, utilisons, partageons et protégeons les données lorsque vous utilisez notre site marketing, nos applications et services.",
-    "sections": [
-      {
-        "title": "1. Qui nous sommes",
-        "paragraphs": [
-          "Le responsable du traitement pour ce site et les services associés est Sentra AI, exploité par {{company}}. Pour toute demande de confidentialité : {{email}}."
-        ]
-      },
-      {
-        "title": "2. Données collectées",
-        "paragraphs": [
-          "Données de compte et de contact : nom, e-mail, téléphone, détails entreprise/site et messages soumis via formulaires démo ou contact.",
-          "Données de service et caméras : flux, instantanés, métadonnées d’événements, configuration du site, résultats de détection et analytiques générés par notre IA.",
-          "Données d’alertes et de communication : journaux WhatsApp/SMS/appels, préférences de notification et contacts d’urgence.",
-          "Données de surveillance humaine optionnelle : lorsque vous activez une équipe de monitoring, des opérateurs autorisés peuvent visionner le live ou l’enregistrement et les infos d’événement.",
-          "Données de paiement (lorsqu’activées) : identité de facturation, offre, factures et statut de paiement traités par notre prestataire. Nous ne stockons pas les numéros de carte complets.",
-          "Données techniques : adresse IP, appareil/navigateur, localisation approximative, cookies et technologies similaires."
-        ]
-      },
-      {
-        "title": "3. Utilisation des données",
-        "paragraphs": [
-          "Fournir la surveillance IA, la vérification des menaces, le filtrage des fausses alertes et l’analytique de site.",
-          "Envoyer des alertes optionnelles par messagerie et téléphone selon vos règles.",
-          "Permettre une revue humaine et une réponse optionnelles si vous souscrivez au monitoring.",
-          "Répondre aux demandes commerciales, support et démos.",
-          "Traiter abonnements et paiements lorsque le checkout est disponible.",
-          "Améliorer la sécurité, la fiabilité, la prévention de fraude et la qualité du produit.",
-          "Respecter la loi et faire appliquer nos Conditions et Règles du site."
-        ]
-      },
-      {
-        "title": "4. Bases légales",
-        "paragraphs": [
-          "Selon votre localisation, nous traitons les données sur la base de l’exécution du contrat, d’intérêts légitimes, du consentement et d’obligations légales."
-        ]
-      },
-      {
-        "title": "5. Partage",
-        "paragraphs": [
-          "Nous partageons des données avec des prestataires d’infrastructure, messagerie, analytique et paiement ; avec des partenaires de monitoring uniquement pour les sites autorisés ; et lorsque la loi l’exige.",
-          "Nous ne vendons pas vos données personnelles."
-        ]
-      },
-      {
-        "title": "6. Conservation",
-        "paragraphs": [
-          "Nous conservons les demandes de contact pendant une période commerciale raisonnable ; les comptes et la facturation pendant la durée du compte plus les délais légaux ; et les données caméra/événement selon votre offre et les besoins opérationnels."
-        ]
-      },
-      {
-        "title": "7. Sécurité",
-        "paragraphs": [
-          "Nous appliquons des mesures adaptées à la sensibilité des images de sécurité et des données de contact. Aucune méthode n’est totalement sûre ; vous restez responsable de la sécurité de vos caméras, identifiants et réseaux."
-        ]
-      },
-      {
-        "title": "8. Vos droits",
-        "paragraphs": [
-          "Sous réserve du droit applicable, vous pouvez demander accès, rectification, suppression, limitation, portabilité ou opposition, et retirer votre consentement. Contactez {{email}}."
-        ]
-      },
-      {
-        "title": "9. Cookies",
-        "paragraphs": [
-          "Le site peut utiliser des cookies essentiels et, le cas échéant, des cookies d’analytique. Vous pouvez contrôler les cookies non essentiels via votre navigateur."
-        ]
-      },
-      {
-        "title": "10. Transferts internationaux",
-        "paragraphs": [
-          "Les données peuvent être traitées hors de votre pays. Le cas échéant, nous utilisons des garanties appropriées."
-        ]
-      },
-      {
-        "title": "11. Enfants",
-        "paragraphs": [
-          "Le service s’adresse aux professionnels et adultes. Nous ne collectons pas sciemment de données d’enfants de moins de 16 ans sans autorisation appropriée."
-        ]
-      },
-      {
-        "title": "12. Modifications",
-        "paragraphs": [
-          "Nous pouvons mettre à jour cette Politique. Les changements matériels seront publiés sur cette page avec une date mise à jour."
-        ]
-      }
-    ]
   },
   "terms": {
     "title": "Conditions d’utilisation",
@@ -428,54 +336,28 @@
         "paragraphs": [
           "Questions : {{email}}."
         ]
-      }
-    ]
-  },
-  "siteRules": {
-    "title": "Règles du site",
-    "intro": "Ces Règles s’appliquent aux visiteurs du site marketing Sentra AI. Elles complètent les Conditions d’utilisation et la Politique de confidentialité.",
-    "sections": [
+      },
       {
-        "title": "1. Objet du site",
+        "title": "15. Conditions relatives aux SMS",
         "paragraphs": [
-          "Ce site informe sur les produits Sentra AI, les démos, téléchargements et (le cas échéant) l’achat d’abonnement."
+          "1. Programme : iLandGuard Ltd, l’opérateur de Sentra AI, envoie par SMS des codes de vérification à usage unique au numéro mobile que vous saisissez lors de votre inscription ou de votre connexion à l’application Sentra AI.",
+          "2. Fréquence des messages : un message par demande.",
+          "3. Des frais de messagerie et de données peuvent s’appliquer. Contactez votre opérateur mobile au sujet de votre forfait.",
+          "4. Pour ne plus recevoir de messages, répondez STOP. Pour obtenir de l’aide, répondez HELP ou écrivez à support@sentraai.ai. Si vous vous désinscrivez, contactez le support pour passer votre compte à la connexion par e-mail.",
+          "5. Les opérateurs ne sont pas responsables des messages retardés ou non distribués.",
+          "6. Confidentialité : consultez notre Politique de confidentialité à l’adresse https://www.sentraai.ai/privacy-policy"
         ]
       },
       {
-        "title": "2. Conduite attendue",
+        "title": "16. Utilisation du site",
         "paragraphs": [
+          "Ce site informe sur les produits Sentra AI, les démos, téléchargements et (le cas échéant) l’achat d’abonnement.",
           "Utilisez le site légalement et respectueusement. N’envoyez pas de spam, malware ou contenu abusif.",
-          "N’essayez pas de sonder, surcharger ou perturber le site."
-        ]
-      },
-      {
-        "title": "3. Propriété intellectuelle",
-        "paragraphs": [
-          "Marques, logos, textes, graphismes, vidéos et logiciels sont protégés. Toute exploitation commerciale sans autorisation écrite est interdite."
-        ]
-      },
-      {
-        "title": "4. Formulaires",
-        "paragraphs": [
-          "Fournissez des coordonnées exactes. Les envois sont traités selon la Politique de confidentialité."
-        ]
-      },
-      {
-        "title": "5. Liens tiers",
-        "paragraphs": [
-          "Les liens vers magasins d’applis, vidéos ou sites tiers sont fournis pour commodité."
-        ]
-      },
-      {
-        "title": "6. Signalement",
-        "paragraphs": [
+          "N’essayez pas de sonder, surcharger ou perturber le site.",
+          "Marques, logos, textes, graphismes, vidéos et logiciels sont protégés. Toute exploitation commerciale sans autorisation écrite est interdite.",
+          "Fournissez des coordonnées exactes. Les envois sont traités selon la Politique de confidentialité.",
+          "Les liens vers magasins d’applis, vidéos ou sites tiers sont fournis pour commodité.",
           "Signalez tout usage abusif à {{email}}."
-        ]
-      },
-      {
-        "title": "7. Application",
-        "paragraphs": [
-          "Nous pouvons bloquer l’accès ou prendre d’autres mesures en cas de violation."
         ]
       }
     ]

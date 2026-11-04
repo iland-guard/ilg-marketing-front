@@ -39,9 +39,6 @@ function LegalShell({
       </p>
       <h1 className="text-4xl font-extrabold tracking-[-0.03em]">{title}</h1>
       <p className="mt-2 text-sm text-[#7A7A7A]">{t('legal.lastUpdated')}</p>
-      <p className="mt-4 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm leading-relaxed text-amber-100/90">
-        {t('legal.disclaimer')}
-      </p>
       <div className="mt-6 space-y-4 leading-relaxed text-[#afc0d4]">
         <p>{fillVars(intro, vars)}</p>
         {sections.map((section) => (
@@ -60,7 +57,7 @@ function LegalShell({
   )
 }
 
-function useLegalSections(key: 'privacy' | 'terms' | 'siteRules') {
+function useLegalSections(key: 'terms') {
   const { t, i18n } = useTranslation()
   const raw = i18n.t(`${key}.sections`, { returnObjects: true }) as
     | Section[]
@@ -72,18 +69,8 @@ function useLegalSections(key: 'privacy' | 'terms' | 'siteRules') {
   }
 }
 
-export function PrivacyPage() {
-  const data = useLegalSections('privacy')
-  return <LegalShell {...data} />
-}
-
 export function TermsPage() {
   const data = useLegalSections('terms')
-  return <LegalShell {...data} />
-}
-
-export function SiteRulesPage() {
-  const data = useLegalSections('siteRules')
   return <LegalShell {...data} />
 }
 
