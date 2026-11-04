@@ -42,7 +42,7 @@ Settings after sign-in. Test the browser fallback and unrelated links as well.
 No deployment, app-store release or device validation is performed by these local
 file changes.
 
-## Notification link groundwork (not sent yet)
+## Notification links in WhatsApp messages
 
 Format: `https://www.sentraai.ai/app/notifications?notificationId=<notification-id>`.
 The browser fallback offers `sentraai://notifications?notificationId=<notification-id>`.
@@ -53,13 +53,11 @@ Notification Detail screen under Alerts. That screen uses the authenticated API
 and handles unavailable or inaccessible notifications through its existing UI.
 
 The `alert-center/util/app_links.py` rollout switch
-`ENABLE_WHATSAPP_NOTIFICATION_APP_LINKS` defaults to `False`. Event cards,
+`ENABLE_WHATSAPP_NOTIFICATION_APP_LINKS` is `True` (enabled for rollout on 2026-11-03). Event cards,
 critical escalation notices and manual video captions are wired to append the
 link only when this switch is enabled and the client's existing push-device
 resolver finds at least one enabled device with a token. Device push preferences
 do not control this app-presence check. Disabled mode performs no device lookup;
 lookup failures keep the existing WhatsApp message without a link.
 
-After validating the verification return link and deploying the website and
-apps supporting notification links, change the switch to `True` and deploy
-alert-center to begin appending links for eligible customers.
+Setting the switch to `False` and deploying alert-center stops appending links.
