@@ -45,7 +45,7 @@
         "title": "Контролер данных",
         "blocks": [
           {
-            "p": "<ltr>Bizz Technologies Ltd</ltr><br/><ltr>17 Nachum Hafzadi, Jerusalem 9548400, Israel</ltr><br/>Эл. почта: <mail>{{supportEmail}}</mail><br/>Телефон: <tel>{{supportPhone}}</tel>"
+            "p": "<ltr>iLandGuard Ltd</ltr><br/><ltr>Suite 5, 39 Irish Town, Gibraltar GX11 1AA</ltr><br/>Эл. почта: <mail>{{supportEmail}}</mail><br/>Телефон: <tel>{{supportPhone}}</tel>"
           }
         ]
       },

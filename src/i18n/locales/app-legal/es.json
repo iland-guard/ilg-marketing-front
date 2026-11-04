@@ -45,7 +45,7 @@
         "title": "Responsable del tratamiento",
         "blocks": [
           {
-            "p": "<ltr>Bizz Technologies Ltd</ltr><br/><ltr>17 Nachum Hafzadi, Jerusalem 9548400, Israel</ltr><br/>Correo electrónico: <mail>{{supportEmail}}</mail><br/>Teléfono: <tel>{{supportPhone}}</tel>"
+            "p": "<ltr>iLandGuard Ltd</ltr><br/><ltr>Suite 5, 39 Irish Town, Gibraltar GX11 1AA</ltr><br/>Correo electrónico: <mail>{{supportEmail}}</mail><br/>Teléfono: <tel>{{supportPhone}}</tel>"
           }
         ]
       },

@@ -45,7 +45,7 @@
         "title": "בעל השליטה במידע",
         "blocks": [
           {
-            "p": "<ltr>Bizz Technologies Ltd</ltr><br/><ltr>17 Nachum Hafzadi, Jerusalem 9548400, Israel</ltr><br/>אימייל: <mail>{{supportEmail}}</mail><br/>טלפון: <tel>{{supportPhone}}</tel>"
+            "p": "<ltr>iLandGuard Ltd</ltr><br/><ltr>Suite 5, 39 Irish Town, Gibraltar GX11 1AA</ltr><br/>אימייל: <mail>{{supportEmail}}</mail><br/>טלפון: <tel>{{supportPhone}}</tel>"
           }
         ]
       },
