@@ -10,7 +10,11 @@ import { LangLayout } from './components/LangLayout'
 import { HomePage } from './pages/HomePage'
 import { PaymentsPage } from './pages/PaymentsPage'
 import { AccessibilityPage, TermsPage } from './pages/LegalPages'
-import { DeleteAccountPage, PrivacyPage } from './pages/AppLegalPages'
+import {
+  DeleteAccountPage,
+  PrivacyPage,
+  SupportPage,
+} from './pages/AppLegalPages'
 import { DEFAULT_LANG, isLang, type Lang } from './i18n/languages'
 import { LANG_STORAGE_KEY } from './i18n'
 
@@ -84,6 +88,7 @@ export default function App() {
               path="/delete-account"
               element={<LangRedirect path="/delete-account" />}
             />
+            <Route path="/support" element={<LangRedirect path="/support" />} />
             <Route path="/:lang" element={<LangLayout />}>
               <Route index element={<HomePage />} />
               <Route path="payments" element={<PaymentsPage />} />
@@ -91,6 +96,7 @@ export default function App() {
               <Route path="terms" element={<TermsPage />} />
               <Route path="accessibility" element={<AccessibilityPage />} />
               <Route path="delete-account" element={<DeleteAccountPage />} />
+              <Route path="support" element={<SupportPage />} />
               <Route
                 path="app-privacy-policy"
                 element={<MovedPage to="/privacy-policy" />}

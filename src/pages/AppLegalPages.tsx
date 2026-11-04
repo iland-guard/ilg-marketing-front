@@ -10,17 +10,19 @@ import { Link, useLocation, useParams } from 'react-router-dom'
 import { useLangPath } from '../hooks/useLangPath'
 import { DEFAULT_LANG, isLang } from '../i18n/languages'
 import {
+  COMPANY_ADDRESS,
+  COMPANY_NAME,
   SUPPORT_EMAIL,
   SUPPORT_PHONE,
   SUPPORT_PHONE_HREF,
 } from '../constants/support'
 
 /**
- * The site's privacy policy (covering the app and the website) and the
- * account-deletion page, both linked from the App Store / Google Play
- * listings. Content lives in
+ * The site's privacy policy (covering the app and the website), the
+ * account-deletion page and the support page, all linked from the App Store /
+ * Google Play listings. Content lives in
  * `i18n/locales/app-legal/<lang>.json` (keys `appLegal`, `appPrivacy`,
- * `deleteAccount`) and is loaded into i18next only when one of these pages is
+ * `deleteAccount`, `support`) and is loaded into i18next only when one of these pages is
  * opened, so the long texts stay out of the landing-page bundle. Inline markup
  * is rendered through <Trans>.
  */
@@ -375,6 +377,93 @@ export function PrivacyPage() {
       showContents
       extras={{ chips: <CategoryChips /> }}
     />
+  )
+}
+
+/** Target of the App Store "Support URL": Apple requires real contact details there. */
+export function SupportPage() {
+  const { t } = useTranslation()
+  const ready = useAppLegalBundle()
+  const home = useLangPath('/')
+  const deletePath = useLangPath(DELETE_ACCOUNT_PATH)
+  const privacyPath = useLangPath(PRIVACY_PATH)
+  useScrollOnEnter(ready)
+
+  if (!ready) {
+    return <div className="min-h-screen" aria-busy="true" />
+  }
+
+  const panelClass = 'mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5 md:p-6'
+  const panelTitleClass = 'text-xl font-bold text-white'
+  const labelClass = 'text-sm text-[#7A7A7A]'
+
+  return (
+    <article className="mx-auto max-w-3xl px-5 py-16 md:py-24">
+      <p className="mb-3 text-xs font-bold tracking-[0.2em] text-[#8fb3ff] uppercase">
+        Sentra AI
+      </p>
+      <h1 className="text-4xl font-extrabold tracking-[-0.03em]">{t('support.title')}</h1>
+      <p className="mt-4 text-lg leading-relaxed text-[#afc0d4]">{t('support.lede')}</p>
+
+      <section aria-labelledby="support-contact" className={panelClass}>
+        <h2 id="support-contact" className={panelTitleClass}>
+          {t('support.contactTitle')}
+        </h2>
+        <dl className="mt-4 space-y-4 text-[#afc0d4]">
+          <div>
+            <dt className={labelClass}>{t('support.email')}</dt>
+            <dd className="mt-1">
+              <a href={`mailto:${SUPPORT_EMAIL}`} dir="ltr" className={linkClass}>
+                {SUPPORT_EMAIL}
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt className={labelClass}>{t('support.phone')}</dt>
+            <dd className="mt-1">
+              <a href={SUPPORT_PHONE_HREF} dir="ltr" className={linkClass}>
+                {SUPPORT_PHONE}
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt className={labelClass}>{t('support.company')}</dt>
+            <dd className="mt-1">
+              <span dir="ltr">{COMPANY_NAME}</span>
+              <br />
+              <span dir="ltr">{COMPANY_ADDRESS}</span>
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="support-more" className={panelClass}>
+        <h2 id="support-more" className={panelTitleClass}>
+          {t('support.moreTitle')}
+        </h2>
+        <ul className="mt-4 space-y-3">
+          <li>
+            <a href={`${home}#DEMO`} className={linkClass}>
+              {t('support.messageLink')}
+            </a>
+          </li>
+          <li>
+            <Link to={deletePath} className={linkClass}>
+              {t('support.deleteLink')}
+            </Link>
+          </li>
+          <li>
+            <Link to={privacyPath} className={linkClass}>
+              {t('support.privacyLink')}
+            </Link>
+          </li>
+        </ul>
+      </section>
+
+      <Link to={home} className="sentra-btn-ghost mt-8 inline-flex">
+        {t('legal.back')}
+      </Link>
+    </article>
   )
 }
 

@@ -3,3 +3,6 @@ export const SUPPORT_EMAIL = 'support@sentraai.ai'
 
 export const SUPPORT_PHONE = '+972-54-804-7747'
 export const SUPPORT_PHONE_HREF = 'tel:+972548047747'
+
+export const COMPANY_NAME = 'iLandGuard Ltd'
+export const COMPANY_ADDRESS = 'Suite 5, 39 Irish Town, Gibraltar GX11 1AA'

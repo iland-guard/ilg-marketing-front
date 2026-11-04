@@ -451,5 +451,17 @@
         ]
       }
     ]
+  },
+  "support": {
+    "title": "Support",
+    "lede": "Benötigen Sie Hilfe mit der Sentra AI App oder möchten Sie uns Feedback geben? Kontaktieren Sie uns über die folgenden Angaben.",
+    "contactTitle": "Kontaktdaten",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "company": "Unternehmen",
+    "moreTitle": "Weitere Optionen",
+    "messageLink": "Nachricht senden",
+    "deleteLink": "Kontolöschung beantragen",
+    "privacyLink": "Datenschutzerklärung"
   }
 }
