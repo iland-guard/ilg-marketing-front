@@ -4,11 +4,11 @@
     "translationNotice": "This page is a translation provided for convenience. If there is any inconsistency, the <enLink>English version</enLink> prevails."
   },
   "appPrivacy": {
-    "badge": "Sentra AI Mobile App",
+    "badge": "Sentra AI",
     "title": "Privacy Policy",
-    "lede": "This policy explains how information is collected, used, shared, and protected when customers use the Sentra AI mobile app for camera alert and security-system management.",
+    "lede": "This policy explains how information is collected, used, shared, and protected when customers use the Sentra AI app for camera alert and security-system management, and when visitors use our website.",
     "lastUpdated": "Last updated: November 3, 2026",
-    "notice": "This Privacy Policy describes how Sentra AI handles information when you use the mobile app. For account deletion instructions, see the <deleteLink>Account Deletion Request</deleteLink> page.",
+    "notice": "This Privacy Policy describes how Sentra AI handles information when you use the app and our website. For account deletion instructions, see the <deleteLink>Account Deletion Request</deleteLink> page.",
     "categoriesLabel": "Data category summary",
     "categories": [
       "Account",
@@ -36,7 +36,7 @@
             "p": "Sentra AI provides a customer-facing mobile application for managing connected NVR and camera alert systems. The app lets customers sign in with an email address or a mobile phone number, view connected NVR cameras, manage linked cameras, configure camera alert behavior, set mute schedules, choose detection classes and mask areas, view alert information, verify a WhatsApp number for alert notifications, and get help from an AI support assistant in the app."
           },
           {
-            "p": "This Privacy Policy applies to the Sentra AI mobile app and the customer-facing services that support it. It does not cover separate admin, operator, or internal tools except where those systems are used to provide or support the mobile app service."
+            "p": "This Privacy Policy applies to the Sentra AI mobile app, our website and the customer-facing services that support them. It does not cover separate admin, operator, or internal tools except where those systems are used to provide or support the mobile app service."
           }
         ]
       },

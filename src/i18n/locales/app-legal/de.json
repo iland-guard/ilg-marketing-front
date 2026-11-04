@@ -4,11 +4,11 @@
     "translationNotice": "Diese Seite ist eine Übersetzung, die zur Vereinfachung bereitgestellt wird. Im Falle von Abweichungen ist die <enLink>englische Fassung</enLink> maßgeblich."
   },
   "appPrivacy": {
-    "badge": "Sentra AI Mobile-App",
+    "badge": "Sentra AI",
     "title": "Datenschutzerklärung",
-    "lede": "Diese Erklärung beschreibt, wie Informationen erhoben, verwendet, weitergegeben und geschützt werden, wenn Kunden die mobile App von Sentra AI zur Verwaltung von Kameraalarmen und Sicherheitssystemen nutzen.",
+    "lede": "Diese Erklärung beschreibt, wie Informationen erhoben, verwendet, weitergegeben und geschützt werden, wenn Kunden die App von Sentra AI zur Verwaltung von Kameraalarmen und Sicherheitssystemen nutzen und wenn Besucher unsere Website nutzen.",
     "lastUpdated": "Zuletzt aktualisiert: 3. November 2026",
-    "notice": "Diese Datenschutzerklärung beschreibt, wie Sentra AI mit Informationen umgeht, wenn Sie die mobile App nutzen. Anleitungen zur Kontolöschung finden Sie auf der Seite <deleteLink>Antrag auf Kontolöschung</deleteLink>.",
+    "notice": "Diese Datenschutzerklärung beschreibt, wie Sentra AI mit Informationen umgeht, wenn Sie die App und unsere Website nutzen. Anleitungen zur Kontolöschung finden Sie auf der Seite <deleteLink>Antrag auf Kontolöschung</deleteLink>.",
     "categoriesLabel": "Übersicht der Datenkategorien",
     "categories": [
       "Konto",
@@ -36,7 +36,7 @@
             "p": "Sentra AI stellt eine kundenseitige mobile Anwendung zur Verwaltung verbundener NVR- und Kameraalarmsysteme bereit. Mit der App können Kunden sich mit einer E-Mail-Adresse oder einer Mobiltelefonnummer anmelden, verbundene NVR-Kameras anzeigen, verknüpfte Kameras verwalten, das Alarmverhalten von Kameras konfigurieren, Stummschaltungszeitpläne festlegen, Erkennungsklassen und Maskenbereiche auswählen, Alarminformationen einsehen, eine WhatsApp-Nummer für Alarmbenachrichtigungen verifizieren und in der App Hilfe von einem KI-Supportassistenten erhalten."
           },
           {
-            "p": "Diese Datenschutzerklärung gilt für die mobile App von Sentra AI und die kundenseitigen Dienste, die sie unterstützen. Sie gilt nicht für separate Administrations-, Betreiber- oder interne Tools, außer soweit diese Systeme zur Bereitstellung oder Unterstützung des Dienstes der mobilen App verwendet werden."
+            "p": "Diese Datenschutzerklärung gilt für die mobile App von Sentra AI, unsere Website und die kundenseitigen Dienste, die diese unterstützen. Sie gilt nicht für separate Administrations-, Betreiber- oder interne Tools, außer soweit diese Systeme zur Bereitstellung oder Unterstützung des Dienstes der mobilen App verwendet werden."
           }
         ]
       },

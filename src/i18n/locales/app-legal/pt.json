@@ -4,11 +4,11 @@
     "translationNotice": "Esta página é uma tradução fornecida para sua conveniência. Em caso de qualquer divergência, prevalece a <enLink>versão em inglês</enLink>."
   },
   "appPrivacy": {
-    "badge": "Aplicativo móvel Sentra AI",
+    "badge": "Sentra AI",
     "title": "Política de Privacidade",
-    "lede": "Esta política explica como as informações são coletadas, usadas, compartilhadas e protegidas quando os clientes usam o aplicativo móvel Sentra AI para o gerenciamento de alertas de câmeras e de sistemas de segurança.",
+    "lede": "Esta política explica como as informações são coletadas, usadas, compartilhadas e protegidas quando os clientes usam o aplicativo Sentra AI para o gerenciamento de alertas de câmeras e de sistemas de segurança, e quando os visitantes usam nosso site.",
     "lastUpdated": "Última atualização: 3 de novembro de 2026",
-    "notice": "Esta Política de Privacidade descreve como a Sentra AI trata as informações quando você usa o aplicativo móvel. Para obter instruções sobre a exclusão da conta, consulte a página <deleteLink>Solicitação de Exclusão de Conta</deleteLink>.",
+    "notice": "Esta Política de Privacidade descreve como a Sentra AI trata as informações quando você usa o aplicativo e nosso site. Para obter instruções sobre a exclusão da conta, consulte a página <deleteLink>Solicitação de Exclusão de Conta</deleteLink>.",
     "categoriesLabel": "Resumo das categorias de dados",
     "categories": [
       "Conta",
@@ -36,7 +36,7 @@
             "p": "A Sentra AI oferece um aplicativo móvel voltado ao cliente para o gerenciamento de sistemas conectados de NVR e de alertas de câmeras. O aplicativo permite que os clientes façam login com um endereço de e-mail ou um número de celular, visualizem câmeras de NVR conectadas, gerenciem câmeras vinculadas, configurem o comportamento de alertas das câmeras, definam agendamentos de silenciamento, escolham classes de detecção e áreas de máscara, visualizem informações de alertas, verifiquem um número de WhatsApp para notificações de alerta e obtenham ajuda de um assistente de suporte com IA no aplicativo."
           },
           {
-            "p": "Esta Política de Privacidade aplica-se ao aplicativo móvel Sentra AI e aos serviços voltados ao cliente que lhe dão suporte. Ela não abrange ferramentas separadas de administração, de operador ou internas, exceto quando esses sistemas forem usados para fornecer ou dar suporte ao serviço do aplicativo móvel."
+            "p": "Esta Política de Privacidade aplica-se ao aplicativo móvel Sentra AI, ao nosso site e aos serviços voltados ao cliente que lhes dão suporte. Ela não abrange ferramentas separadas de administração, de operador ou internas, exceto quando esses sistemas forem usados para fornecer ou dar suporte ao serviço do aplicativo móvel."
           }
         ]
       },
