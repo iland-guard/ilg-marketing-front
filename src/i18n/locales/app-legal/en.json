@@ -1,0 +1,455 @@
+{
+  "appLegal": {
+    "contents": "Contents",
+    "translationNotice": "This page is a translation provided for convenience. If there is any inconsistency, the <enLink>English version</enLink> prevails."
+  },
+  "appPrivacy": {
+    "badge": "Sentra AI",
+    "title": "Privacy Policy",
+    "lede": "This policy explains how information is collected, used, shared, and protected when customers use the Sentra AI app for camera alert and security-system management, and when visitors use our website.",
+    "lastUpdated": "Last updated: November 3, 2026",
+    "notice": "This Privacy Policy describes how Sentra AI handles information when you use the app and our website. For account deletion instructions, see the <deleteLink>Account Deletion Request</deleteLink> page.",
+    "categoriesLabel": "Data category summary",
+    "categories": [
+      "Account",
+      "Profile / Address",
+      "Authentication",
+      "Email",
+      "Phone Sign-In (SMS)",
+      "Phone / WhatsApp",
+      "Camera / NVR",
+      "NVR Setup Images",
+      "Snapshots / Event Media",
+      "Notifications",
+      "Schedules / Mute Windows",
+      "Detection Masks",
+      "Support Chat",
+      "Operational Diagnostics",
+      "Analytics / App Usage"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introduction",
+        "blocks": [
+          {
+            "p": "Sentra AI provides a customer-facing mobile application for managing connected NVR and camera alert systems. The app lets customers sign in with an email address or a mobile phone number, view connected NVR cameras, manage linked cameras, configure camera alert behavior, set mute schedules, choose detection classes and mask areas, view alert information, verify a WhatsApp number for alert notifications, and get help from an AI support assistant in the app."
+          },
+          {
+            "p": "This Privacy Policy applies to the Sentra AI mobile app, our website and the customer-facing services that support them. It does not cover separate admin, operator, or internal tools except where those systems are used to provide or support the mobile app service."
+          }
+        ]
+      },
+      {
+        "id": "controller",
+        "title": "Data Controller",
+        "blocks": [
+          {
+            "p": "<ltr>iLandGuard Ltd</ltr><br/><ltr>Suite 5, 39 Irish Town, Gibraltar GX11 1AA</ltr><br/>Email: <mail>{{supportEmail}}</mail><br/>Phone: <tel>{{supportPhone}}</tel>"
+          }
+        ]
+      },
+      {
+        "id": "collect",
+        "title": "Information We Collect",
+        "blocks": [
+          {
+            "ul": [
+              "<b>Account and login data:</b> email address and/or mobile phone number (depending on how you sign up), account identifiers, display name, organization/account ID, and sign-in/session information. The app also uses email for password reset flows. You can add an email address to an account created with a phone number, or a sign-in phone number to an account created with an email address; each addition is confirmed with a verification code.",
+              "<b>Profile details:</b> when you complete your profile, we collect your city and street address, a contact phone number and your time zone, to identify the protected site and support our service.",
+              "<b>Phone number for sign-in (SMS):</b> if you sign up or sign in with a mobile phone number, we collect that number as your account identifier and send a one-time verification code to it by SMS. SMS sign-in is available only in supported countries. If you sign up with a phone number and do not provide a name, your phone number is used as your display name until you add one. Your display name is visible to support personnel who serve your account and may appear in the names of WhatsApp alert groups. Signing in by SMS does not link WhatsApp: WhatsApp alerts are sent only after you separately verify a number for WhatsApp, as described below.",
+              "<b>Authentication and session data:</b> authentication identifiers, session tokens, and related session state needed to keep users signed in securely.",
+              "<b>Phone and WhatsApp data:</b> a phone number if you choose to link WhatsApp for alerts, and related verification status. We may prompt you once, after your first sign-in, to link a WhatsApp number. You can skip this, and verification only proceeds if you choose to send the verification message. All WhatsApp usage is opt-in. After verification, critical alerts, including images and video clips, are sent to the WhatsApp group set up for your account. The group includes the verified number and any other members you add yourself or ask us to add. We do not access your private WhatsApp conversations; we only see messages in your alert group and messages you send to our support number.",
+              "<b>Camera and NVR connection data:</b> NVR/site names, manufacturer, model, serial number, device type, IP address, secondary IP address when provided, HTTP/RTSP ports, device username and password required to connect to the NVR, channels, interested channels, linked camera IDs, camera names, camera type, device/network/access/alert status, organization ID, client ID, and setup draft progress. This information is provided by the user or account administrator and is used to connect, validate, and operate supported NVR and camera services.",
+              "<b>Alert, detection, and configuration data:</b> notification and event records, alert messages, event times, NVR event times, severity/status, viewed/resolved metadata, detection classes, selected detection class IDs, confidence values, bounding boxes, tags, mute state, temporary inactive periods, weekly mute schedules, time zones, and camera mask polygons or regions configured by the customer.",
+              "<b>Alert verification by our team:</b> trained operators may review an alert's images and video clips to confirm that it is a real event. Access is limited to authorized staff.",
+              "<b>Camera images, snapshots, and event media:</b> the app can load and display camera preview image URLs and last-snapshot URLs returned by the backend. Notification and event records also include snapshot image IDs, temporary image URLs, and event/video media identifiers where available. The app does not request access to the phone microphone or contacts. Device camera and photo library access is requested only when you choose to use them — to photograph or select an image while adding an NVR (see <nvrImage>Image Processing During NVR Setup</nvrImage>), or to save or share an alert image or video from the app. Except for images you supply during NVR setup, all media is provided by customer-owned NVR systems and is not captured by the mobile device.",
+              "<b>Images you provide during NVR setup:</b> if you choose to add an NVR from a photo, we collect the image you capture or select and the connection details extracted from it (IP address, port, NVR username, and NVR password). See <nvrImage>Image Processing During NVR Setup</nvrImage>.",
+              "<b>Contact details you provide about others:</b> if you add emergency or notification contacts, you provide their name, phone number and email address. You are responsible for ensuring you may share their details with us. We use this information only to deliver alerts you have configured, including automated voice calls to your emergency contacts for critical alerts.",
+              "<b>Support chat data:</b> if you use the in-app AI support assistant, we process the messages you write, the history of the current conversation, and the account information needed to answer you. See <supportChat>AI Support Chat</supportChat>.",
+              "<b>Operational and diagnostic data:</b> diagnostic and operational logs may be collected to maintain, secure, and improve the service.",
+              {
+                "text": "<b>Analytics and app usage data:</b> the app uses analytics and app-performance services, currently Google Firebase Analytics and PostHog, to understand how the app is used and to improve its stability, performance, and usability. This may include:",
+                "ul": [
+                  "<b>Usage and interaction data</b> — such as sessions, screens or features viewed, actions taken in the app, and app open, install, or update events.",
+                  "<b>Technical and device data</b> — such as device model, operating system version, app version, language, and approximate location derived from IP address (country or region level).",
+                  "<b>Identifiers</b> — analytics events are associated with your account identifier and with a randomly generated installation identifier. Events sent to PostHog are also associated with a randomly generated device identifier and with your device's push notification token, so that different devices using the same account can be told apart. We do not send your name, email address, phone number, camera imagery, or device credentials to our analytics provider.",
+                  "<b>Error reports</b> — such as the error name, a cleaned-up error message and the screen where it occurred, sent to PostHog to help us fix problems."
+                ],
+                "after": "The specific events we measure may change over time as we improve the app. We do not use advertising identifiers, and we do not use your data for advertising or cross-app tracking."
+              }
+            ]
+          },
+          {
+            "chips": true
+          }
+        ]
+      },
+      {
+        "id": "nvr-image",
+        "title": "Image Processing During NVR Setup",
+        "blocks": [
+          {
+            "p": "When you choose to add an NVR from an image, the app asks for permission to use your device camera or photo library. The image you select is sent to Sentra AI servers and passed to the Google Gemini API solely to identify the connection details it contains."
+          },
+          {
+            "ul": [
+              "<b>What is collected:</b> the image itself, and the connection details extracted from it — IP address, port, NVR username, and NVR password.",
+              "<b>Why:</b> to save you from typing the connection details manually.",
+              "<b>Third party:</b> we use the Google Gemini API. Under Google's paid services terms, the images are not used to train Google's models. See the <google>Google Privacy Policy</google>.",
+              "<b>Storage:</b> the image is stored in our AWS S3 storage."
+            ]
+          },
+          {
+            "p": "This feature is optional. You can always enter NVR connection details manually instead, and the app does not access your camera or photo library unless you start this flow."
+          }
+        ]
+      },
+      {
+        "id": "support-chat",
+        "title": "AI Support Chat",
+        "blocks": [
+          {
+            "p": "The app includes an optional support chat with an AI assistant (Alex). When you use it, your messages are sent to Sentra AI servers and passed to the Google Gemini API to generate replies."
+          },
+          {
+            "ul": [
+              "<b>What is processed:</b> the messages you write, the history of the current conversation (sent with each message), and information from your account that is relevant to your request — for example NVR, camera, connection-status, alert, and statistics data.",
+              "<b>Why:</b> to answer your questions, help you troubleshoot, and carry out actions you ask for in your account. A record of actions the assistant performs (action type, status, and a summary) is kept with your account records.",
+              "<b>Third party:</b> we use the Google Gemini API. Under Google's paid services terms, this data is not used to train Google's models. We take steps to mask device passwords and similar secrets in account data before it is sent to the model. Text you type is sent as written, so please do not type passwords or other sensitive information that is not needed. See the <google>Google Privacy Policy</google>.",
+              "<b>Storage:</b> your past conversations (up to the 20 most recent) are saved on your device so you can reopen them; our servers do not keep a chat history. Short-lived conversation and task state is kept on our servers for a limited time (from about 15 minutes up to 24 hours, depending on the task) so that multi-step requests can be completed."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "data-safety",
+        "title": "Data Safety Summary",
+        "blocks": [
+          {
+            "p": "The categories below summarize types of information the service may collect or process depending on how you use Sentra AI. This summary aligns app store data safety disclosures with this policy."
+          },
+          {
+            "ul": [
+              "<b>Account information:</b> email address and/or phone number, account/user IDs, display name, organization ID. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Profile details:</b> city and street address, contact phone number and time zone. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Phone number:</b> if you sign up or sign in with a phone number (as your account identifier and for SMS verification codes), or if you choose to use WhatsApp verification. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Camera and NVR configuration:</b> connection and configuration information for supported devices. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Snapshots and media:</b> preview images, snapshots, and related event media where applicable. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Photos you provide during NVR setup:</b> an image captured with the device camera or selected from the photo library, used only to extract NVR connection details. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Support chat messages:</b> messages you write to the in-app AI support assistant, processed to answer your request. This information is used for app functionality and customer support and transmitted securely using HTTPS/TLS.",
+              "<b>App interactions and settings:</b> app usage and user-configured settings. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Operational and diagnostic data:</b> logs used for service maintenance, reliability, and security. This information is used for app functionality and transmitted securely using HTTPS/TLS.",
+              "<b>Analytics / app usage data:</b> app usage and interaction data, error reports, technical and device information, your account identifier, randomly generated installation and device identifiers, and (for PostHog) your device's push notification token. This information is used for analytics, is transmitted securely using HTTPS/TLS, and is not used for advertising or cross-app tracking."
+            ]
+          },
+          {
+            "p": "We do not sell personal information. The app is not designed to use personal data for advertising purposes or cross-app tracking."
+          },
+          {
+            "p": "Data may be shared with service providers only as necessary to operate the service."
+          }
+        ]
+      },
+      {
+        "id": "use",
+        "title": "How We Use Information",
+        "blocks": [
+          {
+            "ul": [
+              "Authenticate users, maintain sessions, and protect account access, including sending one-time SMS verification codes when you sign in with a phone number.",
+              "Create, link, or validate customer profiles and organization access.",
+              "Display customer NVRs, cameras, linked cameras, camera status, and camera preview images.",
+              "Connect, scan, activate, sync, and manage NVRs and related camera channels.",
+              "Save customer configuration choices, including linked cameras, interested channels, detection classes, camera masks, mute schedules, temporary mute windows, and NVR setup drafts.",
+              "List and display notifications, alerts, event records, snapshots, and available event media.",
+              "Send critical alerts by WhatsApp to the WhatsApp group set up for your account, after you verify a number through an optional, user-initiated process.",
+              "Place automated voice calls to your emergency contacts when a critical alert occurs.",
+              "Have trained operators review an alert's images and video clips to confirm that it is a real event.",
+              "Operate, secure, troubleshoot, and improve the reliability of the app and supporting services.",
+              "Measure aggregated app usage, feature adoption, stability, and performance through analytics services, so we can fix problems and improve the app experience.",
+              "Extract NVR connection details from an image you choose to provide during NVR setup, so you do not have to type them manually.",
+              "Respond to support inquiries, including NVR setup and connection diagnostics submitted by the customer.",
+              "Answer your questions and carry out actions you request through the in-app AI support assistant.",
+              "Respond to contact requests submitted through our website."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "Sharing With Service Providers",
+        "blocks": [
+          {
+            "p": "We do not sell personal information. The app is not designed to use personal data for advertising purposes or cross-app tracking. We share information with service providers only as necessary to operate, secure, and support the app and alert service."
+          },
+          {
+            "ul": [
+              "<b>Amazon Web Services (Cognito and SNS):</b> used for sign-in, password reset, SMS verification, and session management. When you reset your password, your email address, verification code, and new password are sent directly from the app to AWS. When you sign in with a phone number, your phone number and verification code are sent to AWS, and the code is delivered to your phone by SMS through Amazon SNS. Processed in AWS region il-central-1 (Israel).",
+              "<b>Sentra AI backend API</b> (<backend>backend.x-sentral.com</backend>): processes customer profile, camera, NVR, notification, schedule, detection, mask, event, WhatsApp-linking, support chat, and related operational data as described in this policy.",
+              "<b>WhatsApp (via Green-API):</b> an opt-in delivery channel for critical alerts. Alerts, images and video clips are delivered to your account's WhatsApp group through Green-API, our WhatsApp messaging provider.",
+              "<b>Twilio (USA):</b> if you add emergency contacts, critical alerts may trigger automated voice calls to them through Twilio. Twilio is also used to send SMS verification codes when you verify a phone number in our web app.",
+              "<b>Meta (WhatsApp Business Platform):</b> used for our WhatsApp support line and to process contact requests submitted through our website.",
+              "<b>Amazon Location Service (EU, Frankfurt):</b> address lookups made by our team when setting up a site.",
+              "<b>Cloud storage and media services:</b> camera snapshots, preview URLs, temporary media URLs, and event media files may be stored in or served from cloud infrastructure used by the Sentra AI platform.",
+              "<b>NVR and camera integration services:</b> camera and NVR connection details are processed by backend services that connect to your NVR device to retrieve device status, channel lists, snapshots, and alert data.",
+              "<b>Google Gemini API:</b> if you add an NVR from an image, that image is sent to the Google Gemini API to identify the connection details it contains. If you use the in-app AI support assistant, your messages and related account information are sent to the Google Gemini API to generate replies (see <supportChat>AI Support Chat</supportChat>). Under Google's paid services terms, this data is not used to train Google's models. See the <google>Google Privacy Policy</google>.",
+              "<b>Amazon Web Services (S3):</b> images you provide during NVR setup, along with other platform media, are stored in our AWS S3 storage.",
+              "<b>Analytics and messaging providers — currently Google (Firebase) and PostHog:</b> Firebase Analytics and PostHog are used to collect app usage data, and Firebase Cloud Messaging is used to deliver push notifications to your device. PostHog data is processed in PostHog's EU cloud region. Google and PostHog process this data as our service providers. We may use additional or alternative analytics providers in the future, under equivalent terms. See the <firebase>Firebase Privacy and Security</firebase> information, the <google>Google Privacy Policy</google>, and the <posthog>PostHog Privacy Policy</posthog>."
+            ]
+          },
+          {
+            "p": "Data may be processed in countries where these service providers operate, including Israel (AWS il-central-1), the European Union (PostHog, Amazon Location Service) and the United States (Google, Twilio, Meta). Where applicable laws require safeguards for international data transfers, we rely on contractual and organizational measures consistent with those requirements."
+          }
+        ]
+      },
+      {
+        "id": "sms",
+        "title": "SMS and mobile information",
+        "blocks": [
+          {
+            "p": "We use the mobile phone number you enter in the Sentra AI app to identify your account and to send you one-time verification codes by SMS when you sign up or sign in. We do not send marketing or promotional SMS."
+          },
+          {
+            "p": "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
+          }
+        ]
+      },
+      {
+        "id": "website",
+        "title": "Our Website",
+        "blocks": [
+          {
+            "p": "When you submit the contact form on sentraai.ai, we collect your name, email, phone number, message and language. We store the request, notify our team via WhatsApp, and may send you a WhatsApp message to follow up. Contact requests are kept until you ask us to delete them."
+          }
+        ]
+      },
+      {
+        "id": "analytics",
+        "title": "Analytics and Your Choices",
+        "blocks": [
+          {
+            "p": "We use analytics and app-performance services, currently Google Firebase Analytics and PostHog, to understand in aggregate how the app is used, which features are used, and where errors or performance problems occur. Analytics is used for product improvement, reliability, and security only."
+          },
+          {
+            "p": "As the app evolves, we may add, change, or remove the specific events and measurements we collect, and we may use additional or alternative analytics providers. Any such changes remain subject to the commitments below."
+          },
+          {
+            "ul": [
+              "<b>Product improvement only:</b> we use analytics to improve, secure, and troubleshoot the app — not to make decisions about individual users.",
+              "<b>No advertising or tracking:</b> we do not use advertising identifiers, and we do not use your data for advertising or cross-app tracking. Analytics data is not sold or shared with advertising networks or data brokers.",
+              "<b>No sensitive content:</b> we do not send camera images, snapshots, video, alert media, NVR credentials, or WhatsApp message content to analytics providers.",
+              "<b>Retention:</b> analytics event data is retained according to the retention period configured with our analytics provider, after which it is deleted or retained only in aggregated form.",
+              "<b>Your choices:</b> you can turn analytics off at any time in the app under <b>Settings → Share usage data</b>; this stops collection by both Firebase Analytics and PostHog on that device. You can also limit analytics collection through your device operating system privacy settings, or by uninstalling the app. You may also contact us at <mail>{{supportEmail}}</mail> to request that analytics data associated with your app installation be deleted."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Data Security",
+        "blocks": [
+          {
+            "p": "We use reasonable technical and organizational measures to help protect information against unauthorized access, loss, misuse, or alteration."
+          },
+          {
+            "ul": [
+              "<b>Data in transit:</b> communication between the mobile app and service APIs is protected using HTTPS (TLS).",
+              "<b>Authentication:</b> authenticated access controls are used to protect account and service access.",
+              "<b>Session protection:</b> session information is stored using secure platform capabilities available on the device.",
+              "<b>NVR credentials:</b> device connection details, including NVR usernames and passwords, IP addresses and ports, are stored on our servers so the service can connect to your equipment. Access is restricted to the systems and personnel required to operate the service.",
+              "<b>Local alert cache:</b> recent alert notifications, including their titles and text, are cached in app storage on your device so you can view them offline. This cache is limited in size, is excluded from device cloud backup on Android, and is cleared when you sign out or uninstall the app."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "local-storage",
+        "title": "Local Storage (Archive)",
+        "blocks": [
+          {
+            "p": "The app lets you save alerts, images, and videos to your device's local storage. These items are stored only on your device, are not sent to our servers, and are not accessible to us. They remain until you delete them. You can also save images and videos to your device gallery — this happens only at your initiative and requires your permission."
+          }
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Data Retention",
+        "blocks": [
+          {
+            "p": "We retain different categories of data for different periods depending on operational, security, legal, and contractual requirements. In general:"
+          },
+          {
+            "ul": [
+              "<b>Account and session records</b> may be retained as needed to provide account access, maintain service continuity, and meet legal or contractual obligations.",
+              "<b>NVR and camera configuration and credentials</b> may be retained as needed to connect and operate supported devices and to support service and security functions, depending on configuration and operational requirements.",
+              "<b>Images provided during NVR setup</b> are stored in our AWS S3 storage and may be retained as needed to complete setup, support the device connection, and handle service or security issues.",
+              "<b>Alert, event, snapshot, and media records</b> may be retained as needed for service operation, security, compliance, and dispute handling.",
+              "<b>Support chat conversations</b> are saved on your device (up to the 20 most recent) and are not kept as a chat history on our servers; short-lived conversation and task state on our servers expires within about 15 minutes to 24 hours, and records of actions the assistant performed are retained with your account records.",
+              "<b>Diagnostics and security logs</b> may be retained as needed to monitor, maintain, and protect the service.",
+              "<b>Analytics event data</b> is retained according to the retention period configured with our analytics provider, after which it is deleted or retained only in aggregated form.",
+              "<b>Support and deletion requests</b> may be retained as needed to process requests, provide support, and maintain required records."
+            ]
+          },
+          {
+            "p": "We retain data for as long as necessary to provide the service, meet legal obligations, resolve disputes, and enforce agreements."
+          },
+          {
+            "p": "Users may request deletion of their account and associated personal data. Upon verified request, we will delete or anonymize data where possible, subject to legal, security, and operational requirements."
+          }
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "User Rights and Deletion Requests",
+        "blocks": [
+          {
+            "p": "Where applicable privacy laws grant rights, customers may request access, correction, or deletion of personal information associated with the account, subject to verified identity where required and lawful exceptions (including retention needed for security, legal obligations, contractual or billing obligations, dispute resolution, or continued operation of our services)."
+          },
+          {
+            "p": "<b>How to request account deletion:</b>"
+          },
+          {
+            "ul": [
+              "In the Sentra AI mobile app, open <b>Settings → Delete Account</b> while signed in — this submits a routed deletion request through your authenticated profile.",
+              "Use the public <deleteLink>Account Deletion Request</deleteLink> page or email workflow.",
+              "Email <mail>{{supportEmail}}</mail>, including the email address or phone number you use to sign in."
+            ]
+          },
+          {
+            "p": "<b>Processing timeframe.</b> We aim to process verified deletion requests within 30 days, unless a longer period is required or permitted by law, security obligations, contractual requirements, billing records, dispute resolution, or operational necessity."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "title": "Children's Privacy",
+        "blocks": [
+          {
+            "p": "The app is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided information through the app, contact us so we can review and delete it where appropriate."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "p": "For privacy questions, data requests, or account deletion, contact us using the details below. For deletion you may also use <b>Settings → Delete Account</b> in the app or the <deleteLink>Account Deletion Request</deleteLink> page."
+          },
+          {
+            "p": "Email: <mail>{{supportEmail}}</mail><br/>Phone: <tel>{{supportPhone}}</tel>"
+          },
+          {
+            "p": "We will respond within a reasonable timeframe in accordance with applicable laws and service obligations."
+          }
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "badge": "App name: Sentra AI",
+    "title": "Account Deletion Request",
+    "lede": "You may request deletion of your Sentra AI account and related personal data by following the steps below.",
+    "lastUpdated": "Last updated: October 11, 2026",
+    "noticeProcessing": "<b>Processing time.</b> Deletion requests are reviewed and verified by our support team before processing. <b>Processing timeframe:</b> we aim to process verified deletion requests within 30 days, unless a longer period is required or permitted by law, security obligations, contractual requirements, billing records, dispute resolution, or operational necessity.",
+    "noticeVerification": "<b>Identity verification.</b> Support may verify your identity before processing a deletion request to protect your account.",
+    "emailCta": "Open email to support with subject prefilled",
+    "sections": [
+      {
+        "id": "paths",
+        "title": "Ways to request account deletion",
+        "blocks": [
+          {
+            "p": "You can submit a request using any of these methods:"
+          },
+          {
+            "ul": [
+              "<b>In the Sentra AI app:</b> go to <b>Settings → Delete Account</b> while signed in. This submits a routed deletion request using your authenticated profile.",
+              "<b>By email:</b> follow the steps below to email support (or use the button with a prefilled subject line)."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "email-steps",
+        "title": "How to request deletion by email",
+        "blocks": [
+          {
+            "ol": [
+              "Send an email to <mail>{{supportEmail}}</mail>.",
+              "Use the subject line: <b>{{subject}}</b> (copy it exactly so your request is routed correctly).",
+              "In the body of the email, include the <b>email address or phone number you use to sign in</b> to Sentra AI.",
+              "If available, include any relevant <b>organization or account details</b> that help us locate your account (for example, organization name or context from your service agreement)."
+            ]
+          },
+          {
+            "cta": true
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "title": "About this page",
+        "blocks": [
+          {
+            "p": "This page is a standalone public document. Due to technical limitations of unauthenticated web requests, your browser cannot perform the same authenticated deletion flow used inside the Sentra AI app. If you can log in on your phone, prefer <b>Settings → Delete Account</b> for the most direct path. Otherwise, use email or phone to reach support so your request is reliably received."
+          }
+        ]
+      },
+      {
+        "id": "covered",
+        "title": "What a deletion request covers",
+        "blocks": [
+          {
+            "p": "A verified deletion request covers:"
+          },
+          {
+            "ul": [
+              "Account and profile data",
+              "Login-related account records",
+              "Camera and NVR configuration",
+              "Linked cameras",
+              "Alert settings",
+              "Schedules and mute windows",
+              "WhatsApp verification data",
+              "Support inquiries"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "retained",
+        "title": "What we are required to retain",
+        "blocks": [
+          {
+            "p": "Some information may be kept after account deletion where required or permitted by law or legitimate business needs, such as:"
+          },
+          {
+            "ul": [
+              "Security logs and audit records",
+              "Legal, contractual, or billing records",
+              "Operational and diagnostic logs",
+              "Alert and event records needed for security, fraud prevention, dispute resolution, compliance, or platform integrity"
+            ]
+          },
+          {
+            "p": "Retained data is kept only as long as necessary for legal, security, operational, or contractual reasons. We retain different categories of data for different periods depending on these requirements — specific durations are not published here because they vary by data type and applicable obligations."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "p": "Email: <mail>{{supportEmail}}</mail><br/>Phone: <tel>{{supportPhone}}</tel>"
+          },
+          {
+            "p": "Direct link with subject prefilled: <subjectMail>{{supportEmail}}</subjectMail>"
+          }
+        ]
+      }
+    ]
+  }
+}
